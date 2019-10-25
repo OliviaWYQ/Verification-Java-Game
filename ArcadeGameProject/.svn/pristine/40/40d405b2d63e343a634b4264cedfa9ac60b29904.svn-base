@@ -1,0 +1,76 @@
+import java.awt.geom.Rectangle2D;
+import java.util.HashMap;
+
+
+public class Character implements Moveable {
+	
+	private final int SPEED = 5;
+	private final int STARTING_X = 425;
+	private final int STARTING_Y = 800;
+	private final int BLOCK_SIZE = 25;
+	
+	private int x;
+	private int y;
+	private Rectangle2D.Double square;
+	private boolean isFiring;
+
+	public Character(){
+		this.x = STARTING_X;
+		this.y = STARTING_Y;
+		this.square = new Rectangle2D.Double(this.x, this.y, BLOCK_SIZE, BLOCK_SIZE);
+	}
+	
+	public Rectangle2D.Double getSprite(){
+		return this.square;
+	}
+	
+	public int getX(){
+		return this.x;
+	}
+	
+	public int getY(){
+		return this.y;
+	}
+	
+	@Override
+	public void moveUp() {
+		this.y -= SPEED;
+	}
+
+	@Override
+	public void moveRight() {
+		this.x += SPEED;
+	}
+
+	@Override
+	public void moveDown() {
+		this.y += SPEED;
+	}
+
+	@Override
+	public void moveLeft() {
+		this.x -= SPEED;
+	}
+
+	public void move(HashMap<Integer, Boolean> hashMap) {
+		if(hashMap.get(38)){
+			moveUp();
+		}
+		if(hashMap.get(39)){
+			moveRight();
+		}
+		if(hashMap.get(40)){
+			moveDown();
+		}
+		if(hashMap.get(37)){
+			moveLeft();
+		}
+		this.isFiring = hashMap.get(32);
+		this.square = new Rectangle2D.Double(this.x, this.y, BLOCK_SIZE, BLOCK_SIZE);
+	}
+
+	boolean getFiring(){
+		return this.isFiring;
+	}
+
+}

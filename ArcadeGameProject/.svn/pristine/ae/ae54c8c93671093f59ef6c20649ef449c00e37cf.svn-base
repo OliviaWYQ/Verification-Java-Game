@@ -1,0 +1,48 @@
+
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Scanner;
+
+import javax.swing.JFileChooser;
+
+
+public class LevelLoader {
+	private JFileChooser chooser;
+
+
+public void loader(){
+	this.chooser = new JFileChooser();
+}	
+public static void loadlevel(String inputFileName) {
+	
+	Scanner inScanner = null;
+	try {
+		inScanner = new Scanner(new FileReader(inputFileName));
+	} catch(IOException ex) {
+		System.out.println("it broke");
+	}
+
+	int lineNumber = 0;
+	int minY = 25;
+	int centLengthCount = 0;
+	ArrayList<Mushroom> elements = new ArrayList<>();
+	try {
+		while (inScanner.hasNextLine()) {
+			String line = inScanner.nextLine();
+			for(int i = 0; i < line.length(); i++){
+				if(line.charAt(i) == 'M'){
+					elements.add(new Mushroom(i*15, lineNumber*15+minY));
+					System.out.println(("11"));
+				}
+				else{
+					// add more components here
+				}
+			}
+			lineNumber++;
+		}
+	} finally {
+		inScanner.close();
+	}
+}
+}

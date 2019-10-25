@@ -1,0 +1,148 @@
+import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+import java.awt.geom.Rectangle2D;
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
+
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+
+
+public class CentipedeComponent extends JPanel implements Runnable {
+	
+	private final int BLOCK_SIZE = 25;
+	private final int WINDOW_SIZE = 900;
+	private final Color NORMAL_MUSHROOM_COLOR = Color.GREEN;
+	private final Color POISONED_MUSHROOM_COLOR = Color.MAGENTA;
+	private final Color HERO_COLOR = Color.BLUE;
+	private final Color BULLET_COLOR = Color.GRAY;
+	
+	private int currentLevel;
+	private ArrayList<Mushroom> mushrooms;
+	private ArrayList<Instance> instances;
+	private ArrayList<Bullet> bullets;
+//	private ArrayList<Weapon> weapons;
+//	private ArrayList<Enemy> enemies;
+	private PlayerCharacter hero;
+	private CentipedeListener gameListener;
+	
+	public CentipedeComponent(){
+		this.setPreferredSize(new Dimension(WINDOW_SIZE, WINDOW_SIZE));
+		String levelToLoad = JOptionPane.showInputDialog("What level do you"
+				+ " want to load?");
+		this.instances = new ArrayList<Instance>();
+		this.hero = new PlayerCharacter(this);
+		this.instances.add(this.hero);
+		this.currentLevel = Integer.parseInt(levelToLoad);
+		try {
+			loadLevel(this.currentLevel);
+		} catch (IOException ex) {
+			// IO EXCEPTION
+		}
+		
+		this.gameListener = new CentipedeListener(this);
+		this.addKeyListener(this.gameListener);
+	}
+	
+	public int getLevelNum(){
+		return this.currentLevel;
+	}
+
+	public void loadLevel(int levelNum) throws IOException {
+		// Load sample level
+		this.currentLevel = levelNum;
+		this.instances = new ArrayList<Instance>();
+		//instances.add(this.hero);		
+		BufferedReader br = null;
+		try {
+			br = new BufferedReader(new FileReader("src/level"+levelNum+".txt"));
+		} catch (FileNotFoundException exception) {
+			// FILE NOT FOUND
+		}
+		try {
+		    StringBuilder sb = new StringBuilder();
+		    String line = br.readLine();
+		    int yGrid = 0;
+		    while (line != null) {
+		    	yGrid ++;
+		        sb.append(line);
+		        sb.append(System.lineSeparator());
+		        line = br.readLine();
+		    }
+		    String everything = sb.toString();
+		    String[] lines = everything.split(System.getProperty("line.separator"));
+		    int scanX = 0;
+		    int scanY = 0;
+		    for(String currentLine: lines){
+		    	scanY += 20;
+		    	scanX = 0;
+		    	for(int i = 0; i<currentLine.length(); i++){
+		    		scanX += 20;
+		    		if(currentLine.charAt(i) == 'M'){
+		    			this.instances.add(new Mushroom(scanX, scanY,this));
+		    		}
+		    		// ADD CONSTRUCTORS FOR OTHER OBJECTS
+		    	}
+		    }
+		} finally {
+		    br.close();
+		}
+	}
+	
+	private void addSquare(Graphics2D g2, Rectangle2D.Double sprite, Color color){
+		// ADD A SQUARE
+		g2.setColor(color);		
+		g2.fill(sprite);
+	}
+	void removeinstance(Instance in){
+		this.instances.remove(in);
+	}
+
+	@Override
+	public void run() {
+		try{
+			while (true){
+				this.repaint();
+				Thread.sleep((long) 16.666667);
+			}
+		}
+		catch (InterruptedException ex){
+			// Interrupted
+		}
+	}
+
+	
+	@Override
+	protected void paintComponent(Graphics g){
+		super.paintComponent(g);
+		Graphics2D g2 = (Graphics2D) g;
+		// LOOP THROUGH ITEMS, ENEMIES, AND CHARACTER AND DRAW THEM
+		this.hero.readMap(this.gameListener.getHashMap());
+		this.hero.addTimer();
+		if(this.hero.getFiring()){
+			instances.add(new Bullet(hero.getX()+5, hero.getY(),this));
+		}
+		this.hero.update();
+		for(Instance instance: this.instances){
+			instance.update();
+			if(this.hero.getSprite().intersects(instance.getSprite())){
+				this.hero.collide((Collidable) instance);
+				this.hero.update();
+			}
+			for(Instance some:this.instances){
+				if(instance.getSprite().intersects(some.getSprite())){
+					instance.collide((Collidable) some);
+					instance.update();
+				}
+			}
+			addSquare(g2, instance.getSprite(), instance.getColor());
+		}
+		addSquare(g2, this.hero.getSprite(), this.hero.getColor());
+	}
+
+}

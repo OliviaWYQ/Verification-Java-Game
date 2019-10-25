@@ -1,0 +1,63 @@
+import java.awt.Color;
+import java.awt.geom.Rectangle2D;
+
+
+
+public abstract class Instance implements Moveable{
+	
+	private final int BLOCK_SIZE = 20;
+	private final int SPEED = 2;
+	private final Color DEFAULT_COLOR = Color.RED;
+	
+	public int x;
+	public int y;
+	public Rectangle2D.Double sprite;
+	
+	public Instance(int x, int y){
+		this.x = x;
+		this.y = y;
+		this.sprite = new Rectangle2D.Double(x, y, BLOCK_SIZE, BLOCK_SIZE);
+	}
+	
+	public int getX(){
+		return this.x;
+	}
+	
+	public int getY(){
+		return this.y;
+	}
+	
+	public Rectangle2D.Double getSprite(){
+		return this.sprite;
+	}
+	
+	public void update(){
+		this.sprite = new Rectangle2D.Double(this.x, this.y, BLOCK_SIZE, BLOCK_SIZE);
+	}
+	
+	public java.awt.Color getColor(){
+		return DEFAULT_COLOR;
+	}
+	
+	
+	@Override
+	public void moveUp() {
+		this.y -= SPEED;
+	}
+
+	@Override
+	public void moveRight() {
+		this.x += SPEED;
+	}
+
+	@Override
+	public void moveDown() {
+		this.y += SPEED;
+	}
+
+	@Override
+	public void moveLeft() {
+		this.x -= SPEED;
+	}
+	
+}

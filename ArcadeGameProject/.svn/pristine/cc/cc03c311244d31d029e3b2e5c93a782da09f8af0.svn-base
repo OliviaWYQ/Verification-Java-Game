@@ -1,0 +1,28 @@
+import java.awt.Color;
+
+
+public class ExtendedMushroom extends Instance {
+	
+	private final Color NORMAL_COLOR = Color.GREEN;
+	private final Color POISONED_COLOR = Color.MAGENTA;
+	
+	private boolean isPoisoned;
+
+	public ExtendedMushroom(int x, int y) {
+		super(x, y);
+		this.isPoisoned = false;
+	}
+	
+	public boolean getPoisonedStatus(){
+		return this.isPoisoned;
+	}
+	
+	@Override
+	public Color getColor(){
+		if(!this.isPoisoned){
+			return NORMAL_COLOR;
+		}
+		return POISONED_COLOR;
+	}
+
+}

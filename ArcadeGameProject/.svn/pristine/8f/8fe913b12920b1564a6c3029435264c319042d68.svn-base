@@ -1,0 +1,88 @@
+import java.awt.Color;
+import java.util.HashMap;
+
+
+
+public class PlayerCharacter extends Instance implements Moveable, Collidable{
+	
+	private final static Color HERO_COLOR = Color.BLUE;
+	private final static int DEFAULT_X = 425;
+	private final static int DEFAULT_Y = 800;
+	private final int RELOAD_FRAMES = 20;
+	
+	private boolean isFiring;
+	private int timer;
+	private int prevX;
+	private int prevY;
+	
+	public PlayerCharacter() {
+		super(DEFAULT_X, DEFAULT_Y);
+		this.timer = RELOAD_FRAMES;
+	}
+	
+	public void readMap(HashMap<Integer, Boolean> hashMap) {
+		this.prevX = this.x;
+		this.prevY = this.y;
+		if(hashMap.get(38)){
+			super.moveUp();
+		}
+		if(hashMap.get(39)){
+			super.moveRight();
+		}
+		if(hashMap.get(40)){
+			super.moveDown();
+		}
+		if(hashMap.get(37)){
+			super.moveLeft();
+		}
+		this.isFiring = hashMap.get(32);
+	}
+	
+	@Override
+	public Color getColor(){
+		return HERO_COLOR;
+	}
+	
+	public boolean getFiring(){
+		if(this.timer > RELOAD_FRAMES && this.isFiring){
+			this.timer = 0;
+			return true;
+		}
+		return false;
+	}
+	
+	public void addTimer(){
+		if(this.timer <= RELOAD_FRAMES){
+			this.timer += 1;
+		}
+	}
+	
+	public void stop(){
+		this.x = prevX;
+		this.y = prevY;
+	}
+
+	@Override
+	public void collide(Collidable collidable) {
+		collidable.collideWithCharacter(this);
+		
+	}
+
+	@Override
+	public void collideWithMushroom(Mushroom m) {
+		System.out.println("BOOP");
+		
+	}
+
+	@Override
+	public void collideWithCharacter(PlayerCharacter c) {
+		// Only one instance of character
+		
+	}
+
+	@Override
+	public void collideWithBullet(Bullet b) {
+		// Cannot shoot self
+		
+	}
+}

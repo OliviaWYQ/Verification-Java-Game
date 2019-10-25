@@ -1,0 +1,61 @@
+import java.util.HashMap;
+
+
+public class Character implements Moveable {
+	
+	private final int SPEED = 5;
+	private final int STARTING_X = 425;
+	private final int STARTING_Y = 800;
+	
+	private int x;
+	private int y;
+
+	public Character(){
+		this.x = STARTING_X;
+		this.y = STARTING_Y;
+	}
+	
+	public int getX(){
+		return this.x;
+	}
+	
+	public int getY(){
+		return this.y;
+	}
+	
+	@Override
+	public void moveUp() {
+		this.y -= SPEED;
+	}
+
+	@Override
+	public void moveRight() {
+		this.x += SPEED;
+	}
+
+	@Override
+	public void moveDown() {
+		this.y += SPEED;
+	}
+
+	@Override
+	public void moveLeft() {
+		this.x -= SPEED;
+	}
+
+	public void move(HashMap<Integer, Boolean> hashMap) {
+		if(hashMap.get(38)){
+			moveUp();
+		}
+		if(hashMap.get(39)){
+			moveRight();
+		}
+		if(hashMap.get(40)){
+			moveDown();
+		}
+		if(hashMap.get(37)){
+			moveLeft();
+		}
+	}
+
+}

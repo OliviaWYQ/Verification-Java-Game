@@ -1,0 +1,69 @@
+import java.awt.Color;
+import java.awt.geom.Rectangle2D;
+import java.io.IOException;
+
+public class Centipede extends Instance{
+
+	public static final int SPEED = 2;
+	public static final Color CENTIPEDE_COLOR = Color.DARK_GRAY;
+	public static final Color HEAD_COLOR = Color.ORANGE;
+	public static final int HEAD_SIZE = 20;
+	public static final int DEFAULT_X = 440;
+	public static final int DEFAULT_Y = 20;
+	public static final int MOVEMENT_SPEED = 2;
+	public static final int BORDER = 20;
+	public static final int SCREEN_SIZE = 900;
+	
+	private int movingDown;
+	private int movingSide;
+	
+	public Centipede(int x, int y, int nSegments, CentipedeComponent comp) {
+		super(x, y, comp);
+		this.movingDown = 1;
+		this.movingSide = 1;
+	}
+	
+	public Centipede(int nSegments, CentipedeComponent component) {
+		this(DEFAULT_X, DEFAULT_Y, nSegments, component);
+	}
+	
+	public void dropAndTurn(){
+		this.movingSide *= -1;
+		this.y += 20 * this.movingDown;
+	}
+	
+	@Override
+	public void update(){
+
+		if(this.x <= BORDER||this.x>=SCREEN_SIZE - BORDER){
+			dropAndTurn();
+		}
+		if(this.y <= BORDER||this.y >= (SCREEN_SIZE - 2 * BORDER)){
+			this.movingDown *= -1;
+		}
+		this.x += this.movingSide * MOVEMENT_SPEED;
+		this.sprite = new Rectangle2D.Double(this.x, this.y, HEAD_SIZE, HEAD_SIZE);
+	}
+	
+	@Override
+	public Color getColor(){
+		return HEAD_COLOR;
+	}
+	
+	@Override
+	public void collide(Collidable c){
+		c.collideWithCentipede(this);
+	}
+	
+	@Override
+	public void collideWithCharacter(PlayerCharacter c){
+		System.out.println("YOU DIED");
+		try {
+			this.comp.loadLevel(this.comp.getLevelNum());
+		} catch (IOException exception) {
+			// WILL LOAD A LEVEL
+			exception.printStackTrace();
+		}
+	}
+
+}

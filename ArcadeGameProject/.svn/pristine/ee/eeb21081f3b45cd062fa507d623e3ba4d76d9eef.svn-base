@@ -1,0 +1,55 @@
+import java.awt.Color;
+
+
+public class Mushroom extends Instance implements Collidable {
+	
+	private final Color NORMAL_COLOR = Color.GREEN;
+	private final Color POISONED_COLOR = Color.MAGENTA;
+	
+	private boolean isPoisoned;
+
+	public Mushroom(int x, int y,CentipedeComponent comp) {
+		super(x, y,comp);
+		this.isPoisoned = false;
+	}
+	
+	public boolean getPoisonedStatus(){
+		return this.isPoisoned;
+	}
+	
+	@Override
+	public Color getColor(){
+		if(!this.isPoisoned){
+			return NORMAL_COLOR;
+		}
+		return POISONED_COLOR;
+	}
+
+	@Override
+	public void collide(Collidable collidable) {
+		collidable.collideWithMushroom(this);
+		
+	}
+
+	@Override
+	public void collideWithMushroom(Mushroom m) {
+		// Cannot collide with a mushroom
+		
+	}
+
+	@Override
+	public void collideWithCharacter(PlayerCharacter c) {
+		c.stop();
+		
+	}
+
+	@Override
+	public void collideWithBullet(Bullet b) {
+		b.die();
+		this.die();
+		
+		System.out.println("BOOM!");
+		
+	}
+
+}

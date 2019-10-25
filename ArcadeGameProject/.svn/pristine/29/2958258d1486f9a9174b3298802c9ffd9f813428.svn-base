@@ -1,0 +1,44 @@
+import java.awt.geom.Rectangle2D;
+
+
+public class Mushroom {
+	
+	private final int BLOCK_SIZE = 25;
+	
+	private int x;
+	private int y;
+	private boolean isPoisoned;
+	private Rectangle2D.Double square;
+	
+	/**
+	 * 
+	 * Creates a 25x25 unposioned mushroom
+	 *
+	 * @param x: x position of the upper left corner of the mushroom
+	 * @param y: y position of the upper left corner of the mushroom
+	 */
+	
+	public Mushroom(int x, int y){
+		this.x = x;
+		this.y = y;
+		this.isPoisoned = false;
+		this.square = new Rectangle2D.Double(x, y, BLOCK_SIZE, BLOCK_SIZE);
+	}
+	
+	public int getX(){
+		return this.x;
+	}
+	
+	public int getY(){
+		return this.y;
+	}
+	
+	public boolean getPoisonedStatus(){
+		return this.isPoisoned;
+	}
+	
+	public Rectangle2D.Double getSprite(){
+		return this.square;
+	}
+
+}

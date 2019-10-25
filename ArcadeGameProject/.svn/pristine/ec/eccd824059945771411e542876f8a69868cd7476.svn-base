@@ -1,0 +1,57 @@
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
+import java.util.HashMap;
+
+/**
+ * 
+ * KeyListener which handles keyboard input for the centipede game. Keeps track of which keys
+ * currently being pressed
+ *
+ * @author localmgr.
+ *         Created May 4, 2016.
+ */
+public class CentipedeListener implements KeyListener {
+	
+	public HashMap<Integer, Boolean> keyPressedMap;
+	
+	@SuppressWarnings("boxing")
+	public CentipedeListener() {
+		this.keyPressedMap = new HashMap<>();
+		this.keyPressedMap.put(37, false);
+		this.keyPressedMap.put(38, false);
+		this.keyPressedMap.put(39, false);
+		this.keyPressedMap.put(40, false);
+	}
+	
+	public HashMap<Integer, Boolean> getHashMap(){
+		return this.keyPressedMap;
+	}
+
+	@Override
+	public void keyTyped(KeyEvent e) {
+		// Typed stuff
+
+	}
+
+	@SuppressWarnings("boxing")
+	@Override
+	public void keyPressed(KeyEvent e) {
+		int keyCode = e.getKeyCode();
+		
+		this.keyPressedMap.put(keyCode, true);
+	}
+
+	@Override
+	public void keyReleased(KeyEvent e) {
+		int keyCode = e.getKeyCode();
+		
+		this.keyPressedMap.put(keyCode, false);
+		
+		if (keyCode == KeyEvent.VK_U) {
+			// Increase Level
+		}
+		if (keyCode == KeyEvent.VK_D) {
+			// Decrease Level
+		}
+	}
+}

@@ -1,0 +1,153 @@
+import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+import java.awt.geom.Rectangle2D;
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
+
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+
+
+public class CentipedeComponent extends JPanel implements Runnable {
+	
+	private final int BLOCK_SIZE = 25;
+	private final int WINDOW_SIZE = 900;
+	private final Color NORMAL_MUSHROOM_COLOR = Color.GREEN;
+	private final Color POISONED_MUSHROOM_COLOR = Color.MAGENTA;
+	private final Color HERO_COLOR = Color.BLUE;
+	private final Color BULLET_COLOR = Color.GRAY;
+	
+	private int currentLevel;
+	private ArrayList<Mushroom> mushrooms;
+	private ArrayList<Bullet> bullets;
+//	private ArrayList<Weapon> weapons;
+//	private ArrayList<Enemy> enemies;
+	private Character hero;
+	private CentipedeListener gameListener;
+	
+	public CentipedeComponent(){
+		this.setPreferredSize(new Dimension(WINDOW_SIZE, WINDOW_SIZE));
+		String levelToLoad = JOptionPane.showInputDialog("What level do you"
+				+ " want to load? (input 99 for a test level)");
+		this.hero = new Character();
+		this.currentLevel = Integer.parseInt(levelToLoad);
+		try {
+			loadLevel(this.currentLevel);
+		} catch (IOException ex) {
+			// IO EXCEPTION
+		}
+		
+		this.gameListener = new CentipedeListener(this);
+		this.addKeyListener(this.gameListener);
+	}
+	
+	public int getLevelNum(){
+		return this.currentLevel;
+	}
+
+	public void loadLevel(int levelNum) throws IOException {
+		// Load sample level
+		this.currentLevel = levelNum;
+		this.mushrooms = new ArrayList<Mushroom>();
+		this.bullets = new ArrayList<Bullet>();
+		if (levelNum == 99){
+			System.out.println("LOADING SAMPLE LEVEL");
+			for(int i=0; i<10; i++){
+				this.mushrooms.add(new Mushroom(150 + 50*i, 450));
+				this.mushrooms.add(new Mushroom(175 + 50*i, 425));
+			}
+		}
+		
+		BufferedReader br = null;
+		try {
+			br = new BufferedReader(new FileReader("src/level"+levelNum+".txt"));
+		} catch (FileNotFoundException exception) {
+			// FILE NOT FOUND
+		}
+		try {
+		    StringBuilder sb = new StringBuilder();
+		    String line = br.readLine();
+		    int yGrid = 0;
+		    while (line != null) {
+		    	yGrid ++;
+		        sb.append(line);
+		        sb.append(System.lineSeparator());
+		        line = br.readLine();
+		    }
+		    String everything = sb.toString();
+		    String[] lines = everything.split(System.getProperty("line.separator"));
+		    int scanX = 0;
+		    int scanY = 0;
+		    for(String currentLine: lines){
+		    	scanY += 25;
+		    	scanX = 0;
+		    	for(int i = 0; i<currentLine.length(); i++){
+		    		scanX += 25;
+		    		if(currentLine.charAt(i) == 'M'){
+		    			mushrooms.add(new Mushroom(scanX, scanY));
+		    		}
+		    		// ADD CONSTRUCTORS FOR OTHER OBJECTS
+		    	}
+		    }
+		} finally {
+		    br.close();
+		}
+	}
+	
+	private void addSquare(Graphics2D g2, Rectangle2D.Double sprite, Color color){
+		// ADD A SQUARE
+		g2.setColor(color);		
+		g2.fill(sprite);
+	}
+
+	@Override
+	public void run() {
+		try{
+			while (true){
+				this.repaint();
+				Thread.sleep(50);
+			}
+		}
+		
+		catch (InterruptedException ex){
+			// Interrupted
+		}
+
+	}
+
+//	private void redraw() {
+//		// REDRAW SQUARES FROM POSITIONS
+//		Graphics2D g2 = new Graphics();
+//		Rectangle2D.Double square = new Rectangle2D.Double(x, y, BLOCK_SIZE, BLOCK_SIZE);
+//		
+//	}
+	
+	@Override
+	protected void paintComponent(Graphics g){
+		super.paintComponent(g);
+		Graphics2D g2 = (Graphics2D) g;
+		// LOOP THROUGH ITEMS, ENEMIES, AND CHARACTER AND DRAW THEM
+		for(Mushroom m: mushrooms){
+			Color mushroomColor = NORMAL_MUSHROOM_COLOR;
+			if(m.getPoisonedStatus()){
+				mushroomColor = POISONED_MUSHROOM_COLOR;
+			}
+			addSquare(g2, m.getSprite(), mushroomColor);
+		}
+		this.hero.move(this.gameListener.getHashMap());
+		addSquare(g2, hero.getSprite(), HERO_COLOR);
+		if(this.hero.getFiring()){
+			bullets.add(new Bullet(hero.getX(), hero.getY()));
+		}
+		for(Bullet b: bullets){
+			b.move();
+			addSquare(g2, b.getSprite(), BULLET_COLOR);
+		}
+	}
+
+}

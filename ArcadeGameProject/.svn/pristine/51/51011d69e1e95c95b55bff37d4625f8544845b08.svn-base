@@ -1,0 +1,61 @@
+import java.io.File;
+
+import javax.sound.sampled.AudioSystem;
+import javax.sound.sampled.Clip;
+
+public class BackGroundMusicPlayer {
+	protected static Clip clip;
+	protected boolean clipIsPaused;
+	/**
+	 * 
+	 *Starts the threading and plays the music
+	 */
+	public BackGroundMusicPlayer() {
+		Runnable player = new Runnable() {
+			@Override
+			public void run() {
+				// Periodically asks Java to repaint this component
+				try {
+					while (true) {
+						play();
+					}
+				} catch (Exception exception) {
+					// Stop when interrupted
+				}
+
+			}
+		};
+		new Thread(player).start();
+	}
+	
+	/**
+	 * Reads in the sound file and converts it to clips
+	 */
+	static void play() {
+		File song = new File("Youtube-Arcade Classics 2_ Millipede_Centipede Music - Game Select Screen.wav");
+		try{
+			clip = AudioSystem.getClip();
+			clip.open(AudioSystem.getAudioInputStream(song));
+			clip.start();
+			Thread.sleep(clip.getMicrosecondLength()/1000);
+		}
+		catch(Exception e){
+			System.out.println("Not Found");
+		}
+	}
+	/**
+	 * 
+	 * if the shouldbePaused is true stops making clips
+	 *
+	 * @param shouldBePaused
+	 */
+	public void pause(boolean shouldBePaused){
+		if(shouldBePaused){
+			clip.stop();
+			return;
+		}
+		clip.start();
+	}
+}
+
+

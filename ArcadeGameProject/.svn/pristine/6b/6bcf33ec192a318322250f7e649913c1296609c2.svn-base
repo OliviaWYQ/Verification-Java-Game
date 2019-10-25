@@ -1,0 +1,39 @@
+import java.awt.Color;
+import java.awt.geom.Rectangle2D;
+
+public class Centipede extends Instance {
+
+	public static final int SPEED = 2;
+	public static final Color CENTIPEDE_COLOR = Color.DARK_GRAY;
+	public static final Color HEAD_COLOR = Color.ORANGE;
+	public static final int HEAD_SIZE = 20;
+	public static final int DEFAULT_X = 10;
+	public static final int DEFAULT_Y = 10;
+	
+	private boolean goingDown;
+	
+	public Centipede(int x, int y, int nSegments) {
+		super(x, y);
+		this.goingDown = true;
+	}
+	
+	public Centipede(int nSegments) {
+		this(DEFAULT_X, DEFAULT_Y, nSegments);
+	}
+	
+	@Override
+	public void update(){
+//		if (this.goingDown) {
+//			this.y += SPEED;
+//		} else {
+//			this.y -= SPEED;
+//		}
+		this.sprite = new Rectangle2D.Double(this.x, this.y, HEAD_SIZE, HEAD_SIZE);
+	}
+	
+	@Override
+	public Color getColor(){
+		return HEAD_COLOR;
+	}
+
+}

@@ -1,0 +1,6 @@
+Cycle 1 report:
+We each spent a few hours working on the current deliverable. Our current
+project includes three different levels that can be loaded from files. These
+levels can be switched between when you press the U and D keys. In addition
+the player character can be moved using the arrow keys. As of now the levels
+only contain non-poisoned mushrooms, which have no character collision.

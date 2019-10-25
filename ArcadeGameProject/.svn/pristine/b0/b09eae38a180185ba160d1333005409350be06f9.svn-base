@@ -1,0 +1,42 @@
+import java.awt.geom.Rectangle2D;
+
+/**
+ * 
+ * The default projectile that is created when the hero fires a gun
+ *
+ * @author Maxx Philiposian.
+ *         Created May 6, 2016.
+ */
+public class Bullet {
+	
+	private int x;
+	private int y;
+	
+	private Rectangle2D.Double sprite;
+	
+	public static final int BULLET_SIZE = 25;
+	public static final int BULLET_SPEED = 10;
+	
+	public Bullet(int x, int y) {
+		this.x = x;
+		this.y = y;
+		this.sprite = new Rectangle2D.Double(x, y, BULLET_SIZE, BULLET_SIZE);
+	}
+	
+	public void move() {
+		this.y -= BULLET_SPEED;
+		this.sprite = new Rectangle2D.Double(this.x, this.y, BULLET_SIZE, BULLET_SIZE);
+	}
+	
+	public int getX() {
+		return this.x;
+	}
+	
+	public int getY() {
+		return this.y;
+	}
+
+	public Rectangle2D.Double getSprite() {
+		return this.sprite;
+	}
+}
