@@ -39,7 +39,7 @@ public class Flea extends Instance {
 	
 	@Override
 	public Image getImage(){
-		return Toolkit.getDefaultToolkit().getImage("src/Flea.png");
+		return Toolkit.getDefaultToolkit().getImage(LocalResources.ImgFlea);
 	}
 	
 	@Override

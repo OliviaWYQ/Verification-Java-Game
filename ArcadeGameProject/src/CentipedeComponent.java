@@ -92,7 +92,16 @@ public class CentipedeComponent extends JPanel implements Runnable {
 		this.enemySpawnTimer = 0;
 		BufferedReader br = null;
 		try {
-			br = new BufferedReader(new FileReader("src/level"+levelNum+".txt"));
+			String ComponentPath = System.getProperty("user.dir");
+			String[] segments = ComponentPath.split("/");
+			String lastIndex = segments[segments.length-1];
+			String brPath = "";
+			if(lastIndex.equals("src")){
+				brPath = "level"+levelNum+".txt";
+			} else {
+				brPath = "./src/level"+levelNum+".txt";
+			}
+			br = new BufferedReader(new FileReader(brPath));
 		} catch (FileNotFoundException exception) {
 			// FILE NOT FOUND
 		}
@@ -303,7 +312,7 @@ public class CentipedeComponent extends JPanel implements Runnable {
 	/**
 	 * TODO Put here a description of what this method does.
 	 *
-	 * @param b
+	 * @param
 	 */
 	
 	public void setIsPaused(boolean isPaused) {

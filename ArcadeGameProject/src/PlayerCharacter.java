@@ -95,9 +95,9 @@ public class PlayerCharacter extends Instance implements Moveable, Collidable{
 	@Override
 	public Image getImage(){
 		if(this.animationTimer >= ANIMATION_TIME/2){
-			return Toolkit.getDefaultToolkit().getImage("src/Player1.png");
+			return Toolkit.getDefaultToolkit().getImage(LocalResources.ImgPlayer1);
 		}
-		return Toolkit.getDefaultToolkit().getImage("src/Player2.png");
+		return Toolkit.getDefaultToolkit().getImage(LocalResources.ImgPlayer2);
 	}
 	
 	public boolean getFiring(){

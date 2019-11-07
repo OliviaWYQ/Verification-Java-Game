@@ -68,7 +68,7 @@ public class Boomerang extends Instance {
 	
 	@Override
 	public Image getImage(){
-		return Toolkit.getDefaultToolkit().getImage("src/Boomerang.png");
+		return Toolkit.getDefaultToolkit().getImage(LocalResources.ImgBoomerang);
 	}
 	
 	@Override

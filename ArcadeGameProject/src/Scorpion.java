@@ -27,7 +27,7 @@ public class Scorpion extends Instance {
 	
 	@Override
 	public Image getImage(){
-		return Toolkit.getDefaultToolkit().getImage("src/Scorpion.png");
+		return Toolkit.getDefaultToolkit().getImage(LocalResources.ImgScorpion);
 	}
 	
 	@Override

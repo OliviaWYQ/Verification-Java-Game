@@ -33,7 +33,7 @@ public class Spider extends Instance {
 	
 	@Override
 	public Image getImage(){
-		return Toolkit.getDefaultToolkit().getImage("src/Spider.png");
+		return Toolkit.getDefaultToolkit().getImage(LocalResources.ImgSpider);
 	}
 	
 	@Override

@@ -47,9 +47,9 @@ public class LinkedCentipede extends Instance {
 	@Override
 	public Image getImage(){
 		if(this.nextSegment == null){
-			return Toolkit.getDefaultToolkit().getImage("src/CentipedeHead.png");
+			return Toolkit.getDefaultToolkit().getImage(LocalResources.ImgCentipedeHead);
 		}
-		return Toolkit.getDefaultToolkit().getImage("src/CentipedeBody.png");
+		return Toolkit.getDefaultToolkit().getImage(LocalResources.ImgCentipedeBody);
 	}
 	
 	public LinkedCentipede(int nSegments, CentipedeComponent component) {

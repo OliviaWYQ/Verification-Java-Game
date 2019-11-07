@@ -23,7 +23,8 @@ public class BackGroundMusicPlayer {
 	}
 	
 	static void play() {
-		File song = new File("src/Youtube-Arcade Classics 2_ Millipede_Centipede Music - Game Select Screen.wav");
+
+		File song = new File(LocalResources.SongPath);
 		try{
 			clip = AudioSystem.getClip();
 			clip.open(AudioSystem.getAudioInputStream(song));

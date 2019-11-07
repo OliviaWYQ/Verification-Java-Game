@@ -25,12 +25,12 @@ public class GunPickup extends Instance {
 	@Override
 	public Image getImage(){
 		if(this.gunID == PISTOL_NUMBER){
-			return Toolkit.getDefaultToolkit().getImage("src/Pistol.png");
+			return Toolkit.getDefaultToolkit().getImage(LocalResources.ImgPistol);
 		}
 		if(this.gunID == SHOTGUN_NUMBER){
-			return Toolkit.getDefaultToolkit().getImage("src/Shotgun.png");
+			return Toolkit.getDefaultToolkit().getImage(LocalResources.ImgShotgun);
 		}
-		return Toolkit.getDefaultToolkit().getImage("src/Boomerang.png");
+		return Toolkit.getDefaultToolkit().getImage(LocalResources.ImgBoomerang);
 	}
 	
 	@Override

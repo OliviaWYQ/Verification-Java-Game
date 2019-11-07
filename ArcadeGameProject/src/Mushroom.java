@@ -26,17 +26,17 @@ public class Mushroom extends Instance implements Collidable {
 	@Override
 	public Image getImage(){
 		if(this.isPoisoned && this.life != 0){
-			String fileName = "src/PoisonedMushroom" + this.life + ".png";
+			String fileName = LocalResources.ImgPoisonedMushroom.substring(0, LocalResources.ImgPoisonedMushroom.length()-5) + this.life + ".png";
 			return Toolkit.getDefaultToolkit().getImage(fileName);
 		}
 		if(this.isPoisoned && this.life == 0){
-			return Toolkit.getDefaultToolkit().getImage("src/PoisonedMushroom1.png");
+			return Toolkit.getDefaultToolkit().getImage(LocalResources.ImgPoisonedMushroom);
 		}
 		if(!this.isPoisoned && this.life != 0){
-			String fileName = "src/RegularMushroom" + this.life + ".png";
+			String fileName = LocalResources.ImgRegularMushroom.substring(0, LocalResources.ImgRegularMushroom.length()-5) + this.life + ".png";
 			return Toolkit.getDefaultToolkit().getImage(fileName);
 		}
-		return Toolkit.getDefaultToolkit().getImage("src/RegularMushroom1.png");
+		return Toolkit.getDefaultToolkit().getImage(LocalResources.ImgRegularMushroom);
 	}
 	
 	@Override
