@@ -1,0 +1,1090 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="http://findbugs.sourceforge.net/xsl/default.xsl"?>
+
+<BugCollection version="3.0.1" sequence="0" timestamp="1573685542836" analysisTimestamp="1573685541465" release="">
+  <Project projectName="ArcadeGameProject[ArcadeGameProject]">
+    <Jar>/Users/oliviawang/Documents/GitHub/Verification-Java-Game/ArcadeGameProject/bin/LinkedCentipede.class</Jar>
+    <Jar>/Users/oliviawang/Documents/GitHub/Verification-Java-Game/ArcadeGameProject/bin/Spider.class</Jar>
+    <Jar>/Users/oliviawang/Documents/GitHub/Verification-Java-Game/ArcadeGameProject/bin/StartButtonListener.class</Jar>
+    <Jar>/Users/oliviawang/Documents/GitHub/Verification-Java-Game/ArcadeGameProject/bin/BackGroundMusicPlayer$1.class</Jar>
+    <Jar>/Users/oliviawang/Documents/GitHub/Verification-Java-Game/ArcadeGameProject/bin/Moveable.class</Jar>
+    <Jar>/Users/oliviawang/Documents/GitHub/Verification-Java-Game/ArcadeGameProject/bin/CentipedeListener.class</Jar>
+    <Jar>/Users/oliviawang/Documents/GitHub/Verification-Java-Game/ArcadeGameProject/bin/Scorpion.class</Jar>
+    <Jar>/Users/oliviawang/Documents/GitHub/Verification-Java-Game/ArcadeGameProject/bin/GunPickup.class</Jar>
+    <Jar>/Users/oliviawang/Documents/GitHub/Verification-Java-Game/ArcadeGameProject/bin/BackGroundMusicPlayer.class</Jar>
+    <Jar>/Users/oliviawang/Documents/GitHub/Verification-Java-Game/ArcadeGameProject/bin/CentipedeComponent.class</Jar>
+    <Jar>/Users/oliviawang/Documents/GitHub/Verification-Java-Game/ArcadeGameProject/bin/PlayerCharacter.class</Jar>
+    <Jar>/Users/oliviawang/Documents/GitHub/Verification-Java-Game/ArcadeGameProject/bin/Bullet.class</Jar>
+    <Jar>/Users/oliviawang/Documents/GitHub/Verification-Java-Game/ArcadeGameProject/bin/Instance.class</Jar>
+    <Jar>/Users/oliviawang/Documents/GitHub/Verification-Java-Game/ArcadeGameProject/bin/Collidable.class</Jar>
+    <Jar>/Users/oliviawang/Documents/GitHub/Verification-Java-Game/ArcadeGameProject/bin/Boomerang.class</Jar>
+    <Jar>/Users/oliviawang/Documents/GitHub/Verification-Java-Game/ArcadeGameProject/bin/ShotgunShell.class</Jar>
+    <Jar>/Users/oliviawang/Documents/GitHub/Verification-Java-Game/ArcadeGameProject/bin/Flea.class</Jar>
+    <Jar>/Users/oliviawang/Documents/GitHub/Verification-Java-Game/ArcadeGameProject/bin/Mushroom.class</Jar>
+    <Jar>/Users/oliviawang/Documents/GitHub/Verification-Java-Game/ArcadeGameProject/bin/Main.class</Jar>
+    <Jar>/Users/oliviawang/Documents/GitHub/Verification-Java-Game/ArcadeGameProject/bin/LocalResources.class</Jar>
+    <AuxClasspathEntry>/Users/oliviawang/Documents/GitHub/Verification-Java-Game/ArcadeGameProject/bin</AuxClasspathEntry>
+    <SrcDir>/Users/oliviawang/Documents/GitHub/Verification-Java-Game/ArcadeGameProject/src</SrcDir>
+  </Project>
+  <BugInstance type="MS_PKGPROTECT" priority="2" rank="18" abbrev="MS" category="MALICIOUS_CODE" instanceHash="9409cb5d113a703b69db920035216ffc" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="218">
+    <ShortMessage>Field should be package protected</ShortMessage>
+    <LongMessage>BackGroundMusicPlayer.clip should be package protected</LongMessage>
+    <Class classname="BackGroundMusicPlayer" primary="true">
+      <SourceLine classname="BackGroundMusicPlayer" sourcefile="BackGroundMusicPlayer.java" sourcepath="BackGroundMusicPlayer.java" relSourcepath="BackGroundMusicPlayer.java">
+        <Message>In BackGroundMusicPlayer.java</Message>
+      </SourceLine>
+      <Message>In class BackGroundMusicPlayer</Message>
+    </Class>
+    <Field classname="BackGroundMusicPlayer" name="clip" signature="Ljavax/sound/sampled/Clip;" isStatic="true" primary="true">
+      <SourceLine classname="BackGroundMusicPlayer" sourcefile="BackGroundMusicPlayer.java" sourcepath="BackGroundMusicPlayer.java" relSourcepath="BackGroundMusicPlayer.java">
+        <Message>In BackGroundMusicPlayer.java</Message>
+      </SourceLine>
+      <Message>Field BackGroundMusicPlayer.clip</Message>
+    </Field>
+    <SourceLine classname="BackGroundMusicPlayer" sourcefile="BackGroundMusicPlayer.java" sourcepath="BackGroundMusicPlayer.java" relSourcepath="BackGroundMusicPlayer.java" synthetic="true">
+      <Message>In BackGroundMusicPlayer.java</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_PUBLIC_OR_PROTECTED_FIELD" priority="2" rank="17" abbrev="UuF" category="STYLE" instanceHash="b3b5230eaf602408d45ac146b547bc16" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Unused public or protected field</ShortMessage>
+    <LongMessage>Unused public or protected field: BackGroundMusicPlayer.clipIsPaused</LongMessage>
+    <Class classname="BackGroundMusicPlayer" primary="true">
+      <SourceLine classname="BackGroundMusicPlayer" sourcefile="BackGroundMusicPlayer.java" sourcepath="BackGroundMusicPlayer.java" relSourcepath="BackGroundMusicPlayer.java">
+        <Message>In BackGroundMusicPlayer.java</Message>
+      </SourceLine>
+      <Message>In class BackGroundMusicPlayer</Message>
+    </Class>
+    <Field classname="BackGroundMusicPlayer" name="clipIsPaused" signature="Z" isStatic="false" primary="true">
+      <SourceLine classname="BackGroundMusicPlayer" sourcefile="BackGroundMusicPlayer.java" sourcepath="BackGroundMusicPlayer.java" relSourcepath="BackGroundMusicPlayer.java">
+        <Message>In BackGroundMusicPlayer.java</Message>
+      </SourceLine>
+      <Message>Field BackGroundMusicPlayer.clipIsPaused</Message>
+    </Field>
+    <SourceLine classname="BackGroundMusicPlayer" sourcefile="BackGroundMusicPlayer.java" sourcepath="BackGroundMusicPlayer.java" relSourcepath="BackGroundMusicPlayer.java" synthetic="true">
+      <Message>In BackGroundMusicPlayer.java</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="SS_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SS" category="PERFORMANCE" instanceHash="bea558fcec333e3877f94a728c59173" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Unread field: should this field be static?</ShortMessage>
+    <LongMessage>Unread field: Boomerang.BOOMERANG_SIZE; should this field be static?</LongMessage>
+    <Class classname="Boomerang" primary="true">
+      <SourceLine classname="Boomerang" sourcefile="Boomerang.java" sourcepath="Boomerang.java" relSourcepath="Boomerang.java">
+        <Message>In Boomerang.java</Message>
+      </SourceLine>
+      <Message>In class Boomerang</Message>
+    </Class>
+    <Field classname="Boomerang" name="BOOMERANG_SIZE" signature="I" isStatic="false" primary="true">
+      <SourceLine classname="Boomerang" sourcefile="Boomerang.java" sourcepath="Boomerang.java" relSourcepath="Boomerang.java">
+        <Message>In Boomerang.java</Message>
+      </SourceLine>
+      <Message>Field Boomerang.BOOMERANG_SIZE</Message>
+    </Field>
+    <SourceLine classname="Boomerang" primary="true" start="11" end="11" startBytecode="18" endBytecode="18" sourcefile="Boomerang.java" sourcepath="Boomerang.java" relSourcepath="Boomerang.java">
+      <Message>At Boomerang.java:[line 11]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="SS_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SS" category="PERFORMANCE" instanceHash="2a8b42f00424a8e1daa634aa00b6f67c" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Unread field: should this field be static?</ShortMessage>
+    <LongMessage>Unread field: Boomerang.RETURN_TIME; should this field be static?</LongMessage>
+    <Class classname="Boomerang" primary="true">
+      <SourceLine classname="Boomerang" sourcefile="Boomerang.java" sourcepath="Boomerang.java" relSourcepath="Boomerang.java">
+        <Message>In Boomerang.java</Message>
+      </SourceLine>
+      <Message>In class Boomerang</Message>
+    </Class>
+    <Field classname="Boomerang" name="RETURN_TIME" signature="I" isStatic="false" primary="true">
+      <SourceLine classname="Boomerang" sourcefile="Boomerang.java" sourcepath="Boomerang.java" relSourcepath="Boomerang.java">
+        <Message>In Boomerang.java</Message>
+      </SourceLine>
+      <Message>Field Boomerang.RETURN_TIME</Message>
+    </Field>
+    <SourceLine classname="Boomerang" primary="true" start="12" end="12" startBytecode="24" endBytecode="24" sourcefile="Boomerang.java" sourcepath="Boomerang.java" relSourcepath="Boomerang.java">
+      <Message>At Boomerang.java:[line 12]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="SS_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SS" category="PERFORMANCE" instanceHash="c4e771b6ba6ee7e3c73ff90c1909d074" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Unread field: should this field be static?</ShortMessage>
+    <LongMessage>Unread field: Bullet.BULLET_SIZE; should this field be static?</LongMessage>
+    <Class classname="Bullet" primary="true">
+      <SourceLine classname="Bullet" sourcefile="Bullet.java" sourcepath="Bullet.java" relSourcepath="Bullet.java">
+        <Message>In Bullet.java</Message>
+      </SourceLine>
+      <Message>In class Bullet</Message>
+    </Class>
+    <Field classname="Bullet" name="BULLET_SIZE" signature="I" isStatic="false" primary="true">
+      <SourceLine classname="Bullet" sourcefile="Bullet.java" sourcepath="Bullet.java" relSourcepath="Bullet.java">
+        <Message>In Bullet.java</Message>
+      </SourceLine>
+      <Message>Field Bullet.BULLET_SIZE</Message>
+    </Field>
+    <SourceLine classname="Bullet" primary="true" start="9" end="9" startBytecode="17" endBytecode="17" sourcefile="Bullet.java" sourcepath="Bullet.java" relSourcepath="Bullet.java">
+      <Message>At Bullet.java:[line 9]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" instanceHash="6c37a2353f6a6d7045ed986e9dcab697" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Reliance on default encoding</ShortMessage>
+    <LongMessage>Found reliance on default encoding in CentipedeComponent.loadLevel(int): new java.io.FileReader(String)</LongMessage>
+    <Class classname="CentipedeComponent" primary="true">
+      <SourceLine classname="CentipedeComponent" sourcefile="CentipedeComponent.java" sourcepath="CentipedeComponent.java" relSourcepath="CentipedeComponent.java">
+        <Message>In CentipedeComponent.java</Message>
+      </SourceLine>
+      <Message>In class CentipedeComponent</Message>
+    </Class>
+    <Method classname="CentipedeComponent" name="loadLevel" signature="(I)V" isStatic="false" primary="true">
+      <SourceLine classname="CentipedeComponent" start="82" end="144" startBytecode="0" endBytecode="1108" sourcefile="CentipedeComponent.java" sourcepath="CentipedeComponent.java" relSourcepath="CentipedeComponent.java"/>
+      <Message>In method CentipedeComponent.loadLevel(int)</Message>
+    </Method>
+    <Method classname="java.io.FileReader" name="&lt;init&gt;" signature="(Ljava/lang/String;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.FileReader"/>
+      <Message>Called method new java.io.FileReader(String)</Message>
+    </Method>
+    <SourceLine classname="CentipedeComponent" primary="true" start="104" end="104" startBytecode="199" endBytecode="199" sourcefile="CentipedeComponent.java" sourcepath="CentipedeComponent.java" relSourcepath="CentipedeComponent.java">
+      <Message>At CentipedeComponent.java:[line 104]</Message>
+    </SourceLine>
+    <SourceLine classname="CentipedeComponent" primary="true" start="104" end="104" startBytecode="199" endBytecode="199" sourcefile="CentipedeComponent.java" sourcepath="CentipedeComponent.java" relSourcepath="CentipedeComponent.java">
+      <Message>At CentipedeComponent.java:[line 104]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_EXIT" priority="2" rank="16" abbrev="Dm" category="BAD_PRACTICE" instanceHash="a5e4d4c1ae2c01c61d2da696d5725554" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="382">
+    <ShortMessage>Method invokes System.exit(...)</ShortMessage>
+    <LongMessage>new CentipedeComponent() invokes System.exit(...), which shuts down the entire virtual machine</LongMessage>
+    <Class classname="CentipedeComponent" primary="true">
+      <SourceLine classname="CentipedeComponent" sourcefile="CentipedeComponent.java" sourcepath="CentipedeComponent.java" relSourcepath="CentipedeComponent.java">
+        <Message>In CentipedeComponent.java</Message>
+      </SourceLine>
+      <Message>In class CentipedeComponent</Message>
+    </Class>
+    <Method classname="CentipedeComponent" name="&lt;init&gt;" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="CentipedeComponent" start="45" end="70" startBytecode="0" endBytecode="387" sourcefile="CentipedeComponent.java" sourcepath="CentipedeComponent.java" relSourcepath="CentipedeComponent.java"/>
+      <Message>In method new CentipedeComponent()</Message>
+    </Method>
+    <SourceLine classname="CentipedeComponent" primary="true" start="56" end="56" startBytecode="144" endBytecode="144" sourcefile="CentipedeComponent.java" sourcepath="CentipedeComponent.java" relSourcepath="CentipedeComponent.java">
+      <Message>At CentipedeComponent.java:[line 56]</Message>
+    </SourceLine>
+    <SourceLine classname="CentipedeComponent" primary="true" start="56" end="56" startBytecode="144" endBytecode="144" sourcefile="CentipedeComponent.java" sourcepath="CentipedeComponent.java" relSourcepath="CentipedeComponent.java">
+      <Message>At CentipedeComponent.java:[line 56]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="NP_NULL_ON_SOME_PATH_EXCEPTION" priority="2" rank="11" abbrev="NP" category="CORRECTNESS" instanceHash="2b5e77b5193eba5b0e7902bdb278686e" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="476">
+    <ShortMessage>Possible null pointer dereference in method on exception path</ShortMessage>
+    <LongMessage>Possible null pointer dereference of br in CentipedeComponent.loadLevel(int) on exception path</LongMessage>
+    <Class classname="CentipedeComponent" primary="true">
+      <SourceLine classname="CentipedeComponent" sourcefile="CentipedeComponent.java" sourcepath="CentipedeComponent.java" relSourcepath="CentipedeComponent.java">
+        <Message>In CentipedeComponent.java</Message>
+      </SourceLine>
+      <Message>In class CentipedeComponent</Message>
+    </Class>
+    <Method classname="CentipedeComponent" name="loadLevel" signature="(I)V" isStatic="false" primary="true">
+      <SourceLine classname="CentipedeComponent" start="82" end="144" startBytecode="0" endBytecode="1108" sourcefile="CentipedeComponent.java" sourcepath="CentipedeComponent.java" relSourcepath="CentipedeComponent.java"/>
+      <Message>In method CentipedeComponent.loadLevel(int)</Message>
+    </Method>
+    <LocalVariable name="br" register="2" pc="206" role="LOCAL_VARIABLE_VALUE_OF">
+      <Message>Value loaded from br</Message>
+    </LocalVariable>
+    <SourceLine classname="CentipedeComponent" primary="true" start="110" end="110" startBytecode="219" endBytecode="219" sourcefile="CentipedeComponent.java" sourcepath="CentipedeComponent.java" relSourcepath="CentipedeComponent.java" role="SOURCE_LINE_DEREF">
+      <Message>Dereferenced at CentipedeComponent.java:[line 110]</Message>
+    </SourceLine>
+    <SourceLine classname="CentipedeComponent" start="93" end="93" startBytecode="100" endBytecode="100" sourcefile="CentipedeComponent.java" sourcepath="CentipedeComponent.java" relSourcepath="CentipedeComponent.java" role="SOURCE_LINE_NULL_VALUE">
+      <Message>Null value at CentipedeComponent.java:[line 93]</Message>
+    </SourceLine>
+    <SourceLine classname="CentipedeComponent" start="105" end="105" startBytecode="209" endBytecode="209" sourcefile="CentipedeComponent.java" sourcepath="CentipedeComponent.java" relSourcepath="CentipedeComponent.java" role="SOURCE_LINE_KNOWN_NULL">
+      <Message>Known null at CentipedeComponent.java:[line 105]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.NullDerefProperty.ALWAYS_ON_EXCEPTION_PATH" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.NullDerefProperty.LONG_RANGE_NULL_SOURCE" value="true"/>
+  </BugInstance>
+  <BugInstance type="SS_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SS" category="PERFORMANCE" instanceHash="a4fa856800be3d64a22414f9f2bb800e" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Unread field: should this field be static?</ShortMessage>
+    <LongMessage>Unread field: CentipedeComponent.BLOCK_SIZE; should this field be static?</LongMessage>
+    <Class classname="CentipedeComponent" primary="true">
+      <SourceLine classname="CentipedeComponent" sourcefile="CentipedeComponent.java" sourcepath="CentipedeComponent.java" relSourcepath="CentipedeComponent.java">
+        <Message>In CentipedeComponent.java</Message>
+      </SourceLine>
+      <Message>In class CentipedeComponent</Message>
+    </Class>
+    <Field classname="CentipedeComponent" name="BLOCK_SIZE" signature="I" isStatic="false" primary="true">
+      <SourceLine classname="CentipedeComponent" sourcefile="CentipedeComponent.java" sourcepath="CentipedeComponent.java" relSourcepath="CentipedeComponent.java">
+        <Message>In CentipedeComponent.java</Message>
+      </SourceLine>
+      <Message>Field CentipedeComponent.BLOCK_SIZE</Message>
+    </Field>
+    <SourceLine classname="CentipedeComponent" primary="true" start="21" end="21" startBytecode="7" endBytecode="7" sourcefile="CentipedeComponent.java" sourcepath="CentipedeComponent.java" relSourcepath="CentipedeComponent.java">
+      <Message>At CentipedeComponent.java:[line 21]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="SS_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SS" category="PERFORMANCE" instanceHash="351ba4a2b07e58c407298ff9fcf11236" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Unread field: should this field be static?</ShortMessage>
+    <LongMessage>Unread field: CentipedeComponent.BOOMERANG_NUMBER; should this field be static?</LongMessage>
+    <Class classname="CentipedeComponent" primary="true">
+      <SourceLine classname="CentipedeComponent" sourcefile="CentipedeComponent.java" sourcepath="CentipedeComponent.java" relSourcepath="CentipedeComponent.java">
+        <Message>In CentipedeComponent.java</Message>
+      </SourceLine>
+      <Message>In class CentipedeComponent</Message>
+    </Class>
+    <Field classname="CentipedeComponent" name="BOOMERANG_NUMBER" signature="I" isStatic="false" primary="true">
+      <SourceLine classname="CentipedeComponent" sourcefile="CentipedeComponent.java" sourcepath="CentipedeComponent.java" relSourcepath="CentipedeComponent.java">
+        <Message>In CentipedeComponent.java</Message>
+      </SourceLine>
+      <Message>Field CentipedeComponent.BOOMERANG_NUMBER</Message>
+    </Field>
+    <SourceLine classname="CentipedeComponent" primary="true" start="29" end="29" startBytecode="57" endBytecode="57" sourcefile="CentipedeComponent.java" sourcepath="CentipedeComponent.java" relSourcepath="CentipedeComponent.java">
+      <Message>At CentipedeComponent.java:[line 29]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="SS_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SS" category="PERFORMANCE" instanceHash="e5314570e518c091bbbf919b7601a79d" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Unread field: should this field be static?</ShortMessage>
+    <LongMessage>Unread field: CentipedeComponent.PISTOL_NUMBER; should this field be static?</LongMessage>
+    <Class classname="CentipedeComponent" primary="true">
+      <SourceLine classname="CentipedeComponent" sourcefile="CentipedeComponent.java" sourcepath="CentipedeComponent.java" relSourcepath="CentipedeComponent.java">
+        <Message>In CentipedeComponent.java</Message>
+      </SourceLine>
+      <Message>In class CentipedeComponent</Message>
+    </Class>
+    <Field classname="CentipedeComponent" name="PISTOL_NUMBER" signature="I" isStatic="false" primary="true">
+      <SourceLine classname="CentipedeComponent" sourcefile="CentipedeComponent.java" sourcepath="CentipedeComponent.java" relSourcepath="CentipedeComponent.java">
+        <Message>In CentipedeComponent.java</Message>
+      </SourceLine>
+      <Message>Field CentipedeComponent.PISTOL_NUMBER</Message>
+    </Field>
+    <SourceLine classname="CentipedeComponent" primary="true" start="27" end="27" startBytecode="47" endBytecode="47" sourcefile="CentipedeComponent.java" sourcepath="CentipedeComponent.java" relSourcepath="CentipedeComponent.java">
+      <Message>At CentipedeComponent.java:[line 27]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="SS_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SS" category="PERFORMANCE" instanceHash="e878f3b1a3156dff9e6a7104c6112208" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Unread field: should this field be static?</ShortMessage>
+    <LongMessage>Unread field: CentipedeComponent.SHOTGUN_NUMBER; should this field be static?</LongMessage>
+    <Class classname="CentipedeComponent" primary="true">
+      <SourceLine classname="CentipedeComponent" sourcefile="CentipedeComponent.java" sourcepath="CentipedeComponent.java" relSourcepath="CentipedeComponent.java">
+        <Message>In CentipedeComponent.java</Message>
+      </SourceLine>
+      <Message>In class CentipedeComponent</Message>
+    </Class>
+    <Field classname="CentipedeComponent" name="SHOTGUN_NUMBER" signature="I" isStatic="false" primary="true">
+      <SourceLine classname="CentipedeComponent" sourcefile="CentipedeComponent.java" sourcepath="CentipedeComponent.java" relSourcepath="CentipedeComponent.java">
+        <Message>In CentipedeComponent.java</Message>
+      </SourceLine>
+      <Message>Field CentipedeComponent.SHOTGUN_NUMBER</Message>
+    </Field>
+    <SourceLine classname="CentipedeComponent" primary="true" start="28" end="28" startBytecode="52" endBytecode="52" sourcefile="CentipedeComponent.java" sourcepath="CentipedeComponent.java" relSourcepath="CentipedeComponent.java">
+      <Message>At CentipedeComponent.java:[line 28]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="SS_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SS" category="PERFORMANCE" instanceHash="18ab00688acf80a73feb906f923f7c14" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Unread field: should this field be static?</ShortMessage>
+    <LongMessage>Unread field: CentipedeComponent.WINDOW_SIZE; should this field be static?</LongMessage>
+    <Class classname="CentipedeComponent" primary="true">
+      <SourceLine classname="CentipedeComponent" sourcefile="CentipedeComponent.java" sourcepath="CentipedeComponent.java" relSourcepath="CentipedeComponent.java">
+        <Message>In CentipedeComponent.java</Message>
+      </SourceLine>
+      <Message>In class CentipedeComponent</Message>
+    </Class>
+    <Field classname="CentipedeComponent" name="WINDOW_SIZE" signature="I" isStatic="false" primary="true">
+      <SourceLine classname="CentipedeComponent" sourcefile="CentipedeComponent.java" sourcepath="CentipedeComponent.java" relSourcepath="CentipedeComponent.java">
+        <Message>In CentipedeComponent.java</Message>
+      </SourceLine>
+      <Message>Field CentipedeComponent.WINDOW_SIZE</Message>
+    </Field>
+    <SourceLine classname="CentipedeComponent" primary="true" start="22" end="22" startBytecode="14" endBytecode="14" sourcefile="CentipedeComponent.java" sourcepath="CentipedeComponent.java" relSourcepath="CentipedeComponent.java">
+      <Message>At CentipedeComponent.java:[line 22]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" rank="18" abbrev="UrF" category="PERFORMANCE" instanceHash="16762902b36dee98296b08450636f4d6" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Unread field</ShortMessage>
+    <LongMessage>Unread field: CentipedeComponent.weaponTimer</LongMessage>
+    <Class classname="CentipedeComponent" primary="true">
+      <SourceLine classname="CentipedeComponent" sourcefile="CentipedeComponent.java" sourcepath="CentipedeComponent.java" relSourcepath="CentipedeComponent.java">
+        <Message>In CentipedeComponent.java</Message>
+      </SourceLine>
+      <Message>In class CentipedeComponent</Message>
+    </Class>
+    <Field classname="CentipedeComponent" name="weaponTimer" signature="I" isStatic="false" primary="true">
+      <SourceLine classname="CentipedeComponent" sourcefile="CentipedeComponent.java" sourcepath="CentipedeComponent.java" relSourcepath="CentipedeComponent.java">
+        <Message>In CentipedeComponent.java</Message>
+      </SourceLine>
+      <Message>Field CentipedeComponent.weaponTimer</Message>
+    </Field>
+    <SourceLine classname="CentipedeComponent" primary="true" start="49" end="49" startBytecode="79" endBytecode="79" sourcefile="CentipedeComponent.java" sourcepath="CentipedeComponent.java" relSourcepath="CentipedeComponent.java">
+      <Message>At CentipedeComponent.java:[line 49]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="SS_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SS" category="PERFORMANCE" instanceHash="f8333ffa1f284f1981c8cd9951d7e426" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Unread field: should this field be static?</ShortMessage>
+    <LongMessage>Unread field: Flea.MOVEMENT_SPEED; should this field be static?</LongMessage>
+    <Class classname="Flea" primary="true">
+      <SourceLine classname="Flea" sourcefile="Flea.java" sourcepath="Flea.java" relSourcepath="Flea.java">
+        <Message>In Flea.java</Message>
+      </SourceLine>
+      <Message>In class Flea</Message>
+    </Class>
+    <Field classname="Flea" name="MOVEMENT_SPEED" signature="I" isStatic="false" primary="true">
+      <SourceLine classname="Flea" sourcefile="Flea.java" sourcepath="Flea.java" relSourcepath="Flea.java">
+        <Message>In Flea.java</Message>
+      </SourceLine>
+      <Message>Field Flea.MOVEMENT_SPEED</Message>
+    </Field>
+    <SourceLine classname="Flea" primary="true" start="11" end="11" startBytecode="9" endBytecode="9" sourcefile="Flea.java" sourcepath="Flea.java" relSourcepath="Flea.java">
+      <Message>At Flea.java:[line 11]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="SS_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SS" category="PERFORMANCE" instanceHash="29ada5069dd35c0398368c5ab59bd3ac" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Unread field: should this field be static?</ShortMessage>
+    <LongMessage>Unread field: GunPickup.BOOMERANG_NUMBER; should this field be static?</LongMessage>
+    <Class classname="GunPickup" primary="true">
+      <SourceLine classname="GunPickup" sourcefile="GunPickup.java" sourcepath="GunPickup.java" relSourcepath="GunPickup.java">
+        <Message>In GunPickup.java</Message>
+      </SourceLine>
+      <Message>In class GunPickup</Message>
+    </Class>
+    <Field classname="GunPickup" name="BOOMERANG_NUMBER" signature="I" isStatic="false" primary="true">
+      <SourceLine classname="GunPickup" sourcefile="GunPickup.java" sourcepath="GunPickup.java" relSourcepath="GunPickup.java">
+        <Message>In GunPickup.java</Message>
+      </SourceLine>
+      <Message>Field GunPickup.BOOMERANG_NUMBER</Message>
+    </Field>
+    <SourceLine classname="GunPickup" primary="true" start="11" end="11" startBytecode="20" endBytecode="20" sourcefile="GunPickup.java" sourcepath="GunPickup.java" relSourcepath="GunPickup.java">
+      <Message>At GunPickup.java:[line 11]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="SS_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SS" category="PERFORMANCE" instanceHash="5eaa1784dcf725b97a8f569fd53f4989" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Unread field: should this field be static?</ShortMessage>
+    <LongMessage>Unread field: GunPickup.PISTOL_NUMBER; should this field be static?</LongMessage>
+    <Class classname="GunPickup" primary="true">
+      <SourceLine classname="GunPickup" sourcefile="GunPickup.java" sourcepath="GunPickup.java" relSourcepath="GunPickup.java">
+        <Message>In GunPickup.java</Message>
+      </SourceLine>
+      <Message>In class GunPickup</Message>
+    </Class>
+    <Field classname="GunPickup" name="PISTOL_NUMBER" signature="I" isStatic="false" primary="true">
+      <SourceLine classname="GunPickup" sourcefile="GunPickup.java" sourcepath="GunPickup.java" relSourcepath="GunPickup.java">
+        <Message>In GunPickup.java</Message>
+      </SourceLine>
+      <Message>Field GunPickup.PISTOL_NUMBER</Message>
+    </Field>
+    <SourceLine classname="GunPickup" primary="true" start="9" end="9" startBytecode="10" endBytecode="10" sourcefile="GunPickup.java" sourcepath="GunPickup.java" relSourcepath="GunPickup.java">
+      <Message>At GunPickup.java:[line 9]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="SS_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SS" category="PERFORMANCE" instanceHash="9673372ae08064bb2c95a0afb48fb6a9" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Unread field: should this field be static?</ShortMessage>
+    <LongMessage>Unread field: GunPickup.SHOTGUN_NUMBER; should this field be static?</LongMessage>
+    <Class classname="GunPickup" primary="true">
+      <SourceLine classname="GunPickup" sourcefile="GunPickup.java" sourcepath="GunPickup.java" relSourcepath="GunPickup.java">
+        <Message>In GunPickup.java</Message>
+      </SourceLine>
+      <Message>In class GunPickup</Message>
+    </Class>
+    <Field classname="GunPickup" name="SHOTGUN_NUMBER" signature="I" isStatic="false" primary="true">
+      <SourceLine classname="GunPickup" sourcefile="GunPickup.java" sourcepath="GunPickup.java" relSourcepath="GunPickup.java">
+        <Message>In GunPickup.java</Message>
+      </SourceLine>
+      <Message>Field GunPickup.SHOTGUN_NUMBER</Message>
+    </Field>
+    <SourceLine classname="GunPickup" primary="true" start="10" end="10" startBytecode="15" endBytecode="15" sourcefile="GunPickup.java" sourcepath="GunPickup.java" relSourcepath="GunPickup.java">
+      <Message>At GunPickup.java:[line 10]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="NM_FIELD_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE" instanceHash="f6bb64bbe606981b4a8eb2660013495" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Field names should start with a lower case letter</ShortMessage>
+    <LongMessage>The field name Instance.BlockSIZE doesn&apos;t start with a lower case letter</LongMessage>
+    <Class classname="Instance" primary="true">
+      <SourceLine classname="Instance" sourcefile="Instance.java" sourcepath="Instance.java" relSourcepath="Instance.java">
+        <Message>In Instance.java</Message>
+      </SourceLine>
+      <Message>In class Instance</Message>
+    </Class>
+    <Field classname="Instance" name="BlockSIZE" signature="I" isStatic="false" primary="true">
+      <SourceLine classname="Instance" sourcefile="Instance.java" sourcepath="Instance.java" relSourcepath="Instance.java">
+        <Message>In Instance.java</Message>
+      </SourceLine>
+      <Message>Field Instance.BlockSIZE</Message>
+    </Field>
+    <SourceLine classname="Instance" sourcefile="Instance.java" sourcepath="Instance.java" relSourcepath="Instance.java" synthetic="true">
+      <Message>In Instance.java</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="SS_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SS" category="PERFORMANCE" instanceHash="b51a9a0e75c84606d27f48b323c62a0d" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Unread field: should this field be static?</ShortMessage>
+    <LongMessage>Unread field: Instance.BLOCK_SIZE; should this field be static?</LongMessage>
+    <Class classname="Instance" primary="true">
+      <SourceLine classname="Instance" sourcefile="Instance.java" sourcepath="Instance.java" relSourcepath="Instance.java">
+        <Message>In Instance.java</Message>
+      </SourceLine>
+      <Message>In class Instance</Message>
+    </Class>
+    <Field classname="Instance" name="BLOCK_SIZE" signature="I" isStatic="false" primary="true">
+      <SourceLine classname="Instance" sourcefile="Instance.java" sourcepath="Instance.java" relSourcepath="Instance.java">
+        <Message>In Instance.java</Message>
+      </SourceLine>
+      <Message>Field Instance.BLOCK_SIZE</Message>
+    </Field>
+    <SourceLine classname="Instance" primary="true" start="9" end="9" startBytecode="7" endBytecode="7" sourcefile="Instance.java" sourcepath="Instance.java" relSourcepath="Instance.java">
+      <Message>At Instance.java:[line 9]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="SS_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SS" category="PERFORMANCE" instanceHash="e7df92ccd5095338fd5d9113b483abe" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Unread field: should this field be static?</ShortMessage>
+    <LongMessage>Unread field: Instance.SPEED; should this field be static?</LongMessage>
+    <Class classname="Instance" primary="true">
+      <SourceLine classname="Instance" sourcefile="Instance.java" sourcepath="Instance.java" relSourcepath="Instance.java">
+        <Message>In Instance.java</Message>
+      </SourceLine>
+      <Message>In class Instance</Message>
+    </Class>
+    <Field classname="Instance" name="SPEED" signature="I" isStatic="false" primary="true">
+      <SourceLine classname="Instance" sourcefile="Instance.java" sourcepath="Instance.java" relSourcepath="Instance.java">
+        <Message>In Instance.java</Message>
+      </SourceLine>
+      <Message>Field Instance.SPEED</Message>
+    </Field>
+    <SourceLine classname="Instance" primary="true" start="10" end="10" startBytecode="12" endBytecode="12" sourcefile="Instance.java" sourcepath="Instance.java" relSourcepath="Instance.java">
+      <Message>At Instance.java:[line 10]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="MS_SHOULD_BE_REFACTORED_TO_BE_FINAL" priority="1" rank="16" abbrev="MS" category="MALICIOUS_CODE" instanceHash="e7a55a45d563758950002a48dcc71297" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="218">
+    <ShortMessage>Field isn&apos;t final but should be refactored to be so</ShortMessage>
+    <LongMessage>LocalResources.ImgBoomerang isn&apos;t final but should be refactored to be so</LongMessage>
+    <Class classname="LocalResources" primary="true">
+      <SourceLine classname="LocalResources" sourcefile="LocalResources.java" sourcepath="LocalResources.java" relSourcepath="LocalResources.java">
+        <Message>In LocalResources.java</Message>
+      </SourceLine>
+      <Message>In class LocalResources</Message>
+    </Class>
+    <Field classname="LocalResources" name="ImgBoomerang" signature="Ljava/lang/String;" isStatic="true" primary="true">
+      <SourceLine classname="LocalResources" sourcefile="LocalResources.java" sourcepath="LocalResources.java" relSourcepath="LocalResources.java">
+        <Message>In LocalResources.java</Message>
+      </SourceLine>
+      <Message>Field LocalResources.ImgBoomerang</Message>
+    </Field>
+    <SourceLine classname="LocalResources" primary="true" start="9" end="9" startBytecode="32" endBytecode="32" sourcefile="LocalResources.java" sourcepath="LocalResources.java" relSourcepath="LocalResources.java">
+      <Message>At LocalResources.java:[line 9]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="MS_SHOULD_BE_REFACTORED_TO_BE_FINAL" priority="1" rank="16" abbrev="MS" category="MALICIOUS_CODE" instanceHash="8ba8768c77296be5b653ae020e1c838f" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="218">
+    <ShortMessage>Field isn&apos;t final but should be refactored to be so</ShortMessage>
+    <LongMessage>LocalResources.ImgCentipedeBody isn&apos;t final but should be refactored to be so</LongMessage>
+    <Class classname="LocalResources" primary="true">
+      <SourceLine classname="LocalResources" sourcefile="LocalResources.java" sourcepath="LocalResources.java" relSourcepath="LocalResources.java">
+        <Message>In LocalResources.java</Message>
+      </SourceLine>
+      <Message>In class LocalResources</Message>
+    </Class>
+    <Field classname="LocalResources" name="ImgCentipedeBody" signature="Ljava/lang/String;" isStatic="true" primary="true">
+      <SourceLine classname="LocalResources" sourcefile="LocalResources.java" sourcepath="LocalResources.java" relSourcepath="LocalResources.java">
+        <Message>In LocalResources.java</Message>
+      </SourceLine>
+      <Message>Field LocalResources.ImgCentipedeBody</Message>
+    </Field>
+    <SourceLine classname="LocalResources" primary="true" start="15" end="15" startBytecode="62" endBytecode="62" sourcefile="LocalResources.java" sourcepath="LocalResources.java" relSourcepath="LocalResources.java">
+      <Message>At LocalResources.java:[line 15]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="MS_SHOULD_BE_REFACTORED_TO_BE_FINAL" priority="1" rank="16" abbrev="MS" category="MALICIOUS_CODE" instanceHash="82c23ded5d888bf5a1edf9c559ca701d" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="218">
+    <ShortMessage>Field isn&apos;t final but should be refactored to be so</ShortMessage>
+    <LongMessage>LocalResources.ImgCentipedeHead isn&apos;t final but should be refactored to be so</LongMessage>
+    <Class classname="LocalResources" primary="true">
+      <SourceLine classname="LocalResources" sourcefile="LocalResources.java" sourcepath="LocalResources.java" relSourcepath="LocalResources.java">
+        <Message>In LocalResources.java</Message>
+      </SourceLine>
+      <Message>In class LocalResources</Message>
+    </Class>
+    <Field classname="LocalResources" name="ImgCentipedeHead" signature="Ljava/lang/String;" isStatic="true" primary="true">
+      <SourceLine classname="LocalResources" sourcefile="LocalResources.java" sourcepath="LocalResources.java" relSourcepath="LocalResources.java">
+        <Message>In LocalResources.java</Message>
+      </SourceLine>
+      <Message>Field LocalResources.ImgCentipedeHead</Message>
+    </Field>
+    <SourceLine classname="LocalResources" primary="true" start="14" end="14" startBytecode="57" endBytecode="57" sourcefile="LocalResources.java" sourcepath="LocalResources.java" relSourcepath="LocalResources.java">
+      <Message>At LocalResources.java:[line 14]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="MS_SHOULD_BE_REFACTORED_TO_BE_FINAL" priority="1" rank="16" abbrev="MS" category="MALICIOUS_CODE" instanceHash="3068b44a3639ec626d071267099b1c41" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="218">
+    <ShortMessage>Field isn&apos;t final but should be refactored to be so</ShortMessage>
+    <LongMessage>LocalResources.ImgFlea isn&apos;t final but should be refactored to be so</LongMessage>
+    <Class classname="LocalResources" primary="true">
+      <SourceLine classname="LocalResources" sourcefile="LocalResources.java" sourcepath="LocalResources.java" relSourcepath="LocalResources.java">
+        <Message>In LocalResources.java</Message>
+      </SourceLine>
+      <Message>In class LocalResources</Message>
+    </Class>
+    <Field classname="LocalResources" name="ImgFlea" signature="Ljava/lang/String;" isStatic="true" primary="true">
+      <SourceLine classname="LocalResources" sourcefile="LocalResources.java" sourcepath="LocalResources.java" relSourcepath="LocalResources.java">
+        <Message>In LocalResources.java</Message>
+      </SourceLine>
+      <Message>Field LocalResources.ImgFlea</Message>
+    </Field>
+    <SourceLine classname="LocalResources" primary="true" start="6" end="6" startBytecode="17" endBytecode="17" sourcefile="LocalResources.java" sourcepath="LocalResources.java" relSourcepath="LocalResources.java">
+      <Message>At LocalResources.java:[line 6]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="MS_SHOULD_BE_REFACTORED_TO_BE_FINAL" priority="1" rank="16" abbrev="MS" category="MALICIOUS_CODE" instanceHash="2422ff3320d6a7a6d9ff749d542dfc43" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="218">
+    <ShortMessage>Field isn&apos;t final but should be refactored to be so</ShortMessage>
+    <LongMessage>LocalResources.ImgPistol isn&apos;t final but should be refactored to be so</LongMessage>
+    <Class classname="LocalResources" primary="true">
+      <SourceLine classname="LocalResources" sourcefile="LocalResources.java" sourcepath="LocalResources.java" relSourcepath="LocalResources.java">
+        <Message>In LocalResources.java</Message>
+      </SourceLine>
+      <Message>In class LocalResources</Message>
+    </Class>
+    <Field classname="LocalResources" name="ImgPistol" signature="Ljava/lang/String;" isStatic="true" primary="true">
+      <SourceLine classname="LocalResources" sourcefile="LocalResources.java" sourcepath="LocalResources.java" relSourcepath="LocalResources.java">
+        <Message>In LocalResources.java</Message>
+      </SourceLine>
+      <Message>Field LocalResources.ImgPistol</Message>
+    </Field>
+    <SourceLine classname="LocalResources" primary="true" start="7" end="7" startBytecode="22" endBytecode="22" sourcefile="LocalResources.java" sourcepath="LocalResources.java" relSourcepath="LocalResources.java">
+      <Message>At LocalResources.java:[line 7]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="MS_SHOULD_BE_REFACTORED_TO_BE_FINAL" priority="1" rank="16" abbrev="MS" category="MALICIOUS_CODE" instanceHash="45ae65932dd7c45263f1d150fe2b888e" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="218">
+    <ShortMessage>Field isn&apos;t final but should be refactored to be so</ShortMessage>
+    <LongMessage>LocalResources.ImgPlayer1 isn&apos;t final but should be refactored to be so</LongMessage>
+    <Class classname="LocalResources" primary="true">
+      <SourceLine classname="LocalResources" sourcefile="LocalResources.java" sourcepath="LocalResources.java" relSourcepath="LocalResources.java">
+        <Message>In LocalResources.java</Message>
+      </SourceLine>
+      <Message>In class LocalResources</Message>
+    </Class>
+    <Field classname="LocalResources" name="ImgPlayer1" signature="Ljava/lang/String;" isStatic="true" primary="true">
+      <SourceLine classname="LocalResources" sourcefile="LocalResources.java" sourcepath="LocalResources.java" relSourcepath="LocalResources.java">
+        <Message>In LocalResources.java</Message>
+      </SourceLine>
+      <Message>Field LocalResources.ImgPlayer1</Message>
+    </Field>
+    <SourceLine classname="LocalResources" primary="true" start="12" end="12" startBytecode="47" endBytecode="47" sourcefile="LocalResources.java" sourcepath="LocalResources.java" relSourcepath="LocalResources.java">
+      <Message>At LocalResources.java:[line 12]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="MS_SHOULD_BE_REFACTORED_TO_BE_FINAL" priority="1" rank="16" abbrev="MS" category="MALICIOUS_CODE" instanceHash="f20271f80a19d07619ce27b479d33f19" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="218">
+    <ShortMessage>Field isn&apos;t final but should be refactored to be so</ShortMessage>
+    <LongMessage>LocalResources.ImgPlayer2 isn&apos;t final but should be refactored to be so</LongMessage>
+    <Class classname="LocalResources" primary="true">
+      <SourceLine classname="LocalResources" sourcefile="LocalResources.java" sourcepath="LocalResources.java" relSourcepath="LocalResources.java">
+        <Message>In LocalResources.java</Message>
+      </SourceLine>
+      <Message>In class LocalResources</Message>
+    </Class>
+    <Field classname="LocalResources" name="ImgPlayer2" signature="Ljava/lang/String;" isStatic="true" primary="true">
+      <SourceLine classname="LocalResources" sourcefile="LocalResources.java" sourcepath="LocalResources.java" relSourcepath="LocalResources.java">
+        <Message>In LocalResources.java</Message>
+      </SourceLine>
+      <Message>Field LocalResources.ImgPlayer2</Message>
+    </Field>
+    <SourceLine classname="LocalResources" primary="true" start="13" end="13" startBytecode="52" endBytecode="52" sourcefile="LocalResources.java" sourcepath="LocalResources.java" relSourcepath="LocalResources.java">
+      <Message>At LocalResources.java:[line 13]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="MS_SHOULD_BE_REFACTORED_TO_BE_FINAL" priority="1" rank="16" abbrev="MS" category="MALICIOUS_CODE" instanceHash="8c5a84828555f0ebbdfff3b127cea227" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="218">
+    <ShortMessage>Field isn&apos;t final but should be refactored to be so</ShortMessage>
+    <LongMessage>LocalResources.ImgPoisonedMushroom isn&apos;t final but should be refactored to be so</LongMessage>
+    <Class classname="LocalResources" primary="true">
+      <SourceLine classname="LocalResources" sourcefile="LocalResources.java" sourcepath="LocalResources.java" relSourcepath="LocalResources.java">
+        <Message>In LocalResources.java</Message>
+      </SourceLine>
+      <Message>In class LocalResources</Message>
+    </Class>
+    <Field classname="LocalResources" name="ImgPoisonedMushroom" signature="Ljava/lang/String;" isStatic="true" primary="true">
+      <SourceLine classname="LocalResources" sourcefile="LocalResources.java" sourcepath="LocalResources.java" relSourcepath="LocalResources.java">
+        <Message>In LocalResources.java</Message>
+      </SourceLine>
+      <Message>Field LocalResources.ImgPoisonedMushroom</Message>
+    </Field>
+    <SourceLine classname="LocalResources" primary="true" start="4" end="4" startBytecode="7" endBytecode="7" sourcefile="LocalResources.java" sourcepath="LocalResources.java" relSourcepath="LocalResources.java">
+      <Message>At LocalResources.java:[line 4]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="MS_SHOULD_BE_REFACTORED_TO_BE_FINAL" priority="1" rank="16" abbrev="MS" category="MALICIOUS_CODE" instanceHash="56ea8562439fef0d6cd8f90dd155de67" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="218">
+    <ShortMessage>Field isn&apos;t final but should be refactored to be so</ShortMessage>
+    <LongMessage>LocalResources.ImgRegularMushroom isn&apos;t final but should be refactored to be so</LongMessage>
+    <Class classname="LocalResources" primary="true">
+      <SourceLine classname="LocalResources" sourcefile="LocalResources.java" sourcepath="LocalResources.java" relSourcepath="LocalResources.java">
+        <Message>In LocalResources.java</Message>
+      </SourceLine>
+      <Message>In class LocalResources</Message>
+    </Class>
+    <Field classname="LocalResources" name="ImgRegularMushroom" signature="Ljava/lang/String;" isStatic="true" primary="true">
+      <SourceLine classname="LocalResources" sourcefile="LocalResources.java" sourcepath="LocalResources.java" relSourcepath="LocalResources.java">
+        <Message>In LocalResources.java</Message>
+      </SourceLine>
+      <Message>Field LocalResources.ImgRegularMushroom</Message>
+    </Field>
+    <SourceLine classname="LocalResources" primary="true" start="5" end="5" startBytecode="12" endBytecode="12" sourcefile="LocalResources.java" sourcepath="LocalResources.java" relSourcepath="LocalResources.java">
+      <Message>At LocalResources.java:[line 5]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="MS_SHOULD_BE_REFACTORED_TO_BE_FINAL" priority="1" rank="16" abbrev="MS" category="MALICIOUS_CODE" instanceHash="3a45a5493b9704d964c617f6dea58355" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="218">
+    <ShortMessage>Field isn&apos;t final but should be refactored to be so</ShortMessage>
+    <LongMessage>LocalResources.ImgScorpion isn&apos;t final but should be refactored to be so</LongMessage>
+    <Class classname="LocalResources" primary="true">
+      <SourceLine classname="LocalResources" sourcefile="LocalResources.java" sourcepath="LocalResources.java" relSourcepath="LocalResources.java">
+        <Message>In LocalResources.java</Message>
+      </SourceLine>
+      <Message>In class LocalResources</Message>
+    </Class>
+    <Field classname="LocalResources" name="ImgScorpion" signature="Ljava/lang/String;" isStatic="true" primary="true">
+      <SourceLine classname="LocalResources" sourcefile="LocalResources.java" sourcepath="LocalResources.java" relSourcepath="LocalResources.java">
+        <Message>In LocalResources.java</Message>
+      </SourceLine>
+      <Message>Field LocalResources.ImgScorpion</Message>
+    </Field>
+    <SourceLine classname="LocalResources" primary="true" start="11" end="11" startBytecode="42" endBytecode="42" sourcefile="LocalResources.java" sourcepath="LocalResources.java" relSourcepath="LocalResources.java">
+      <Message>At LocalResources.java:[line 11]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="MS_SHOULD_BE_REFACTORED_TO_BE_FINAL" priority="1" rank="16" abbrev="MS" category="MALICIOUS_CODE" instanceHash="c11f5a72e12ebeea19b919be4e7a0a0e" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="218">
+    <ShortMessage>Field isn&apos;t final but should be refactored to be so</ShortMessage>
+    <LongMessage>LocalResources.ImgShotgun isn&apos;t final but should be refactored to be so</LongMessage>
+    <Class classname="LocalResources" primary="true">
+      <SourceLine classname="LocalResources" sourcefile="LocalResources.java" sourcepath="LocalResources.java" relSourcepath="LocalResources.java">
+        <Message>In LocalResources.java</Message>
+      </SourceLine>
+      <Message>In class LocalResources</Message>
+    </Class>
+    <Field classname="LocalResources" name="ImgShotgun" signature="Ljava/lang/String;" isStatic="true" primary="true">
+      <SourceLine classname="LocalResources" sourcefile="LocalResources.java" sourcepath="LocalResources.java" relSourcepath="LocalResources.java">
+        <Message>In LocalResources.java</Message>
+      </SourceLine>
+      <Message>Field LocalResources.ImgShotgun</Message>
+    </Field>
+    <SourceLine classname="LocalResources" primary="true" start="8" end="8" startBytecode="27" endBytecode="27" sourcefile="LocalResources.java" sourcepath="LocalResources.java" relSourcepath="LocalResources.java">
+      <Message>At LocalResources.java:[line 8]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="MS_SHOULD_BE_REFACTORED_TO_BE_FINAL" priority="1" rank="16" abbrev="MS" category="MALICIOUS_CODE" instanceHash="f2c8e9e73f5f8d805bfe821a3cf89a4" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="218">
+    <ShortMessage>Field isn&apos;t final but should be refactored to be so</ShortMessage>
+    <LongMessage>LocalResources.ImgSpider isn&apos;t final but should be refactored to be so</LongMessage>
+    <Class classname="LocalResources" primary="true">
+      <SourceLine classname="LocalResources" sourcefile="LocalResources.java" sourcepath="LocalResources.java" relSourcepath="LocalResources.java">
+        <Message>In LocalResources.java</Message>
+      </SourceLine>
+      <Message>In class LocalResources</Message>
+    </Class>
+    <Field classname="LocalResources" name="ImgSpider" signature="Ljava/lang/String;" isStatic="true" primary="true">
+      <SourceLine classname="LocalResources" sourcefile="LocalResources.java" sourcepath="LocalResources.java" relSourcepath="LocalResources.java">
+        <Message>In LocalResources.java</Message>
+      </SourceLine>
+      <Message>Field LocalResources.ImgSpider</Message>
+    </Field>
+    <SourceLine classname="LocalResources" primary="true" start="10" end="10" startBytecode="37" endBytecode="37" sourcefile="LocalResources.java" sourcepath="LocalResources.java" relSourcepath="LocalResources.java">
+      <Message>At LocalResources.java:[line 10]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="MS_SHOULD_BE_REFACTORED_TO_BE_FINAL" priority="1" rank="16" abbrev="MS" category="MALICIOUS_CODE" instanceHash="deb91089460938e63e9c980c2031ad6b" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="218">
+    <ShortMessage>Field isn&apos;t final but should be refactored to be so</ShortMessage>
+    <LongMessage>LocalResources.SongPath isn&apos;t final but should be refactored to be so</LongMessage>
+    <Class classname="LocalResources" primary="true">
+      <SourceLine classname="LocalResources" sourcefile="LocalResources.java" sourcepath="LocalResources.java" relSourcepath="LocalResources.java">
+        <Message>In LocalResources.java</Message>
+      </SourceLine>
+      <Message>In class LocalResources</Message>
+    </Class>
+    <Field classname="LocalResources" name="SongPath" signature="Ljava/lang/String;" isStatic="true" primary="true">
+      <SourceLine classname="LocalResources" sourcefile="LocalResources.java" sourcepath="LocalResources.java" relSourcepath="LocalResources.java">
+        <Message>In LocalResources.java</Message>
+      </SourceLine>
+      <Message>Field LocalResources.SongPath</Message>
+    </Field>
+    <SourceLine classname="LocalResources" primary="true" start="3" end="3" startBytecode="2" endBytecode="2" sourcefile="LocalResources.java" sourcepath="LocalResources.java" relSourcepath="LocalResources.java">
+      <Message>At LocalResources.java:[line 3]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="SS_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SS" category="PERFORMANCE" instanceHash="83bd51cd6e56232a333bc7520c04fe6" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Unread field: should this field be static?</ShortMessage>
+    <LongMessage>Unread field: PlayerCharacter.ANIMATION_TIME; should this field be static?</LongMessage>
+    <Class classname="PlayerCharacter" primary="true">
+      <SourceLine classname="PlayerCharacter" sourcefile="PlayerCharacter.java" sourcepath="PlayerCharacter.java" relSourcepath="PlayerCharacter.java">
+        <Message>In PlayerCharacter.java</Message>
+      </SourceLine>
+      <Message>In class PlayerCharacter</Message>
+    </Class>
+    <Field classname="PlayerCharacter" name="ANIMATION_TIME" signature="I" isStatic="false" primary="true">
+      <SourceLine classname="PlayerCharacter" sourcefile="PlayerCharacter.java" sourcepath="PlayerCharacter.java" relSourcepath="PlayerCharacter.java">
+        <Message>In PlayerCharacter.java</Message>
+      </SourceLine>
+      <Message>Field PlayerCharacter.ANIMATION_TIME</Message>
+    </Field>
+    <SourceLine classname="PlayerCharacter" primary="true" start="19" end="19" startBytecode="35" endBytecode="35" sourcefile="PlayerCharacter.java" sourcepath="PlayerCharacter.java" relSourcepath="PlayerCharacter.java">
+      <Message>At PlayerCharacter.java:[line 19]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="SS_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SS" category="PERFORMANCE" instanceHash="83a55d9f0306dfb2c1fe549bfba2fae2" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Unread field: should this field be static?</ShortMessage>
+    <LongMessage>Unread field: PlayerCharacter.BOOMERANG_NUMBER; should this field be static?</LongMessage>
+    <Class classname="PlayerCharacter" primary="true">
+      <SourceLine classname="PlayerCharacter" sourcefile="PlayerCharacter.java" sourcepath="PlayerCharacter.java" relSourcepath="PlayerCharacter.java">
+        <Message>In PlayerCharacter.java</Message>
+      </SourceLine>
+      <Message>In class PlayerCharacter</Message>
+    </Class>
+    <Field classname="PlayerCharacter" name="BOOMERANG_NUMBER" signature="I" isStatic="false" primary="true">
+      <SourceLine classname="PlayerCharacter" sourcefile="PlayerCharacter.java" sourcepath="PlayerCharacter.java" relSourcepath="PlayerCharacter.java">
+        <Message>In PlayerCharacter.java</Message>
+      </SourceLine>
+      <Message>Field PlayerCharacter.BOOMERANG_NUMBER</Message>
+    </Field>
+    <SourceLine classname="PlayerCharacter" primary="true" start="18" end="18" startBytecode="29" endBytecode="29" sourcefile="PlayerCharacter.java" sourcepath="PlayerCharacter.java" relSourcepath="PlayerCharacter.java">
+      <Message>At PlayerCharacter.java:[line 18]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="SS_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SS" category="PERFORMANCE" instanceHash="f60e9e7b95260acf330a6aa44282132f" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Unread field: should this field be static?</ShortMessage>
+    <LongMessage>Unread field: PlayerCharacter.PISTOL_NUMBER; should this field be static?</LongMessage>
+    <Class classname="PlayerCharacter" primary="true">
+      <SourceLine classname="PlayerCharacter" sourcefile="PlayerCharacter.java" sourcepath="PlayerCharacter.java" relSourcepath="PlayerCharacter.java">
+        <Message>In PlayerCharacter.java</Message>
+      </SourceLine>
+      <Message>In class PlayerCharacter</Message>
+    </Class>
+    <Field classname="PlayerCharacter" name="PISTOL_NUMBER" signature="I" isStatic="false" primary="true">
+      <SourceLine classname="PlayerCharacter" sourcefile="PlayerCharacter.java" sourcepath="PlayerCharacter.java" relSourcepath="PlayerCharacter.java">
+        <Message>In PlayerCharacter.java</Message>
+      </SourceLine>
+      <Message>Field PlayerCharacter.PISTOL_NUMBER</Message>
+    </Field>
+    <SourceLine classname="PlayerCharacter" primary="true" start="16" end="16" startBytecode="19" endBytecode="19" sourcefile="PlayerCharacter.java" sourcepath="PlayerCharacter.java" relSourcepath="PlayerCharacter.java">
+      <Message>At PlayerCharacter.java:[line 16]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="SS_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SS" category="PERFORMANCE" instanceHash="a461de1e5fe23783fe36618138526ba2" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Unread field: should this field be static?</ShortMessage>
+    <LongMessage>Unread field: PlayerCharacter.RELOAD_FRAMES; should this field be static?</LongMessage>
+    <Class classname="PlayerCharacter" primary="true">
+      <SourceLine classname="PlayerCharacter" sourcefile="PlayerCharacter.java" sourcepath="PlayerCharacter.java" relSourcepath="PlayerCharacter.java">
+        <Message>In PlayerCharacter.java</Message>
+      </SourceLine>
+      <Message>In class PlayerCharacter</Message>
+    </Class>
+    <Field classname="PlayerCharacter" name="RELOAD_FRAMES" signature="I" isStatic="false" primary="true">
+      <SourceLine classname="PlayerCharacter" sourcefile="PlayerCharacter.java" sourcepath="PlayerCharacter.java" relSourcepath="PlayerCharacter.java">
+        <Message>In PlayerCharacter.java</Message>
+      </SourceLine>
+      <Message>Field PlayerCharacter.RELOAD_FRAMES</Message>
+    </Field>
+    <SourceLine classname="PlayerCharacter" primary="true" start="15" end="15" startBytecode="14" endBytecode="14" sourcefile="PlayerCharacter.java" sourcepath="PlayerCharacter.java" relSourcepath="PlayerCharacter.java">
+      <Message>At PlayerCharacter.java:[line 15]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="SS_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SS" category="PERFORMANCE" instanceHash="207b40a15ce7f49b9240042255e988cd" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Unread field: should this field be static?</ShortMessage>
+    <LongMessage>Unread field: PlayerCharacter.SHOTGUN_NUMBER; should this field be static?</LongMessage>
+    <Class classname="PlayerCharacter" primary="true">
+      <SourceLine classname="PlayerCharacter" sourcefile="PlayerCharacter.java" sourcepath="PlayerCharacter.java" relSourcepath="PlayerCharacter.java">
+        <Message>In PlayerCharacter.java</Message>
+      </SourceLine>
+      <Message>In class PlayerCharacter</Message>
+    </Class>
+    <Field classname="PlayerCharacter" name="SHOTGUN_NUMBER" signature="I" isStatic="false" primary="true">
+      <SourceLine classname="PlayerCharacter" sourcefile="PlayerCharacter.java" sourcepath="PlayerCharacter.java" relSourcepath="PlayerCharacter.java">
+        <Message>In PlayerCharacter.java</Message>
+      </SourceLine>
+      <Message>Field PlayerCharacter.SHOTGUN_NUMBER</Message>
+    </Field>
+    <SourceLine classname="PlayerCharacter" primary="true" start="17" end="17" startBytecode="24" endBytecode="24" sourcefile="PlayerCharacter.java" sourcepath="PlayerCharacter.java" relSourcepath="PlayerCharacter.java">
+      <Message>At PlayerCharacter.java:[line 17]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="SS_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SS" category="PERFORMANCE" instanceHash="6218f4dbb519674ffc3aadfde87e63c6" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Unread field: should this field be static?</ShortMessage>
+    <LongMessage>Unread field: Scorpion.MOVEMENT_SPEED; should this field be static?</LongMessage>
+    <Class classname="Scorpion" primary="true">
+      <SourceLine classname="Scorpion" sourcefile="Scorpion.java" sourcepath="Scorpion.java" relSourcepath="Scorpion.java">
+        <Message>In Scorpion.java</Message>
+      </SourceLine>
+      <Message>In class Scorpion</Message>
+    </Class>
+    <Field classname="Scorpion" name="MOVEMENT_SPEED" signature="I" isStatic="false" primary="true">
+      <SourceLine classname="Scorpion" sourcefile="Scorpion.java" sourcepath="Scorpion.java" relSourcepath="Scorpion.java">
+        <Message>In Scorpion.java</Message>
+      </SourceLine>
+      <Message>Field Scorpion.MOVEMENT_SPEED</Message>
+    </Field>
+    <SourceLine classname="Scorpion" primary="true" start="9" end="9" startBytecode="9" endBytecode="9" sourcefile="Scorpion.java" sourcepath="Scorpion.java" relSourcepath="Scorpion.java">
+      <Message>At Scorpion.java:[line 9]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="SS_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SS" category="PERFORMANCE" instanceHash="8c4b4703c0df28cbf08551afa54e4269" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Unread field: should this field be static?</ShortMessage>
+    <LongMessage>Unread field: ShotgunShell.BULLET_SIZE; should this field be static?</LongMessage>
+    <Class classname="ShotgunShell" primary="true">
+      <SourceLine classname="ShotgunShell" sourcefile="ShotgunShell.java" sourcepath="ShotgunShell.java" relSourcepath="ShotgunShell.java">
+        <Message>In ShotgunShell.java</Message>
+      </SourceLine>
+      <Message>In class ShotgunShell</Message>
+    </Class>
+    <Field classname="ShotgunShell" name="BULLET_SIZE" signature="I" isStatic="false" primary="true">
+      <SourceLine classname="ShotgunShell" sourcefile="ShotgunShell.java" sourcepath="ShotgunShell.java" relSourcepath="ShotgunShell.java">
+        <Message>In ShotgunShell.java</Message>
+      </SourceLine>
+      <Message>Field ShotgunShell.BULLET_SIZE</Message>
+    </Field>
+    <SourceLine classname="ShotgunShell" primary="true" start="9" end="9" startBytecode="18" endBytecode="18" sourcefile="ShotgunShell.java" sourcepath="ShotgunShell.java" relSourcepath="ShotgunShell.java">
+      <Message>At ShotgunShell.java:[line 9]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="SS_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SS" category="PERFORMANCE" instanceHash="71b6cee07947b4d9857eb5bec94c5947" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Unread field: should this field be static?</ShortMessage>
+    <LongMessage>Unread field: ShotgunShell.BULLET_TIME; should this field be static?</LongMessage>
+    <Class classname="ShotgunShell" primary="true">
+      <SourceLine classname="ShotgunShell" sourcefile="ShotgunShell.java" sourcepath="ShotgunShell.java" relSourcepath="ShotgunShell.java">
+        <Message>In ShotgunShell.java</Message>
+      </SourceLine>
+      <Message>In class ShotgunShell</Message>
+    </Class>
+    <Field classname="ShotgunShell" name="BULLET_TIME" signature="I" isStatic="false" primary="true">
+      <SourceLine classname="ShotgunShell" sourcefile="ShotgunShell.java" sourcepath="ShotgunShell.java" relSourcepath="ShotgunShell.java">
+        <Message>In ShotgunShell.java</Message>
+      </SourceLine>
+      <Message>Field ShotgunShell.BULLET_TIME</Message>
+    </Field>
+    <SourceLine classname="ShotgunShell" primary="true" start="11" end="11" startBytecode="29" endBytecode="29" sourcefile="ShotgunShell.java" sourcepath="ShotgunShell.java" relSourcepath="ShotgunShell.java">
+      <Message>At ShotgunShell.java:[line 11]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="SS_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SS" category="PERFORMANCE" instanceHash="d7b1aac8acf611a8b66362a894ef1bfc" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Unread field: should this field be static?</ShortMessage>
+    <LongMessage>Unread field: ShotgunShell.NUMBER_OF_BULLETS; should this field be static?</LongMessage>
+    <Class classname="ShotgunShell" primary="true">
+      <SourceLine classname="ShotgunShell" sourcefile="ShotgunShell.java" sourcepath="ShotgunShell.java" relSourcepath="ShotgunShell.java">
+        <Message>In ShotgunShell.java</Message>
+      </SourceLine>
+      <Message>In class ShotgunShell</Message>
+    </Class>
+    <Field classname="ShotgunShell" name="NUMBER_OF_BULLETS" signature="I" isStatic="false" primary="true">
+      <SourceLine classname="ShotgunShell" sourcefile="ShotgunShell.java" sourcepath="ShotgunShell.java" relSourcepath="ShotgunShell.java">
+        <Message>In ShotgunShell.java</Message>
+      </SourceLine>
+      <Message>Field ShotgunShell.NUMBER_OF_BULLETS</Message>
+    </Field>
+    <SourceLine classname="ShotgunShell" primary="true" start="10" end="10" startBytecode="23" endBytecode="23" sourcefile="ShotgunShell.java" sourcepath="ShotgunShell.java" relSourcepath="ShotgunShell.java">
+      <Message>At ShotgunShell.java:[line 10]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="SS_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SS" category="PERFORMANCE" instanceHash="4193af82cff9228c049bfea0727a174" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Unread field: should this field be static?</ShortMessage>
+    <LongMessage>Unread field: Spider.MOVEMENT_SPEED; should this field be static?</LongMessage>
+    <Class classname="Spider" primary="true">
+      <SourceLine classname="Spider" sourcefile="Spider.java" sourcepath="Spider.java" relSourcepath="Spider.java">
+        <Message>In Spider.java</Message>
+      </SourceLine>
+      <Message>In class Spider</Message>
+    </Class>
+    <Field classname="Spider" name="MOVEMENT_SPEED" signature="I" isStatic="false" primary="true">
+      <SourceLine classname="Spider" sourcefile="Spider.java" sourcepath="Spider.java" relSourcepath="Spider.java">
+        <Message>In Spider.java</Message>
+      </SourceLine>
+      <Message>Field Spider.MOVEMENT_SPEED</Message>
+    </Field>
+    <SourceLine classname="Spider" primary="true" start="10" end="10" startBytecode="16" endBytecode="16" sourcefile="Spider.java" sourcepath="Spider.java" relSourcepath="Spider.java">
+      <Message>At Spider.java:[line 10]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="BAD_PRACTICE">
+    <Description>Bad practice</Description>
+  </BugCategory>
+  <BugCategory category="MALICIOUS_CODE">
+    <Description>Malicious code vulnerability</Description>
+  </BugCategory>
+  <BugCategory category="PERFORMANCE">
+    <Description>Performance</Description>
+  </BugCategory>
+  <BugCategory category="CORRECTNESS">
+    <Description>Correctness</Description>
+  </BugCategory>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugCategory category="I18N">
+    <Description>Internationalization</Description>
+  </BugCategory>
+  <BugPattern type="NM_FIELD_NAMING_CONVENTION" abbrev="Nm" category="BAD_PRACTICE">
+    <ShortDescription>Field names should start with a lower case letter</ShortDescription>
+    <Details><![CDATA[
+
+  <p>
+Names of fields that are not final should be in mixed case with a lowercase first letter and the first letters of subsequent words capitalized.
+</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugPattern type="SS_SHOULD_BE_STATIC" abbrev="SS" category="PERFORMANCE">
+    <ShortDescription>Unread field: should this field be static?</ShortDescription>
+    <Details><![CDATA[
+
+  <p> This class contains an instance final field that
+   is initialized to a compile-time static value.
+   Consider making the field static.</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugPattern type="UUF_UNUSED_PUBLIC_OR_PROTECTED_FIELD" abbrev="UuF" category="STYLE">
+    <ShortDescription>Unused public or protected field</ShortDescription>
+    <Details><![CDATA[
+
+  <p> This field is never used.&nbsp;
+The field is public or protected, so perhaps
+    it is intended to be used with classes not seen as part of the analysis. If not,
+consider removing it from the class.</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugPattern type="DM_DEFAULT_ENCODING" abbrev="Dm" category="I18N">
+    <ShortDescription>Reliance on default encoding</ShortDescription>
+    <Details><![CDATA[
+
+<p> Found a call to a method which will perform a byte to String (or String to byte) conversion, and will assume that the default platform encoding is suitable. This will cause the application behaviour to vary between platforms. Use an alternative API and specify a charset name or Charset object explicitly.  </p>
+
+      ]]></Details>
+  </BugPattern>
+  <BugPattern type="URF_UNREAD_FIELD" abbrev="UrF" category="PERFORMANCE">
+    <ShortDescription>Unread field</ShortDescription>
+    <Details><![CDATA[
+
+  <p> This field is never read.&nbsp; Consider removing it from the class.</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugPattern type="DM_EXIT" abbrev="Dm" category="BAD_PRACTICE" cweid="382">
+    <ShortDescription>Method invokes System.exit(...)</ShortDescription>
+    <Details><![CDATA[
+
+  <p> Invoking System.exit shuts down the entire Java virtual machine. This
+   should only been done when it is appropriate. Such calls make it
+   hard or impossible for your code to be invoked by other code.
+   Consider throwing a RuntimeException instead.</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugPattern type="MS_SHOULD_BE_REFACTORED_TO_BE_FINAL" abbrev="MS" category="MALICIOUS_CODE">
+    <ShortDescription>Field isn&apos;t final but should be refactored to be so</ShortDescription>
+    <Details><![CDATA[
+
+   <p>
+This static field public but not final, and
+could be changed by malicious code or
+by accident from another package.
+The field could be made final to avoid
+this vulnerability. However, the static initializer contains more than one write
+to the field, so doing so will require some refactoring.
+</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugPattern type="MS_PKGPROTECT" abbrev="MS" category="MALICIOUS_CODE">
+    <ShortDescription>Field should be package protected</ShortDescription>
+    <Details><![CDATA[
+
+  <p> A mutable static field could be changed by malicious code or
+   by accident.
+   The field could be made package protected to avoid
+   this vulnerability.</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugPattern type="NP_NULL_ON_SOME_PATH_EXCEPTION" abbrev="NP" category="CORRECTNESS">
+    <ShortDescription>Possible null pointer dereference in method on exception path</ShortDescription>
+    <Details><![CDATA[
+
+<p> A reference value which is null on some exception control path is
+dereferenced here.&nbsp; This may lead to a <code>NullPointerException</code>
+when the code is executed.&nbsp;
+Note that because FindBugs currently does not prune infeasible exception paths,
+this may be a false warning.</p>
+
+<p> Also note that FindBugs considers the default case of a switch statement to
+be an exception path, since the default case is often infeasible.</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="SS">
+    <Description>Unread field should be static</Description>
+  </BugCode>
+  <BugCode abbrev="NP" cweid="476">
+    <Description>Null pointer dereference</Description>
+  </BugCode>
+  <BugCode abbrev="MS" cweid="218">
+    <Description>Mutable static field</Description>
+  </BugCode>
+  <BugCode abbrev="UuF">
+    <Description>Unused field</Description>
+  </BugCode>
+  <BugCode abbrev="UrF">
+    <Description>Unread field</Description>
+  </BugCode>
+  <BugCode abbrev="Dm">
+    <Description>Dubious method used</Description>
+  </BugCode>
+  <BugCode abbrev="Nm">
+    <Description>Confusing method name</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 13 Nov 2019 17:52:19 -0500" total_classes="20" referenced_classes="20" total_bugs="44" total_size="1109" num_packages="1" java_version="11.0.3" vm_version="11.0.3+12-b304.10" cpu_seconds="19.68" clock_seconds="54.67" peak_mbytes="687.39" alloc_mbytes="989.88" gc_seconds="0.04" priority_2="30" priority_1="14">
+    <FileStats path="BackGroundMusicPlayer.java" bugCount="2" size="33" bugHash="629f9d8a5458c91d64556ffc5160da3b"/>
+    <FileStats path="Boomerang.java" bugCount="2" size="53" bugHash="256b1251d46d1aaf9c6b532065c0e4a1"/>
+    <FileStats path="Bullet.java" bugCount="1" size="36" bugHash="14c834ee43d0784bfe060749296b1db7"/>
+    <FileStats path="CentipedeComponent.java" bugCount="9" size="222" bugHash="76e8f3a48abe62dc60c94705908f79ff"/>
+    <FileStats path="CentipedeListener.java" bugCount="0" size="61"/>
+    <FileStats path="Collidable.java" bugCount="0" size="12"/>
+    <FileStats path="Flea.java" bugCount="1" size="46" bugHash="441faba94d71c82f67ff0eb997050bbc"/>
+    <FileStats path="GunPickup.java" bugCount="3" size="34" bugHash="e5cb9a7caad0446fa498959144071ffa"/>
+    <FileStats path="Instance.java" bugCount="3" size="77" bugHash="1a2c23ddee11f10d6b11e6d437e56698"/>
+    <FileStats path="LinkedCentipede.java" bugCount="0" size="143"/>
+    <FileStats path="LocalResources.java" bugCount="13" size="48" bugHash="0761a8fda766f03d5e6909542660bc6b"/>
+    <FileStats path="Main.java" bugCount="0" size="16"/>
+    <FileStats path="Moveable.java" bugCount="0" size="5"/>
+    <FileStats path="Mushroom.java" bugCount="0" size="76"/>
+    <FileStats path="PlayerCharacter.java" bugCount="5" size="109" bugHash="0511918e41eed934952f5ea080ea78d6"/>
+    <FileStats path="Scorpion.java" bugCount="1" size="43" bugHash="7153feda913d6d01d228e45fd54472ae"/>
+    <FileStats path="ShotgunShell.java" bugCount="3" size="42" bugHash="f12ca7af5de4408750ca78975557d955"/>
+    <FileStats path="Spider.java" bugCount="1" size="48" bugHash="b3983edcc9e87074e6b75a50ef959d0f"/>
+    <FileStats path="StartButtonListener.java" bugCount="0" size="5"/>
+    <PackageStats package="" total_bugs="44" total_types="20" total_size="1109" priority_2="30" priority_1="14">
+      <ClassStats class="BackGroundMusicPlayer" sourceFile="BackGroundMusicPlayer.java" interface="false" size="24" bugs="2" priority_2="2"/>
+      <ClassStats class="BackGroundMusicPlayer$1" sourceFile="BackGroundMusicPlayer.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="Boomerang" sourceFile="Boomerang.java" interface="false" size="53" bugs="2" priority_2="2"/>
+      <ClassStats class="Bullet" sourceFile="Bullet.java" interface="false" size="36" bugs="1" priority_2="1"/>
+      <ClassStats class="CentipedeComponent" sourceFile="CentipedeComponent.java" interface="false" size="222" bugs="9" priority_2="8" priority_1="1"/>
+      <ClassStats class="CentipedeListener" sourceFile="CentipedeListener.java" interface="false" size="61" bugs="0"/>
+      <ClassStats class="Collidable" sourceFile="Collidable.java" interface="true" size="12" bugs="0"/>
+      <ClassStats class="Flea" sourceFile="Flea.java" interface="false" size="46" bugs="1" priority_2="1"/>
+      <ClassStats class="GunPickup" sourceFile="GunPickup.java" interface="false" size="34" bugs="3" priority_2="3"/>
+      <ClassStats class="Instance" sourceFile="Instance.java" interface="false" size="77" bugs="3" priority_2="3"/>
+      <ClassStats class="LinkedCentipede" sourceFile="LinkedCentipede.java" interface="false" size="143" bugs="0"/>
+      <ClassStats class="LocalResources" sourceFile="LocalResources.java" interface="false" size="48" bugs="13" priority_1="13"/>
+      <ClassStats class="Main" sourceFile="Main.java" interface="false" size="16" bugs="0"/>
+      <ClassStats class="Moveable" sourceFile="Moveable.java" interface="true" size="5" bugs="0"/>
+      <ClassStats class="Mushroom" sourceFile="Mushroom.java" interface="false" size="76" bugs="0"/>
+      <ClassStats class="PlayerCharacter" sourceFile="PlayerCharacter.java" interface="false" size="109" bugs="5" priority_2="5"/>
+      <ClassStats class="Scorpion" sourceFile="Scorpion.java" interface="false" size="43" bugs="1" priority_2="1"/>
+      <ClassStats class="ShotgunShell" sourceFile="ShotgunShell.java" interface="false" size="42" bugs="3" priority_2="3"/>
+      <ClassStats class="Spider" sourceFile="Spider.java" interface="false" size="48" bugs="1" priority_2="1"/>
+      <ClassStats class="StartButtonListener" sourceFile="StartButtonListener.java" interface="false" size="5" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.FindBugs2" totalMilliseconds="306" invocations="2" avgMicrosecondsPerInvocation="153015" maxMicrosecondsPerInvocation="174782" standardDeviationMircosecondsPerInvocation="21770"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="71" invocations="171" avgMicrosecondsPerInvocation="417" maxMicrosecondsPerInvocation="13029" standardDeviationMircosecondsPerInvocation="1486"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="66" invocations="170" avgMicrosecondsPerInvocation="393" maxMicrosecondsPerInvocation="14303" standardDeviationMircosecondsPerInvocation="1519"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="58" invocations="170" avgMicrosecondsPerInvocation="341" maxMicrosecondsPerInvocation="6367" standardDeviationMircosecondsPerInvocation="920"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="58" invocations="170" avgMicrosecondsPerInvocation="341" maxMicrosecondsPerInvocation="6364" standardDeviationMircosecondsPerInvocation="771"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="45" invocations="170" avgMicrosecondsPerInvocation="269" maxMicrosecondsPerInvocation="12653" standardDeviationMircosecondsPerInvocation="996"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="40" invocations="185" avgMicrosecondsPerInvocation="217" maxMicrosecondsPerInvocation="24331" standardDeviationMircosecondsPerInvocation="1796"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindOpenStream" totalMilliseconds="37" invocations="20" avgMicrosecondsPerInvocation="1882" maxMicrosecondsPerInvocation="17550" standardDeviationMircosecondsPerInvocation="4806"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="36" invocations="170" avgMicrosecondsPerInvocation="213" maxMicrosecondsPerInvocation="6461" standardDeviationMircosecondsPerInvocation="630"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="34" invocations="20" avgMicrosecondsPerInvocation="1707" maxMicrosecondsPerInvocation="9112" standardDeviationMircosecondsPerInvocation="2455"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="31" invocations="20" avgMicrosecondsPerInvocation="1585" maxMicrosecondsPerInvocation="7671" standardDeviationMircosecondsPerInvocation="2336"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="28" invocations="206" avgMicrosecondsPerInvocation="139" maxMicrosecondsPerInvocation="19158" standardDeviationMircosecondsPerInvocation="1337"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="28" invocations="104" avgMicrosecondsPerInvocation="270" maxMicrosecondsPerInvocation="5361" standardDeviationMircosecondsPerInvocation="730"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="25" invocations="175" avgMicrosecondsPerInvocation="144" maxMicrosecondsPerInvocation="8915" standardDeviationMircosecondsPerInvocation="802"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="18" invocations="51" avgMicrosecondsPerInvocation="371" maxMicrosecondsPerInvocation="12121" standardDeviationMircosecondsPerInvocation="1691"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CheckRelaxingNullnessAnnotation" totalMilliseconds="14" invocations="20" avgMicrosecondsPerInvocation="720" maxMicrosecondsPerInvocation="6464" standardDeviationMircosecondsPerInvocation="1503"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.TypeQualifierNullnessAnnotationDatabase" totalMilliseconds="13" invocations="2993" avgMicrosecondsPerInvocation="4" maxMicrosecondsPerInvocation="2218" standardDeviationMircosecondsPerInvocation="46"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindInconsistentSync2" totalMilliseconds="12" invocations="20" avgMicrosecondsPerInvocation="649" maxMicrosecondsPerInvocation="2836" standardDeviationMircosecondsPerInvocation="802"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="12" invocations="170" avgMicrosecondsPerInvocation="76" maxMicrosecondsPerInvocation="2598" standardDeviationMircosecondsPerInvocation="235"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="12" invocations="20" avgMicrosecondsPerInvocation="632" maxMicrosecondsPerInvocation="4784" standardDeviationMircosecondsPerInvocation="1040"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.UnreadFields" totalMilliseconds="12" invocations="20" avgMicrosecondsPerInvocation="625" maxMicrosecondsPerInvocation="2646" standardDeviationMircosecondsPerInvocation="621"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.InfiniteLoop" totalMilliseconds="12" invocations="20" avgMicrosecondsPerInvocation="617" maxMicrosecondsPerInvocation="8093" standardDeviationMircosecondsPerInvocation="1728"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueRangeAnalysisFactory" totalMilliseconds="11" invocations="185" avgMicrosecondsPerInvocation="62" maxMicrosecondsPerInvocation="3327" standardDeviationMircosecondsPerInvocation="285"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="11" invocations="20" avgMicrosecondsPerInvocation="559" maxMicrosecondsPerInvocation="4501" standardDeviationMircosecondsPerInvocation="942"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

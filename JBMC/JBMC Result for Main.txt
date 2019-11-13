@@ -1,0 +1,397 @@
+dyn-160-39-148-229:src oliviawang$ ~/Documents/verificationtool/JBMC/cbmc-git/jbmc/src/jbmc/jbmc Main.class --unwind 5 --classpath ~/Documents/verificationtool/JBMC/cbmc-git/jbmc/src/jbmc/core-models.jar:.
+JBMC version 5.12 (cbmc-5.12-d8598f8-1269-g001b6f919) 64-bit x86_64 macos
+Parsing Main.class
+Java main class: Main
+failed to open JAR file '/Users/oliviawang/Documents/verificationtool/JBMC/cbmc-git/jbmc/src/jbmc/core-models.jar'
+failed to open JAR file '/Users/oliviawang/Documents/verificationtool/JBMC/cbmc-git/jbmc/src/jbmc/core-models.jar'
+failed to load class java.lang.Runnable
+failed to open JAR file '/Users/oliviawang/Documents/verificationtool/JBMC/cbmc-git/jbmc/src/jbmc/core-models.jar'
+failed to load class java.lang.Thread
+failed to open JAR file '/Users/oliviawang/Documents/verificationtool/JBMC/cbmc-git/jbmc/src/jbmc/core-models.jar'
+failed to load class java.awt.Component
+failed to open JAR file '/Users/oliviawang/Documents/verificationtool/JBMC/cbmc-git/jbmc/src/jbmc/core-models.jar'
+failed to load class javax.swing.JFrame
+failed to open JAR file '/Users/oliviawang/Documents/verificationtool/JBMC/cbmc-git/jbmc/src/jbmc/core-models.jar'
+failed to load class java.lang.System
+failed to open JAR file '/Users/oliviawang/Documents/verificationtool/JBMC/cbmc-git/jbmc/src/jbmc/core-models.jar'
+failed to load class java.io.PrintStream
+failed to open JAR file '/Users/oliviawang/Documents/verificationtool/JBMC/cbmc-git/jbmc/src/jbmc/core-models.jar'
+failed to open JAR file '/Users/oliviawang/Documents/verificationtool/JBMC/cbmc-git/jbmc/src/jbmc/core-models.jar'
+failed to load class java.awt.Font
+failed to open JAR file '/Users/oliviawang/Documents/verificationtool/JBMC/cbmc-git/jbmc/src/jbmc/core-models.jar'
+failed to load class java.util.Random
+failed to open JAR file '/Users/oliviawang/Documents/verificationtool/JBMC/cbmc-git/jbmc/src/jbmc/core-models.jar'
+failed to open JAR file '/Users/oliviawang/Documents/verificationtool/JBMC/cbmc-git/jbmc/src/jbmc/core-models.jar'
+failed to open JAR file '/Users/oliviawang/Documents/verificationtool/JBMC/cbmc-git/jbmc/src/jbmc/core-models.jar'
+failed to load class java.awt.Toolkit
+failed to open JAR file '/Users/oliviawang/Documents/verificationtool/JBMC/cbmc-git/jbmc/src/jbmc/core-models.jar'
+failed to open JAR file '/Users/oliviawang/Documents/verificationtool/JBMC/cbmc-git/jbmc/src/jbmc/core-models.jar'
+failed to load class java.lang.Object
+failed to open JAR file '/Users/oliviawang/Documents/verificationtool/JBMC/cbmc-git/jbmc/src/jbmc/core-models.jar'
+failed to load class java.lang.String
+failed to open JAR file '/Users/oliviawang/Documents/verificationtool/JBMC/cbmc-git/jbmc/src/jbmc/core-models.jar'
+failed to load class java.lang.Comparable
+failed to open JAR file '/Users/oliviawang/Documents/verificationtool/JBMC/cbmc-git/jbmc/src/jbmc/core-models.jar'
+failed to load class java.lang.CharSequence
+failed to open JAR file '/Users/oliviawang/Documents/verificationtool/JBMC/cbmc-git/jbmc/src/jbmc/core-models.jar'
+failed to load class java.io.Serializable
+failed to open JAR file '/Users/oliviawang/Documents/verificationtool/JBMC/cbmc-git/jbmc/src/jbmc/core-models.jar'
+failed to load class java.awt.geom.Rectangle2D
+failed to open JAR file '/Users/oliviawang/Documents/verificationtool/JBMC/cbmc-git/jbmc/src/jbmc/core-models.jar'
+failed to load class java.awt.geom.Rectangle2D$Double
+failed to open JAR file '/Users/oliviawang/Documents/verificationtool/JBMC/cbmc-git/jbmc/src/jbmc/core-models.jar'
+failed to load class java.awt.Image
+failed to open JAR file '/Users/oliviawang/Documents/verificationtool/JBMC/cbmc-git/jbmc/src/jbmc/core-models.jar'
+failed to load class java.awt.Color
+failed to open JAR file '/Users/oliviawang/Documents/verificationtool/JBMC/cbmc-git/jbmc/src/jbmc/core-models.jar'
+failed to open JAR file '/Users/oliviawang/Documents/verificationtool/JBMC/cbmc-git/jbmc/src/jbmc/core-models.jar'
+failed to load class java.lang.Math
+failed to open JAR file '/Users/oliviawang/Documents/verificationtool/JBMC/cbmc-git/jbmc/src/jbmc/core-models.jar'
+failed to open JAR file '/Users/oliviawang/Documents/verificationtool/JBMC/cbmc-git/jbmc/src/jbmc/core-models.jar'
+failed to open JAR file '/Users/oliviawang/Documents/verificationtool/JBMC/cbmc-git/jbmc/src/jbmc/core-models.jar'
+failed to open JAR file '/Users/oliviawang/Documents/verificationtool/JBMC/cbmc-git/jbmc/src/jbmc/core-models.jar'
+failed to open JAR file '/Users/oliviawang/Documents/verificationtool/JBMC/cbmc-git/jbmc/src/jbmc/core-models.jar'
+failed to open JAR file '/Users/oliviawang/Documents/verificationtool/JBMC/cbmc-git/jbmc/src/jbmc/core-models.jar'
+failed to open JAR file '/Users/oliviawang/Documents/verificationtool/JBMC/cbmc-git/jbmc/src/jbmc/core-models.jar'
+failed to open JAR file '/Users/oliviawang/Documents/verificationtool/JBMC/cbmc-git/jbmc/src/jbmc/core-models.jar'
+failed to load class java.lang.Integer
+failed to open JAR file '/Users/oliviawang/Documents/verificationtool/JBMC/cbmc-git/jbmc/src/jbmc/core-models.jar'
+failed to load class java.util.HashMap
+failed to open JAR file '/Users/oliviawang/Documents/verificationtool/JBMC/cbmc-git/jbmc/src/jbmc/core-models.jar'
+failed to open JAR file '/Users/oliviawang/Documents/verificationtool/JBMC/cbmc-git/jbmc/src/jbmc/core-models.jar'
+failed to load class java.lang.Boolean
+failed to open JAR file '/Users/oliviawang/Documents/verificationtool/JBMC/cbmc-git/jbmc/src/jbmc/core-models.jar'
+failed to load class java.io.IOException
+failed to open JAR file '/Users/oliviawang/Documents/verificationtool/JBMC/cbmc-git/jbmc/src/jbmc/core-models.jar'
+failed to open JAR file '/Users/oliviawang/Documents/verificationtool/JBMC/cbmc-git/jbmc/src/jbmc/core-models.jar'
+failed to open JAR file '/Users/oliviawang/Documents/verificationtool/JBMC/cbmc-git/jbmc/src/jbmc/core-models.jar'
+failed to load class java.lang.StringBuilder
+failed to open JAR file '/Users/oliviawang/Documents/verificationtool/JBMC/cbmc-git/jbmc/src/jbmc/core-models.jar'
+failed to load class java.lang.AbstractStringBuilder
+failed to open JAR file '/Users/oliviawang/Documents/verificationtool/JBMC/cbmc-git/jbmc/src/jbmc/core-models.jar'
+failed to load class java.util.Iterator
+failed to open JAR file '/Users/oliviawang/Documents/verificationtool/JBMC/cbmc-git/jbmc/src/jbmc/core-models.jar'
+failed to load class java.lang.InterruptedException
+failed to open JAR file '/Users/oliviawang/Documents/verificationtool/JBMC/cbmc-git/jbmc/src/jbmc/core-models.jar'
+failed to load class java.awt.Graphics
+failed to open JAR file '/Users/oliviawang/Documents/verificationtool/JBMC/cbmc-git/jbmc/src/jbmc/core-models.jar'
+failed to load class java.awt.image.ImageObserver
+failed to open JAR file '/Users/oliviawang/Documents/verificationtool/JBMC/cbmc-git/jbmc/src/jbmc/core-models.jar'
+failed to load class java.awt.Shape
+failed to open JAR file '/Users/oliviawang/Documents/verificationtool/JBMC/cbmc-git/jbmc/src/jbmc/core-models.jar'
+failed to load class java.awt.Graphics2D
+failed to open JAR file '/Users/oliviawang/Documents/verificationtool/JBMC/cbmc-git/jbmc/src/jbmc/core-models.jar'
+failed to load class java.io.FileNotFoundException
+failed to open JAR file '/Users/oliviawang/Documents/verificationtool/JBMC/cbmc-git/jbmc/src/jbmc/core-models.jar'
+failed to load class java.io.Reader
+failed to open JAR file '/Users/oliviawang/Documents/verificationtool/JBMC/cbmc-git/jbmc/src/jbmc/core-models.jar'
+failed to load class java.io.FileReader
+failed to open JAR file '/Users/oliviawang/Documents/verificationtool/JBMC/cbmc-git/jbmc/src/jbmc/core-models.jar'
+failed to load class java.io.BufferedReader
+failed to open JAR file '/Users/oliviawang/Documents/verificationtool/JBMC/cbmc-git/jbmc/src/jbmc/core-models.jar'
+failed to load class java.awt.event.KeyListener
+failed to open JAR file '/Users/oliviawang/Documents/verificationtool/JBMC/cbmc-git/jbmc/src/jbmc/core-models.jar'
+failed to load class java.util.ArrayList
+failed to open JAR file '/Users/oliviawang/Documents/verificationtool/JBMC/cbmc-git/jbmc/src/jbmc/core-models.jar'
+failed to load class javax.swing.JOptionPane
+failed to open JAR file '/Users/oliviawang/Documents/verificationtool/JBMC/cbmc-git/jbmc/src/jbmc/core-models.jar'
+failed to load class javax.swing.Icon
+failed to open JAR file '/Users/oliviawang/Documents/verificationtool/JBMC/cbmc-git/jbmc/src/jbmc/core-models.jar'
+failed to load class java.awt.Dimension
+failed to open JAR file '/Users/oliviawang/Documents/verificationtool/JBMC/cbmc-git/jbmc/src/jbmc/core-models.jar'
+failed to load class javax.swing.JPanel
+failed to open JAR file '/Users/oliviawang/Documents/verificationtool/JBMC/cbmc-git/jbmc/src/jbmc/core-models.jar'
+failed to open JAR file '/Users/oliviawang/Documents/verificationtool/JBMC/cbmc-git/jbmc/src/jbmc/core-models.jar'
+failed to load class java.awt.event.KeyEvent
+failed to open JAR file '/Users/oliviawang/Documents/verificationtool/JBMC/cbmc-git/jbmc/src/jbmc/core-models.jar'
+failed to open JAR file '/Users/oliviawang/Documents/verificationtool/JBMC/cbmc-git/jbmc/src/jbmc/core-models.jar'
+failed to load class java.lang.Exception
+failed to open JAR file '/Users/oliviawang/Documents/verificationtool/JBMC/cbmc-git/jbmc/src/jbmc/core-models.jar'
+failed to load class javax.sound.sampled.AudioInputStream
+failed to open JAR file '/Users/oliviawang/Documents/verificationtool/JBMC/cbmc-git/jbmc/src/jbmc/core-models.jar'
+failed to load class javax.sound.sampled.AudioSystem
+failed to open JAR file '/Users/oliviawang/Documents/verificationtool/JBMC/cbmc-git/jbmc/src/jbmc/core-models.jar'
+failed to load class javax.sound.sampled.Clip
+failed to open JAR file '/Users/oliviawang/Documents/verificationtool/JBMC/cbmc-git/jbmc/src/jbmc/core-models.jar'
+failed to load class java.io.File
+failed to open JAR file '/Users/oliviawang/Documents/verificationtool/JBMC/cbmc-git/jbmc/src/jbmc/core-models.jar'
+failed to open JAR file '/Users/oliviawang/Documents/verificationtool/JBMC/cbmc-git/jbmc/src/jbmc/core-models.jar'
+failed to load class java.lang.Throwable
+failed to open JAR file '/Users/oliviawang/Documents/verificationtool/JBMC/cbmc-git/jbmc/src/jbmc/core-models.jar'
+failed to load class java.lang.Class
+Converting
+stub class symbol java::java.lang.Object already exists
+Java: added 127 String or Class constant symbols
+Generating GOTO Program
+Running GOTO functions transformation passes
+Running with 16 object bits, 48 offset bits (default)
+Starting Bounded Model Checking
+Unwinding loop __CPROVER__start.0 iteration 1  thread 0
+Unwinding loop __CPROVER__start.0 iteration 2  thread 0
+Unwinding loop __CPROVER__start.0 iteration 3  thread 0
+Unwinding loop __CPROVER__start.0 iteration 4  thread 0
+Not unwinding loop __CPROVER__start.0 iteration 5  thread 0
+Unwinding recursion java::LinkedCentipede.<clinit_wrapper> iteration 1
+Unwinding recursion java::LinkedCentipede.<clinit_wrapper> iteration 1
+Unwinding recursion LinkedCentipede(int, int, int, CentipedeComponent) iteration 1
+Unwinding recursion LinkedCentipede(int, int, int, CentipedeComponent) iteration 2
+Unwinding recursion LinkedCentipede(int, int, int, CentipedeComponent) iteration 3
+Unwinding recursion LinkedCentipede(int, int, int, CentipedeComponent) iteration 4
+Unwinding recursion LinkedCentipede(int, int, int, CentipedeComponent) iteration 5
+Not unwinding recursion LinkedCentipede(int, int, int, CentipedeComponent) iteration 6
+size of program expression: 2363 steps
+simple slicing removed 0 assignments
+Generated 166 VCC(s), 0 remaining after simplification
+
+** Results:
+[array-create-negative-size.1] Array size should be >= 0: SUCCESS
+[array-create-negative-size.2] Array size should be >= 0: SUCCESS
+[array-create-negative-size.3] Array size should be >= 0: SUCCESS
+[array-create-negative-size.4] Array size should be >= 0: SUCCESS
+[array-create-negative-size.5] Array size should be >= 0: SUCCESS
+[array-create-negative-size.6] Array size should be >= 0: SUCCESS
+[array-create-negative-size.7] Array size should be >= 0: SUCCESS
+[array-create-negative-size.8] Array size should be >= 0: SUCCESS
+[array-create-negative-size.9] Array size should be >= 0: SUCCESS
+[null-pointer-exception.1] Null pointer check: SUCCESS
+[null-pointer-exception.10] Null pointer check: SUCCESS
+[null-pointer-exception.11] Null pointer check: SUCCESS
+[null-pointer-exception.12] Null pointer check: SUCCESS
+[null-pointer-exception.13] Null pointer check: SUCCESS
+[null-pointer-exception.14] Null pointer check: SUCCESS
+[null-pointer-exception.2] Null pointer check: SUCCESS
+[null-pointer-exception.3] Null pointer check: SUCCESS
+[null-pointer-exception.4] Null pointer check: SUCCESS
+[null-pointer-exception.5] Null pointer check: SUCCESS
+[null-pointer-exception.6] Null pointer check: SUCCESS
+[null-pointer-exception.7] Null pointer check: SUCCESS
+[null-pointer-exception.8] Null pointer check: SUCCESS
+[null-pointer-exception.9] Null pointer check: SUCCESS
+BackGroundMusicPlayer.java function java::BackGroundMusicPlayer.<init>:()V
+[java::BackGroundMusicPlayer.<init>:()V.null-pointer-exception.1] line 9 Null pointer check: SUCCESS
+
+BackGroundMusicPlayer.java function java::BackGroundMusicPlayer$1.<init>:(LBackGroundMusicPlayer;)V
+[java::BackGroundMusicPlayer$1.<init>:(LBackGroundMusicPlayer;)V.null-pointer-exception.1] line 10 Null pointer check: SUCCESS
+[java::BackGroundMusicPlayer$1.<init>:(LBackGroundMusicPlayer;)V.null-pointer-exception.2] line 10 Null pointer check: SUCCESS
+
+BackGroundMusicPlayer.java function java::BackGroundMusicPlayer.<init>:()V
+[java::BackGroundMusicPlayer.<init>:()V.null-pointer-exception.2] line 10 Null pointer check: SUCCESS
+[java::BackGroundMusicPlayer.<init>:()V.null-pointer-exception.3] line 22 Null pointer check: SUCCESS
+[java::BackGroundMusicPlayer.<init>:()V.null-pointer-exception.4] line 22 Null pointer check: SUCCESS
+
+CentipedeComponent.java function java::CentipedeComponent.<init>:()V
+[java::CentipedeComponent.<init>:()V.null-pointer-exception.2] line 21 Null pointer check: SUCCESS
+[java::CentipedeComponent.<init>:()V.null-pointer-exception.3] line 22 Null pointer check: SUCCESS
+[java::CentipedeComponent.<init>:()V.null-pointer-exception.4] line 23 Null pointer check: SUCCESS
+[java::CentipedeComponent.<init>:()V.null-pointer-exception.5] line 24 Null pointer check: SUCCESS
+[java::CentipedeComponent.<init>:()V.null-pointer-exception.6] line 25 Null pointer check: SUCCESS
+[java::CentipedeComponent.<init>:()V.null-pointer-exception.7] line 26 Null pointer check: SUCCESS
+[java::CentipedeComponent.<init>:()V.null-pointer-exception.8] line 27 Null pointer check: SUCCESS
+[java::CentipedeComponent.<init>:()V.null-pointer-exception.9] line 28 Null pointer check: SUCCESS
+[java::CentipedeComponent.<init>:()V.null-pointer-exception.10] line 29 Null pointer check: SUCCESS
+[java::CentipedeComponent.<init>:()V.null-pointer-exception.1] line 45 Null pointer check: SUCCESS
+[java::CentipedeComponent.<init>:()V.null-pointer-exception.11] line 46 Null pointer check: SUCCESS
+[java::CentipedeComponent.<init>:()V.null-pointer-exception.12] line 47 Null pointer check: SUCCESS
+[java::CentipedeComponent.<init>:()V.null-pointer-exception.13] line 48 Null pointer check: SUCCESS
+[java::CentipedeComponent.<init>:()V.null-pointer-exception.14] line 49 Null pointer check: SUCCESS
+[java::CentipedeComponent.<init>:()V.null-pointer-exception.16] line 50 Null pointer check: SUCCESS
+[java::CentipedeComponent.<init>:()V.null-pointer-exception.15] line 50 Null pointer check: SUCCESS
+[java::CentipedeComponent.<init>:()V.null-pointer-exception.18] line 51 Null pointer check: SUCCESS
+[java::CentipedeComponent.<init>:()V.null-pointer-exception.17] line 51 Null pointer check: SUCCESS
+[java::CentipedeComponent.<init>:()V.array-index-out-of-bounds-low.2] line 54 Array index should be >= 0: SUCCESS
+[java::CentipedeComponent.<init>:()V.array-index-out-of-bounds-low.1] line 54 Array index should be >= 0: SUCCESS
+[java::CentipedeComponent.<init>:()V.null-pointer-exception.19] line 54 Null pointer check: SUCCESS
+[java::CentipedeComponent.<init>:()V.array-create-negative-size.1] line 54 Array size should be >= 0: SUCCESS
+[java::CentipedeComponent.<init>:()V.array-index-out-of-bounds-high.2] line 54 Array index should be < length: SUCCESS
+[java::CentipedeComponent.<init>:()V.null-pointer-exception.20] line 54 Null pointer check: SUCCESS
+[java::CentipedeComponent.<init>:()V.array-index-out-of-bounds-high.1] line 54 Array index should be < length: SUCCESS
+[java::CentipedeComponent.<init>:()V.null-pointer-exception.21] line 59 Null pointer check: SUCCESS
+[java::CentipedeComponent.<init>:()V.null-pointer-exception.22] line 59 Null pointer check: SUCCESS
+[java::CentipedeComponent.<init>:()V.null-pointer-exception.23] line 61 Null pointer check: SUCCESS
+[java::CentipedeComponent.<init>:()V.null-pointer-exception.24] line 63 Null pointer check: SUCCESS
+[java::CentipedeComponent.<init>:()V.null-pointer-exception.25] line 63 Null pointer check: SUCCESS
+[java::CentipedeComponent.<init>:()V.null-pointer-exception.26] line 68 Null pointer check: SUCCESS
+[java::CentipedeComponent.<init>:()V.null-pointer-exception.27] line 68 Null pointer check: SUCCESS
+[java::CentipedeComponent.<init>:()V.null-pointer-exception.28] line 69 Null pointer check: SUCCESS
+[java::CentipedeComponent.<init>:()V.null-pointer-exception.29] line 69 Null pointer check: SUCCESS
+
+CentipedeComponent.java function java::CentipedeComponent.loadLevel:(I)V
+[java::CentipedeComponent.loadLevel:(I)V.null-pointer-exception.1] line 82 Null pointer check: SUCCESS
+[java::CentipedeComponent.loadLevel:(I)V.null-pointer-exception.2] line 83 Null pointer check: SUCCESS
+[java::CentipedeComponent.loadLevel:(I)V.null-pointer-exception.3] line 84 Null pointer check: SUCCESS
+[java::CentipedeComponent.loadLevel:(I)V.null-pointer-exception.4] line 85 Null pointer check: SUCCESS
+[java::CentipedeComponent.loadLevel:(I)V.null-pointer-exception.5] line 85 Null pointer check: SUCCESS
+[java::CentipedeComponent.loadLevel:(I)V.null-pointer-exception.6] line 86 Null pointer check: SUCCESS
+[java::CentipedeComponent.loadLevel:(I)V.null-pointer-exception.7] line 86 Null pointer check: SUCCESS
+[java::CentipedeComponent.loadLevel:(I)V.null-pointer-exception.8] line 86 Null pointer check: SUCCESS
+[java::CentipedeComponent.loadLevel:(I)V.null-pointer-exception.9] line 87 Null pointer check: SUCCESS
+[java::CentipedeComponent.loadLevel:(I)V.null-pointer-exception.10] line 87 Null pointer check: SUCCESS
+[java::CentipedeComponent.loadLevel:(I)V.null-pointer-exception.11] line 88 Null pointer check: SUCCESS
+[java::CentipedeComponent.loadLevel:(I)V.null-pointer-exception.12] line 88 Null pointer check: SUCCESS
+[java::CentipedeComponent.loadLevel:(I)V.null-pointer-exception.13] line 89 Null pointer check: SUCCESS
+[java::CentipedeComponent.loadLevel:(I)V.null-pointer-exception.14] line 89 Null pointer check: SUCCESS
+[java::CentipedeComponent.loadLevel:(I)V.null-pointer-exception.15] line 90 Null pointer check: SUCCESS
+[java::CentipedeComponent.loadLevel:(I)V.null-pointer-exception.16] line 90 Null pointer check: SUCCESS
+[java::CentipedeComponent.loadLevel:(I)V.null-pointer-exception.17] line 90 Null pointer check: SUCCESS
+[java::CentipedeComponent.loadLevel:(I)V.null-pointer-exception.18] line 91 Null pointer check: SUCCESS
+[java::CentipedeComponent.loadLevel:(I)V.null-pointer-exception.19] line 92 Null pointer check: SUCCESS
+[java::CentipedeComponent.loadLevel:(I)V.null-pointer-exception.20] line 96 Null pointer check: SUCCESS
+[java::CentipedeComponent.loadLevel:(I)V.null-pointer-exception.21] line 97 Null pointer check: SUCCESS
+[java::CentipedeComponent.loadLevel:(I)V.null-pointer-exception.22] line 97 Null pointer check: SUCCESS
+[java::CentipedeComponent.loadLevel:(I)V.array-index-out-of-bounds-low.1] line 97 Array index should be >= 0: SUCCESS
+[java::CentipedeComponent.loadLevel:(I)V.array-index-out-of-bounds-high.1] line 97 Array index should be < length: SUCCESS
+[java::CentipedeComponent.loadLevel:(I)V.null-pointer-exception.23] line 99 Null pointer check: SUCCESS
+[java::CentipedeComponent.loadLevel:(I)V.null-pointer-exception.24] line 100 Null pointer check: SUCCESS
+[java::CentipedeComponent.loadLevel:(I)V.null-pointer-exception.25] line 100 Null pointer check: SUCCESS
+[java::CentipedeComponent.loadLevel:(I)V.null-pointer-exception.26] line 100 Null pointer check: SUCCESS
+[java::CentipedeComponent.loadLevel:(I)V.null-pointer-exception.27] line 100 Null pointer check: SUCCESS
+[java::CentipedeComponent.loadLevel:(I)V.null-pointer-exception.28] line 102 Null pointer check: SUCCESS
+[java::CentipedeComponent.loadLevel:(I)V.null-pointer-exception.29] line 102 Null pointer check: SUCCESS
+[java::CentipedeComponent.loadLevel:(I)V.null-pointer-exception.30] line 102 Null pointer check: SUCCESS
+[java::CentipedeComponent.loadLevel:(I)V.null-pointer-exception.31] line 102 Null pointer check: SUCCESS
+[java::CentipedeComponent.loadLevel:(I)V.null-pointer-exception.32] line 104 Null pointer check: SUCCESS
+[java::CentipedeComponent.loadLevel:(I)V.null-pointer-exception.33] line 104 Null pointer check: SUCCESS
+[java::CentipedeComponent.loadLevel:(I)V.null-pointer-exception.34] line 109 Null pointer check: SUCCESS
+[java::CentipedeComponent.loadLevel:(I)V.null-pointer-exception.35] line 110 Null pointer check: SUCCESS
+[java::CentipedeComponent.loadLevel:(I)V.null-pointer-exception.36] line 114 Null pointer check: SUCCESS
+[java::CentipedeComponent.loadLevel:(I)V.null-pointer-exception.37] line 115 Null pointer check: SUCCESS
+[java::CentipedeComponent.loadLevel:(I)V.null-pointer-exception.38] line 116 Null pointer check: SUCCESS
+[java::CentipedeComponent.loadLevel:(I)V.null-pointer-exception.39] line 118 Null pointer check: SUCCESS
+[java::CentipedeComponent.loadLevel:(I)V.null-pointer-exception.40] line 119 Null pointer check: SUCCESS
+[java::CentipedeComponent.loadLevel:(I)V.array-index-out-of-bounds-high.2] line 122 Array index should be < length: SUCCESS
+[java::CentipedeComponent.loadLevel:(I)V.array-index-out-of-bounds-low.2] line 122 Array index should be >= 0: SUCCESS
+[java::CentipedeComponent.loadLevel:(I)V.null-pointer-exception.42] line 122 Null pointer check: SUCCESS
+[java::CentipedeComponent.loadLevel:(I)V.null-pointer-exception.41] line 122 Null pointer check: SUCCESS
+[java::CentipedeComponent.loadLevel:(I)V.null-pointer-exception.59] line 125 Null pointer check: SUCCESS
+[java::CentipedeComponent.loadLevel:(I)V.null-pointer-exception.43] line 127 Null pointer check: SUCCESS
+[java::CentipedeComponent.loadLevel:(I)V.null-pointer-exception.46] line 128 Null pointer check: SUCCESS
+[java::CentipedeComponent.loadLevel:(I)V.null-pointer-exception.45] line 128 Null pointer check: SUCCESS
+[java::CentipedeComponent.loadLevel:(I)V.null-pointer-exception.44] line 128 Null pointer check: SUCCESS
+[java::CentipedeComponent.loadLevel:(I)V.null-pointer-exception.47] line 130 Null pointer check: SUCCESS
+[java::CentipedeComponent.loadLevel:(I)V.null-pointer-exception.50] line 131 Null pointer check: SUCCESS
+[java::CentipedeComponent.loadLevel:(I)V.null-pointer-exception.49] line 131 Null pointer check: SUCCESS
+[java::CentipedeComponent.loadLevel:(I)V.null-pointer-exception.48] line 131 Null pointer check: SUCCESS
+[java::CentipedeComponent.loadLevel:(I)V.null-pointer-exception.51] line 133 Null pointer check: SUCCESS
+[java::CentipedeComponent.loadLevel:(I)V.null-pointer-exception.52] line 134 Null pointer check: SUCCESS
+[java::CentipedeComponent.loadLevel:(I)V.null-pointer-exception.53] line 134 Null pointer check: SUCCESS
+[java::CentipedeComponent.loadLevel:(I)V.null-pointer-exception.54] line 134 Null pointer check: SUCCESS
+[java::CentipedeComponent.loadLevel:(I)V.null-pointer-exception.55] line 136 Null pointer check: SUCCESS
+[java::CentipedeComponent.loadLevel:(I)V.null-pointer-exception.56] line 137 Null pointer check: SUCCESS
+[java::CentipedeComponent.loadLevel:(I)V.null-pointer-exception.57] line 137 Null pointer check: SUCCESS
+[java::CentipedeComponent.loadLevel:(I)V.null-pointer-exception.58] line 137 Null pointer check: SUCCESS
+[java::CentipedeComponent.loadLevel:(I)V.null-pointer-exception.60] line 142 Null pointer check: SUCCESS
+[java::CentipedeComponent.loadLevel:(I)V.null-pointer-exception.62] line 142 Null pointer check: SUCCESS
+[java::CentipedeComponent.loadLevel:(I)V.null-pointer-exception.61] line 143 Null pointer check: SUCCESS
+[java::CentipedeComponent.loadLevel:(I)V.pointer_dereference.1] line 143 throwing null in anonlocal::15a: SUCCESS
+
+CentipedeComponent.java function java::CentipedeComponent.addInstance:(LInstance;)V
+[java::CentipedeComponent.addInstance:(LInstance;)V.null-pointer-exception.1] line 152 Null pointer check: SUCCESS
+[java::CentipedeComponent.addInstance:(LInstance;)V.null-pointer-exception.2] line 152 Null pointer check: SUCCESS
+
+CentipedeListener.java function java::CentipedeListener.<init>:(LCentipedeComponent;)V
+[java::CentipedeListener.<init>:(LCentipedeComponent;)V.null-pointer-exception.1] line 20 Null pointer check: SUCCESS
+[java::CentipedeListener.<init>:(LCentipedeComponent;)V.null-pointer-exception.2] line 21 Null pointer check: SUCCESS
+[java::CentipedeListener.<init>:(LCentipedeComponent;)V.null-pointer-exception.3] line 22 Null pointer check: SUCCESS
+[java::CentipedeListener.<init>:(LCentipedeComponent;)V.null-pointer-exception.4] line 22 Null pointer check: SUCCESS
+[java::CentipedeListener.<init>:(LCentipedeComponent;)V.null-pointer-exception.5] line 23 Null pointer check: SUCCESS
+[java::CentipedeListener.<init>:(LCentipedeComponent;)V.null-pointer-exception.6] line 23 Null pointer check: SUCCESS
+[java::CentipedeListener.<init>:(LCentipedeComponent;)V.null-pointer-exception.7] line 24 Null pointer check: SUCCESS
+[java::CentipedeListener.<init>:(LCentipedeComponent;)V.null-pointer-exception.8] line 24 Null pointer check: SUCCESS
+[java::CentipedeListener.<init>:(LCentipedeComponent;)V.null-pointer-exception.10] line 25 Null pointer check: SUCCESS
+[java::CentipedeListener.<init>:(LCentipedeComponent;)V.null-pointer-exception.9] line 25 Null pointer check: SUCCESS
+[java::CentipedeListener.<init>:(LCentipedeComponent;)V.null-pointer-exception.12] line 26 Null pointer check: SUCCESS
+[java::CentipedeListener.<init>:(LCentipedeComponent;)V.null-pointer-exception.11] line 26 Null pointer check: SUCCESS
+[java::CentipedeListener.<init>:(LCentipedeComponent;)V.null-pointer-exception.14] line 27 Null pointer check: SUCCESS
+[java::CentipedeListener.<init>:(LCentipedeComponent;)V.null-pointer-exception.13] line 27 Null pointer check: SUCCESS
+[java::CentipedeListener.<init>:(LCentipedeComponent;)V.null-pointer-exception.16] line 28 Null pointer check: SUCCESS
+[java::CentipedeListener.<init>:(LCentipedeComponent;)V.null-pointer-exception.15] line 28 Null pointer check: SUCCESS
+[java::CentipedeListener.<init>:(LCentipedeComponent;)V.null-pointer-exception.18] line 29 Null pointer check: SUCCESS
+[java::CentipedeListener.<init>:(LCentipedeComponent;)V.null-pointer-exception.17] line 29 Null pointer check: SUCCESS
+[java::CentipedeListener.<init>:(LCentipedeComponent;)V.null-pointer-exception.20] line 30 Null pointer check: SUCCESS
+[java::CentipedeListener.<init>:(LCentipedeComponent;)V.null-pointer-exception.19] line 30 Null pointer check: SUCCESS
+[java::CentipedeListener.<init>:(LCentipedeComponent;)V.null-pointer-exception.21] line 31 Null pointer check: SUCCESS
+[java::CentipedeListener.<init>:(LCentipedeComponent;)V.null-pointer-exception.22] line 31 Null pointer check: SUCCESS
+
+GunPickup.java function java::GunPickup.<init>:(IIILCentipedeComponent;)V
+[java::GunPickup.<init>:(IIILCentipedeComponent;)V.null-pointer-exception.2] line 9 Null pointer check: SUCCESS
+[java::GunPickup.<init>:(IIILCentipedeComponent;)V.null-pointer-exception.3] line 10 Null pointer check: SUCCESS
+[java::GunPickup.<init>:(IIILCentipedeComponent;)V.null-pointer-exception.4] line 11 Null pointer check: SUCCESS
+[java::GunPickup.<init>:(IIILCentipedeComponent;)V.null-pointer-exception.1] line 17 Null pointer check: SUCCESS
+[java::GunPickup.<init>:(IIILCentipedeComponent;)V.null-pointer-exception.5] line 18 Null pointer check: SUCCESS
+[java::GunPickup.<init>:(IIILCentipedeComponent;)V.null-pointer-exception.7] line 19 Null pointer check: SUCCESS
+[java::GunPickup.<init>:(IIILCentipedeComponent;)V.null-pointer-exception.6] line 19 Null pointer check: SUCCESS
+[java::GunPickup.<init>:(IIILCentipedeComponent;)V.null-pointer-exception.9] line 20 Null pointer check: SUCCESS
+[java::GunPickup.<init>:(IIILCentipedeComponent;)V.null-pointer-exception.8] line 20 Null pointer check: SUCCESS
+[java::GunPickup.<init>:(IIILCentipedeComponent;)V.null-pointer-exception.10] line 21 Null pointer check: SUCCESS
+[java::GunPickup.<init>:(IIILCentipedeComponent;)V.null-pointer-exception.11] line 21 Null pointer check: SUCCESS
+[java::GunPickup.<init>:(IIILCentipedeComponent;)V.null-pointer-exception.13] line 22 Null pointer check: SUCCESS
+[java::GunPickup.<init>:(IIILCentipedeComponent;)V.null-pointer-exception.12] line 22 Null pointer check: SUCCESS
+
+Instance.java function java::Instance.<init>:(IILCentipedeComponent;)V
+[java::Instance.<init>:(IILCentipedeComponent;)V.null-pointer-exception.2] line 9 Null pointer check: SUCCESS
+[java::Instance.<init>:(IILCentipedeComponent;)V.null-pointer-exception.3] line 10 Null pointer check: SUCCESS
+[java::Instance.<init>:(IILCentipedeComponent;)V.null-pointer-exception.4] line 11 Null pointer check: SUCCESS
+[java::Instance.<init>:(IILCentipedeComponent;)V.null-pointer-exception.5] line 16 Null pointer check: SUCCESS
+[java::Instance.<init>:(IILCentipedeComponent;)V.null-pointer-exception.1] line 18 Null pointer check: SUCCESS
+[java::Instance.<init>:(IILCentipedeComponent;)V.null-pointer-exception.6] line 19 Null pointer check: SUCCESS
+[java::Instance.<init>:(IILCentipedeComponent;)V.null-pointer-exception.7] line 20 Null pointer check: SUCCESS
+[java::Instance.<init>:(IILCentipedeComponent;)V.null-pointer-exception.8] line 21 Null pointer check: SUCCESS
+[java::Instance.<init>:(IILCentipedeComponent;)V.null-pointer-exception.10] line 22 Null pointer check: SUCCESS
+[java::Instance.<init>:(IILCentipedeComponent;)V.null-pointer-exception.9] line 22 Null pointer check: SUCCESS
+
+LinkedCentipede.java function java::LinkedCentipede.<init>:(IIILCentipedeComponent;)V
+[java::LinkedCentipede.<init>:(IIILCentipedeComponent;)V.null-pointer-exception.1] line 30 Null pointer check: SUCCESS
+[java::LinkedCentipede.<init>:(IIILCentipedeComponent;)V.null-pointer-exception.2] line 31 Null pointer check: SUCCESS
+[java::LinkedCentipede.<init>:(IIILCentipedeComponent;)V.null-pointer-exception.3] line 32 Null pointer check: SUCCESS
+[java::LinkedCentipede.<init>:(IIILCentipedeComponent;)V.null-pointer-exception.4] line 33 Null pointer check: SUCCESS
+[java::LinkedCentipede.<init>:(IIILCentipedeComponent;)V.null-pointer-exception.5] line 34 Null pointer check: SUCCESS
+[java::LinkedCentipede.<init>:(IIILCentipedeComponent;)V.null-pointer-exception.6] line 35 Null pointer check: SUCCESS
+[java::LinkedCentipede.<init>:(IIILCentipedeComponent;)V.null-pointer-exception.7] line 36 Null pointer check: SUCCESS
+[java::LinkedCentipede.<init>:(IIILCentipedeComponent;)V.null-pointer-exception.8] line 37 Null pointer check: SUCCESS
+[java::LinkedCentipede.<init>:(IIILCentipedeComponent;)V.null-pointer-exception.9] line 38 Null pointer check: SUCCESS
+[java::LinkedCentipede.<init>:(IIILCentipedeComponent;)V.null-pointer-exception.10] line 40 Null pointer check: SUCCESS
+[java::LinkedCentipede.<init>:(IIILCentipedeComponent;)V.null-pointer-exception.11] line 40 Null pointer check: SUCCESS
+[java::LinkedCentipede.<init>:(IIILCentipedeComponent;)V.null-pointer-exception.12] line 41 Null pointer check: SUCCESS
+[java::LinkedCentipede.<init>:(IIILCentipedeComponent;)V.null-pointer-exception.13] line 41 Null pointer check: SUCCESS
+[java::LinkedCentipede.<init>:(IIILCentipedeComponent;)V.null-pointer-exception.14] line 41 Null pointer check: SUCCESS
+[java::LinkedCentipede.<init>:(IIILCentipedeComponent;)V.null-pointer-exception.15] line 43 Null pointer check: SUCCESS
+
+LinkedCentipede.java function java::LinkedCentipede.<init>:(ILCentipedeComponent;)V
+[java::LinkedCentipede.<init>:(ILCentipedeComponent;)V.null-pointer-exception.1] line 56 Null pointer check: SUCCESS
+
+Main.java function java::Main.main:([Ljava/lang/String;)V
+[java::Main.main:([Ljava/lang/String;)V.1] line 20 no uncaught exception: SUCCESS
+[java::Main.main:([Ljava/lang/String;)V.null-pointer-exception.1] line 20 Null pointer check: SUCCESS
+[java::Main.main:([Ljava/lang/String;)V.null-pointer-exception.2] line 21 Null pointer check: SUCCESS
+[java::Main.main:([Ljava/lang/String;)V.null-pointer-exception.3] line 23 Null pointer check: SUCCESS
+[java::Main.main:([Ljava/lang/String;)V.null-pointer-exception.4] line 24 Null pointer check: SUCCESS
+[java::Main.main:([Ljava/lang/String;)V.null-pointer-exception.5] line 25 Null pointer check: SUCCESS
+[java::Main.main:([Ljava/lang/String;)V.null-pointer-exception.6] line 26 Null pointer check: SUCCESS
+[java::Main.main:([Ljava/lang/String;)V.null-pointer-exception.7] line 27 Null pointer check: SUCCESS
+[java::Main.main:([Ljava/lang/String;)V.null-pointer-exception.8] line 28 Null pointer check: SUCCESS
+[java::Main.main:([Ljava/lang/String;)V.null-pointer-exception.9] line 30 Null pointer check: SUCCESS
+[java::Main.main:([Ljava/lang/String;)V.null-pointer-exception.10] line 31 Null pointer check: SUCCESS
+[java::Main.main:([Ljava/lang/String;)V.null-pointer-exception.11] line 32 Null pointer check: SUCCESS
+
+Mushroom.java function java::Mushroom.<init>:(IILCentipedeComponent;)V
+[java::Mushroom.<init>:(IILCentipedeComponent;)V.null-pointer-exception.2] line 10 Null pointer check: SUCCESS
+[java::Mushroom.<init>:(IILCentipedeComponent;)V.null-pointer-exception.3] line 11 Null pointer check: SUCCESS
+[java::Mushroom.<init>:(IILCentipedeComponent;)V.null-pointer-exception.1] line 17 Null pointer check: SUCCESS
+[java::Mushroom.<init>:(IILCentipedeComponent;)V.null-pointer-exception.4] line 18 Null pointer check: SUCCESS
+[java::Mushroom.<init>:(IILCentipedeComponent;)V.null-pointer-exception.5] line 19 Null pointer check: SUCCESS
+
+PlayerCharacter.java function java::PlayerCharacter.<init>:(LCentipedeComponent;)V
+[java::PlayerCharacter.<init>:(LCentipedeComponent;)V.null-pointer-exception.2] line 15 Null pointer check: SUCCESS
+[java::PlayerCharacter.<init>:(LCentipedeComponent;)V.null-pointer-exception.3] line 16 Null pointer check: SUCCESS
+[java::PlayerCharacter.<init>:(LCentipedeComponent;)V.null-pointer-exception.4] line 17 Null pointer check: SUCCESS
+[java::PlayerCharacter.<init>:(LCentipedeComponent;)V.null-pointer-exception.5] line 18 Null pointer check: SUCCESS
+[java::PlayerCharacter.<init>:(LCentipedeComponent;)V.null-pointer-exception.6] line 19 Null pointer check: SUCCESS
+[java::PlayerCharacter.<init>:(LCentipedeComponent;)V.null-pointer-exception.1] line 31 Null pointer check: SUCCESS
+[java::PlayerCharacter.<init>:(LCentipedeComponent;)V.null-pointer-exception.7] line 32 Null pointer check: SUCCESS
+[java::PlayerCharacter.<init>:(LCentipedeComponent;)V.null-pointer-exception.8] line 33 Null pointer check: SUCCESS
+[java::PlayerCharacter.<init>:(LCentipedeComponent;)V.null-pointer-exception.9] line 34 Null pointer check: SUCCESS
+[java::PlayerCharacter.<init>:(LCentipedeComponent;)V.null-pointer-exception.10] line 35 Null pointer check: SUCCESS
+[java::PlayerCharacter.<init>:(LCentipedeComponent;)V.null-pointer-exception.11] line 36 Null pointer check: SUCCESS
+
+** 0 of 221 failed (1 iterations)
+VERIFICATION SUCCESSFUL

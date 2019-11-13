@@ -1,0 +1,1370 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>FindBugs Report</title>
+        <style type="text/css">
+		.tablerow0 {
+			background: #EEEEEE;
+		}
+
+		.tablerow1 {
+			background: white;
+		}
+
+		.detailrow0 {
+			background: #EEEEEE;
+		}
+
+		.detailrow1 {
+			background: white;
+		}
+
+		.tableheader {
+			background: #b9b9fe;
+			font-size: larger;
+		}
+		</style>
+    </head>
+    <body>
+        <h1>FindBugs Report</h1>
+        <p>
+            Produced using 
+            <a href="http://findbugs.sourceforge.net">FindBugs</a>
+            3.0.1.
+        </p>
+        <p>Project: 
+			ArcadeGameProject[ArcadeGameProject]</p>
+        <h2>Metrics</h2>
+        <p>1109 lines of code analyzed,
+	in 20 classes, 
+	in 1 packages.</p>
+        <table width="500" cellpadding="5" cellspacing="2">
+            <tr class="tableheader">
+                <th align="left">Metric</th>
+                <th align="right">Total</th>
+                <th align="right">Density*</th>
+            </tr>
+            <tr class="tablerow0">
+                <td>High Priority Warnings</td>
+                <td align="right">14</td>
+                <td align="right">12.62</td>
+            </tr>
+            <tr class="tablerow1">
+                <td>Medium Priority Warnings</td>
+                <td align="right">30</td>
+                <td align="right">27.05</td>
+            </tr>
+            <tr class="$totalClass">
+                <td>
+                    <b>Total Warnings</b>
+                </td>
+                <td align="right">
+                    <b>44</b>
+                </td>
+                <td align="right">
+                    <b>39.68</b>
+                </td>
+            </tr>
+        </table>
+        <p>
+            <i>(* Defects per Thousand lines of non-commenting source statements)</i>
+        </p>
+        <p>
+            <br />
+            <br />
+        </p>
+        <h2>Summary</h2>
+        <table width="500" cellpadding="5" cellspacing="2">
+            <tr class="tableheader">
+                <th align="left">Warning Type</th>
+                <th align="right">Number</th>
+            </tr>
+            <tr class="tablerow0">
+                <td>
+                    <a href="#Warnings_BAD_PRACTICE">Bad practice Warnings</a>
+                </td>
+                <td align="right">2</td>
+            </tr>
+            <tr class="tablerow1">
+                <td>
+                    <a href="#Warnings_CORRECTNESS">Correctness Warnings</a>
+                </td>
+                <td align="right">1</td>
+            </tr>
+            <tr class="tablerow0">
+                <td>
+                    <a href="#Warnings_I18N">Internationalization Warnings</a>
+                </td>
+                <td align="right">1</td>
+            </tr>
+            <tr class="tablerow1">
+                <td>
+                    <a href="#Warnings_MALICIOUS_CODE">Malicious code vulnerability Warnings</a>
+                </td>
+                <td align="right">14</td>
+            </tr>
+            <tr class="tablerow0">
+                <td>
+                    <a href="#Warnings_PERFORMANCE">Performance Warnings</a>
+                </td>
+                <td align="right">25</td>
+            </tr>
+            <tr class="tablerow1">
+                <td>
+                    <a href="#Warnings_STYLE">Dodgy code Warnings</a>
+                </td>
+                <td align="right">1</td>
+            </tr>
+            <tr class="tablerow0">
+                <td>
+                    <b>Total</b>
+                </td>
+                <td align="right">
+                    <b>44</b>
+                </td>
+            </tr>
+        </table>
+        <p>
+            <br />
+            <br />
+        </p>
+        <h1>Warnings</h1>
+        <p>Click on each warning link to see a full description of the issue, and
+	    details of how to resolve it.</p>
+        <h2>
+            <a name="Warnings_BAD_PRACTICE">Bad practice Warnings</a>
+        </h2>
+        <table class="warningtable" width="100%" cellspacing="2" cellpadding="5">
+            <tr class="tableheader">
+                <th align="left">Warning</th>
+                <th align="left">Priority</th>
+                <th align="left">Details</th>
+            </tr>
+            <tr class="tablerow1">
+                <td width="20%" valign="top">
+                    <a href="#DM_EXIT">Method invokes System.exit(...)</a>
+                </td>
+                <td width="10%" valign="top">Medium</td>
+                <td width="70%">
+                    <p>
+                        new CentipedeComponent() invokes System.exit(...), which shuts down the entire virtual machine
+                        <br />
+                        <br />
+                        <br />
+                        In file CentipedeComponent.java,
+					
+						line 56
+                        <br />
+                        In class CentipedeComponent
+                        <br />
+                        In method new CentipedeComponent()
+                        <br />
+                        At CentipedeComponent.java:[line 56]
+                        <br />
+                        At CentipedeComponent.java:[line 56]
+                    </p>
+                </td>
+            </tr>
+            <tr class="tablerow0">
+                <td width="20%" valign="top">
+                    <a href="#NM_FIELD_NAMING_CONVENTION">Field names should start with a lower case letter</a>
+                </td>
+                <td width="10%" valign="top">Medium</td>
+                <td width="70%">
+                    <p>
+                        The field name Instance.BlockSIZE doesn't start with a lower case letter
+                        <br />
+                        <br />
+                        <br />
+                        In file Instance.java,
+					
+						lines 
+						    to 
+                        <br />
+                        In class Instance
+                        <br />
+                        Field Instance.BlockSIZE
+                        <br />
+                        In Instance.java
+                    </p>
+                </td>
+            </tr>
+        </table>
+        <p>
+            <br />
+            <br />
+        </p>
+        <h2>
+            <a name="Warnings_CORRECTNESS">Correctness Warnings</a>
+        </h2>
+        <table class="warningtable" width="100%" cellspacing="2" cellpadding="5">
+            <tr class="tableheader">
+                <th align="left">Warning</th>
+                <th align="left">Priority</th>
+                <th align="left">Details</th>
+            </tr>
+            <tr class="tablerow1">
+                <td width="20%" valign="top">
+                    <a href="#NP_NULL_ON_SOME_PATH_EXCEPTION">Possible null pointer dereference in method on exception path</a>
+                </td>
+                <td width="10%" valign="top">Medium</td>
+                <td width="70%">
+                    <p>
+                        Possible null pointer dereference of br in CentipedeComponent.loadLevel(int) on exception path
+                        <br />
+                        <br />
+                        <br />
+                        In file CentipedeComponent.java,
+					
+						line 110
+                        <br />
+                        In class CentipedeComponent
+                        <br />
+                        In method CentipedeComponent.loadLevel(int)
+                        <br />
+                        Value loaded from br
+                        <br />
+                        Dereferenced at CentipedeComponent.java:[line 110]
+                        <br />
+                        Null value at CentipedeComponent.java:[line 93]
+                        <br />
+                        Known null at CentipedeComponent.java:[line 105]
+                    </p>
+                </td>
+            </tr>
+        </table>
+        <p>
+            <br />
+            <br />
+        </p>
+        <h2>
+            <a name="Warnings_I18N">Internationalization Warnings</a>
+        </h2>
+        <table class="warningtable" width="100%" cellspacing="2" cellpadding="5">
+            <tr class="tableheader">
+                <th align="left">Warning</th>
+                <th align="left">Priority</th>
+                <th align="left">Details</th>
+            </tr>
+            <tr class="tablerow1">
+                <td width="20%" valign="top">
+                    <a href="#DM_DEFAULT_ENCODING">Reliance on default encoding</a>
+                </td>
+                <td width="10%" valign="top">High</td>
+                <td width="70%">
+                    <p>
+                        Found reliance on default encoding in CentipedeComponent.loadLevel(int): new java.io.FileReader(String)
+                        <br />
+                        <br />
+                        <br />
+                        In file CentipedeComponent.java,
+					
+						line 104
+                        <br />
+                        In class CentipedeComponent
+                        <br />
+                        In method CentipedeComponent.loadLevel(int)
+                        <br />
+                        Called method new java.io.FileReader(String)
+                        <br />
+                        At CentipedeComponent.java:[line 104]
+                        <br />
+                        At CentipedeComponent.java:[line 104]
+                    </p>
+                </td>
+            </tr>
+        </table>
+        <p>
+            <br />
+            <br />
+        </p>
+        <h2>
+            <a name="Warnings_MALICIOUS_CODE">Malicious code vulnerability Warnings</a>
+        </h2>
+        <table class="warningtable" width="100%" cellspacing="2" cellpadding="5">
+            <tr class="tableheader">
+                <th align="left">Warning</th>
+                <th align="left">Priority</th>
+                <th align="left">Details</th>
+            </tr>
+            <tr class="tablerow1">
+                <td width="20%" valign="top">
+                    <a href="#MS_SHOULD_BE_REFACTORED_TO_BE_FINAL">Field isn't final but should be refactored to be so</a>
+                </td>
+                <td width="10%" valign="top">High</td>
+                <td width="70%">
+                    <p>
+                        LocalResources.ImgBoomerang isn't final but should be refactored to be so
+                        <br />
+                        <br />
+                        <br />
+                        In file LocalResources.java,
+					
+						line 9
+                        <br />
+                        In class LocalResources
+                        <br />
+                        Field LocalResources.ImgBoomerang
+                        <br />
+                        At LocalResources.java:[line 9]
+                    </p>
+                </td>
+            </tr>
+            <tr class="tablerow0">
+                <td width="20%" valign="top">
+                    <a href="#MS_SHOULD_BE_REFACTORED_TO_BE_FINAL">Field isn't final but should be refactored to be so</a>
+                </td>
+                <td width="10%" valign="top">High</td>
+                <td width="70%">
+                    <p>
+                        LocalResources.ImgCentipedeBody isn't final but should be refactored to be so
+                        <br />
+                        <br />
+                        <br />
+                        In file LocalResources.java,
+					
+						line 15
+                        <br />
+                        In class LocalResources
+                        <br />
+                        Field LocalResources.ImgCentipedeBody
+                        <br />
+                        At LocalResources.java:[line 15]
+                    </p>
+                </td>
+            </tr>
+            <tr class="tablerow1">
+                <td width="20%" valign="top">
+                    <a href="#MS_SHOULD_BE_REFACTORED_TO_BE_FINAL">Field isn't final but should be refactored to be so</a>
+                </td>
+                <td width="10%" valign="top">High</td>
+                <td width="70%">
+                    <p>
+                        LocalResources.ImgCentipedeHead isn't final but should be refactored to be so
+                        <br />
+                        <br />
+                        <br />
+                        In file LocalResources.java,
+					
+						line 14
+                        <br />
+                        In class LocalResources
+                        <br />
+                        Field LocalResources.ImgCentipedeHead
+                        <br />
+                        At LocalResources.java:[line 14]
+                    </p>
+                </td>
+            </tr>
+            <tr class="tablerow0">
+                <td width="20%" valign="top">
+                    <a href="#MS_SHOULD_BE_REFACTORED_TO_BE_FINAL">Field isn't final but should be refactored to be so</a>
+                </td>
+                <td width="10%" valign="top">High</td>
+                <td width="70%">
+                    <p>
+                        LocalResources.ImgFlea isn't final but should be refactored to be so
+                        <br />
+                        <br />
+                        <br />
+                        In file LocalResources.java,
+					
+						line 6
+                        <br />
+                        In class LocalResources
+                        <br />
+                        Field LocalResources.ImgFlea
+                        <br />
+                        At LocalResources.java:[line 6]
+                    </p>
+                </td>
+            </tr>
+            <tr class="tablerow1">
+                <td width="20%" valign="top">
+                    <a href="#MS_SHOULD_BE_REFACTORED_TO_BE_FINAL">Field isn't final but should be refactored to be so</a>
+                </td>
+                <td width="10%" valign="top">High</td>
+                <td width="70%">
+                    <p>
+                        LocalResources.ImgPistol isn't final but should be refactored to be so
+                        <br />
+                        <br />
+                        <br />
+                        In file LocalResources.java,
+					
+						line 7
+                        <br />
+                        In class LocalResources
+                        <br />
+                        Field LocalResources.ImgPistol
+                        <br />
+                        At LocalResources.java:[line 7]
+                    </p>
+                </td>
+            </tr>
+            <tr class="tablerow0">
+                <td width="20%" valign="top">
+                    <a href="#MS_SHOULD_BE_REFACTORED_TO_BE_FINAL">Field isn't final but should be refactored to be so</a>
+                </td>
+                <td width="10%" valign="top">High</td>
+                <td width="70%">
+                    <p>
+                        LocalResources.ImgPlayer1 isn't final but should be refactored to be so
+                        <br />
+                        <br />
+                        <br />
+                        In file LocalResources.java,
+					
+						line 12
+                        <br />
+                        In class LocalResources
+                        <br />
+                        Field LocalResources.ImgPlayer1
+                        <br />
+                        At LocalResources.java:[line 12]
+                    </p>
+                </td>
+            </tr>
+            <tr class="tablerow1">
+                <td width="20%" valign="top">
+                    <a href="#MS_SHOULD_BE_REFACTORED_TO_BE_FINAL">Field isn't final but should be refactored to be so</a>
+                </td>
+                <td width="10%" valign="top">High</td>
+                <td width="70%">
+                    <p>
+                        LocalResources.ImgPlayer2 isn't final but should be refactored to be so
+                        <br />
+                        <br />
+                        <br />
+                        In file LocalResources.java,
+					
+						line 13
+                        <br />
+                        In class LocalResources
+                        <br />
+                        Field LocalResources.ImgPlayer2
+                        <br />
+                        At LocalResources.java:[line 13]
+                    </p>
+                </td>
+            </tr>
+            <tr class="tablerow0">
+                <td width="20%" valign="top">
+                    <a href="#MS_SHOULD_BE_REFACTORED_TO_BE_FINAL">Field isn't final but should be refactored to be so</a>
+                </td>
+                <td width="10%" valign="top">High</td>
+                <td width="70%">
+                    <p>
+                        LocalResources.ImgPoisonedMushroom isn't final but should be refactored to be so
+                        <br />
+                        <br />
+                        <br />
+                        In file LocalResources.java,
+					
+						line 4
+                        <br />
+                        In class LocalResources
+                        <br />
+                        Field LocalResources.ImgPoisonedMushroom
+                        <br />
+                        At LocalResources.java:[line 4]
+                    </p>
+                </td>
+            </tr>
+            <tr class="tablerow1">
+                <td width="20%" valign="top">
+                    <a href="#MS_SHOULD_BE_REFACTORED_TO_BE_FINAL">Field isn't final but should be refactored to be so</a>
+                </td>
+                <td width="10%" valign="top">High</td>
+                <td width="70%">
+                    <p>
+                        LocalResources.ImgRegularMushroom isn't final but should be refactored to be so
+                        <br />
+                        <br />
+                        <br />
+                        In file LocalResources.java,
+					
+						line 5
+                        <br />
+                        In class LocalResources
+                        <br />
+                        Field LocalResources.ImgRegularMushroom
+                        <br />
+                        At LocalResources.java:[line 5]
+                    </p>
+                </td>
+            </tr>
+            <tr class="tablerow0">
+                <td width="20%" valign="top">
+                    <a href="#MS_SHOULD_BE_REFACTORED_TO_BE_FINAL">Field isn't final but should be refactored to be so</a>
+                </td>
+                <td width="10%" valign="top">High</td>
+                <td width="70%">
+                    <p>
+                        LocalResources.ImgScorpion isn't final but should be refactored to be so
+                        <br />
+                        <br />
+                        <br />
+                        In file LocalResources.java,
+					
+						line 11
+                        <br />
+                        In class LocalResources
+                        <br />
+                        Field LocalResources.ImgScorpion
+                        <br />
+                        At LocalResources.java:[line 11]
+                    </p>
+                </td>
+            </tr>
+            <tr class="tablerow1">
+                <td width="20%" valign="top">
+                    <a href="#MS_SHOULD_BE_REFACTORED_TO_BE_FINAL">Field isn't final but should be refactored to be so</a>
+                </td>
+                <td width="10%" valign="top">High</td>
+                <td width="70%">
+                    <p>
+                        LocalResources.ImgShotgun isn't final but should be refactored to be so
+                        <br />
+                        <br />
+                        <br />
+                        In file LocalResources.java,
+					
+						line 8
+                        <br />
+                        In class LocalResources
+                        <br />
+                        Field LocalResources.ImgShotgun
+                        <br />
+                        At LocalResources.java:[line 8]
+                    </p>
+                </td>
+            </tr>
+            <tr class="tablerow0">
+                <td width="20%" valign="top">
+                    <a href="#MS_SHOULD_BE_REFACTORED_TO_BE_FINAL">Field isn't final but should be refactored to be so</a>
+                </td>
+                <td width="10%" valign="top">High</td>
+                <td width="70%">
+                    <p>
+                        LocalResources.ImgSpider isn't final but should be refactored to be so
+                        <br />
+                        <br />
+                        <br />
+                        In file LocalResources.java,
+					
+						line 10
+                        <br />
+                        In class LocalResources
+                        <br />
+                        Field LocalResources.ImgSpider
+                        <br />
+                        At LocalResources.java:[line 10]
+                    </p>
+                </td>
+            </tr>
+            <tr class="tablerow1">
+                <td width="20%" valign="top">
+                    <a href="#MS_SHOULD_BE_REFACTORED_TO_BE_FINAL">Field isn't final but should be refactored to be so</a>
+                </td>
+                <td width="10%" valign="top">High</td>
+                <td width="70%">
+                    <p>
+                        LocalResources.SongPath isn't final but should be refactored to be so
+                        <br />
+                        <br />
+                        <br />
+                        In file LocalResources.java,
+					
+						line 3
+                        <br />
+                        In class LocalResources
+                        <br />
+                        Field LocalResources.SongPath
+                        <br />
+                        At LocalResources.java:[line 3]
+                    </p>
+                </td>
+            </tr>
+            <tr class="tablerow0">
+                <td width="20%" valign="top">
+                    <a href="#MS_PKGPROTECT">Field should be package protected</a>
+                </td>
+                <td width="10%" valign="top">Medium</td>
+                <td width="70%">
+                    <p>
+                        BackGroundMusicPlayer.clip should be package protected
+                        <br />
+                        <br />
+                        <br />
+                        In file BackGroundMusicPlayer.java,
+					
+						lines 
+						    to 
+                        <br />
+                        In class BackGroundMusicPlayer
+                        <br />
+                        Field BackGroundMusicPlayer.clip
+                        <br />
+                        In BackGroundMusicPlayer.java
+                    </p>
+                </td>
+            </tr>
+        </table>
+        <p>
+            <br />
+            <br />
+        </p>
+        <h2>
+            <a name="Warnings_PERFORMANCE">Performance Warnings</a>
+        </h2>
+        <table class="warningtable" width="100%" cellspacing="2" cellpadding="5">
+            <tr class="tableheader">
+                <th align="left">Warning</th>
+                <th align="left">Priority</th>
+                <th align="left">Details</th>
+            </tr>
+            <tr class="tablerow1">
+                <td width="20%" valign="top">
+                    <a href="#SS_SHOULD_BE_STATIC">Unread field: should this field be static?</a>
+                </td>
+                <td width="10%" valign="top">Medium</td>
+                <td width="70%">
+                    <p>
+                        Unread field: Boomerang.BOOMERANG_SIZE; should this field be static?
+                        <br />
+                        <br />
+                        <br />
+                        In file Boomerang.java,
+					
+						line 11
+                        <br />
+                        In class Boomerang
+                        <br />
+                        Field Boomerang.BOOMERANG_SIZE
+                        <br />
+                        At Boomerang.java:[line 11]
+                    </p>
+                </td>
+            </tr>
+            <tr class="tablerow0">
+                <td width="20%" valign="top">
+                    <a href="#SS_SHOULD_BE_STATIC">Unread field: should this field be static?</a>
+                </td>
+                <td width="10%" valign="top">Medium</td>
+                <td width="70%">
+                    <p>
+                        Unread field: Boomerang.RETURN_TIME; should this field be static?
+                        <br />
+                        <br />
+                        <br />
+                        In file Boomerang.java,
+					
+						line 12
+                        <br />
+                        In class Boomerang
+                        <br />
+                        Field Boomerang.RETURN_TIME
+                        <br />
+                        At Boomerang.java:[line 12]
+                    </p>
+                </td>
+            </tr>
+            <tr class="tablerow1">
+                <td width="20%" valign="top">
+                    <a href="#SS_SHOULD_BE_STATIC">Unread field: should this field be static?</a>
+                </td>
+                <td width="10%" valign="top">Medium</td>
+                <td width="70%">
+                    <p>
+                        Unread field: Bullet.BULLET_SIZE; should this field be static?
+                        <br />
+                        <br />
+                        <br />
+                        In file Bullet.java,
+					
+						line 9
+                        <br />
+                        In class Bullet
+                        <br />
+                        Field Bullet.BULLET_SIZE
+                        <br />
+                        At Bullet.java:[line 9]
+                    </p>
+                </td>
+            </tr>
+            <tr class="tablerow0">
+                <td width="20%" valign="top">
+                    <a href="#SS_SHOULD_BE_STATIC">Unread field: should this field be static?</a>
+                </td>
+                <td width="10%" valign="top">Medium</td>
+                <td width="70%">
+                    <p>
+                        Unread field: CentipedeComponent.BLOCK_SIZE; should this field be static?
+                        <br />
+                        <br />
+                        <br />
+                        In file CentipedeComponent.java,
+					
+						line 21
+                        <br />
+                        In class CentipedeComponent
+                        <br />
+                        Field CentipedeComponent.BLOCK_SIZE
+                        <br />
+                        At CentipedeComponent.java:[line 21]
+                    </p>
+                </td>
+            </tr>
+            <tr class="tablerow1">
+                <td width="20%" valign="top">
+                    <a href="#SS_SHOULD_BE_STATIC">Unread field: should this field be static?</a>
+                </td>
+                <td width="10%" valign="top">Medium</td>
+                <td width="70%">
+                    <p>
+                        Unread field: CentipedeComponent.BOOMERANG_NUMBER; should this field be static?
+                        <br />
+                        <br />
+                        <br />
+                        In file CentipedeComponent.java,
+					
+						line 29
+                        <br />
+                        In class CentipedeComponent
+                        <br />
+                        Field CentipedeComponent.BOOMERANG_NUMBER
+                        <br />
+                        At CentipedeComponent.java:[line 29]
+                    </p>
+                </td>
+            </tr>
+            <tr class="tablerow0">
+                <td width="20%" valign="top">
+                    <a href="#SS_SHOULD_BE_STATIC">Unread field: should this field be static?</a>
+                </td>
+                <td width="10%" valign="top">Medium</td>
+                <td width="70%">
+                    <p>
+                        Unread field: CentipedeComponent.PISTOL_NUMBER; should this field be static?
+                        <br />
+                        <br />
+                        <br />
+                        In file CentipedeComponent.java,
+					
+						line 27
+                        <br />
+                        In class CentipedeComponent
+                        <br />
+                        Field CentipedeComponent.PISTOL_NUMBER
+                        <br />
+                        At CentipedeComponent.java:[line 27]
+                    </p>
+                </td>
+            </tr>
+            <tr class="tablerow1">
+                <td width="20%" valign="top">
+                    <a href="#SS_SHOULD_BE_STATIC">Unread field: should this field be static?</a>
+                </td>
+                <td width="10%" valign="top">Medium</td>
+                <td width="70%">
+                    <p>
+                        Unread field: CentipedeComponent.SHOTGUN_NUMBER; should this field be static?
+                        <br />
+                        <br />
+                        <br />
+                        In file CentipedeComponent.java,
+					
+						line 28
+                        <br />
+                        In class CentipedeComponent
+                        <br />
+                        Field CentipedeComponent.SHOTGUN_NUMBER
+                        <br />
+                        At CentipedeComponent.java:[line 28]
+                    </p>
+                </td>
+            </tr>
+            <tr class="tablerow0">
+                <td width="20%" valign="top">
+                    <a href="#SS_SHOULD_BE_STATIC">Unread field: should this field be static?</a>
+                </td>
+                <td width="10%" valign="top">Medium</td>
+                <td width="70%">
+                    <p>
+                        Unread field: CentipedeComponent.WINDOW_SIZE; should this field be static?
+                        <br />
+                        <br />
+                        <br />
+                        In file CentipedeComponent.java,
+					
+						line 22
+                        <br />
+                        In class CentipedeComponent
+                        <br />
+                        Field CentipedeComponent.WINDOW_SIZE
+                        <br />
+                        At CentipedeComponent.java:[line 22]
+                    </p>
+                </td>
+            </tr>
+            <tr class="tablerow1">
+                <td width="20%" valign="top">
+                    <a href="#SS_SHOULD_BE_STATIC">Unread field: should this field be static?</a>
+                </td>
+                <td width="10%" valign="top">Medium</td>
+                <td width="70%">
+                    <p>
+                        Unread field: Flea.MOVEMENT_SPEED; should this field be static?
+                        <br />
+                        <br />
+                        <br />
+                        In file Flea.java,
+					
+						line 11
+                        <br />
+                        In class Flea
+                        <br />
+                        Field Flea.MOVEMENT_SPEED
+                        <br />
+                        At Flea.java:[line 11]
+                    </p>
+                </td>
+            </tr>
+            <tr class="tablerow0">
+                <td width="20%" valign="top">
+                    <a href="#SS_SHOULD_BE_STATIC">Unread field: should this field be static?</a>
+                </td>
+                <td width="10%" valign="top">Medium</td>
+                <td width="70%">
+                    <p>
+                        Unread field: GunPickup.BOOMERANG_NUMBER; should this field be static?
+                        <br />
+                        <br />
+                        <br />
+                        In file GunPickup.java,
+					
+						line 11
+                        <br />
+                        In class GunPickup
+                        <br />
+                        Field GunPickup.BOOMERANG_NUMBER
+                        <br />
+                        At GunPickup.java:[line 11]
+                    </p>
+                </td>
+            </tr>
+            <tr class="tablerow1">
+                <td width="20%" valign="top">
+                    <a href="#SS_SHOULD_BE_STATIC">Unread field: should this field be static?</a>
+                </td>
+                <td width="10%" valign="top">Medium</td>
+                <td width="70%">
+                    <p>
+                        Unread field: GunPickup.PISTOL_NUMBER; should this field be static?
+                        <br />
+                        <br />
+                        <br />
+                        In file GunPickup.java,
+					
+						line 9
+                        <br />
+                        In class GunPickup
+                        <br />
+                        Field GunPickup.PISTOL_NUMBER
+                        <br />
+                        At GunPickup.java:[line 9]
+                    </p>
+                </td>
+            </tr>
+            <tr class="tablerow0">
+                <td width="20%" valign="top">
+                    <a href="#SS_SHOULD_BE_STATIC">Unread field: should this field be static?</a>
+                </td>
+                <td width="10%" valign="top">Medium</td>
+                <td width="70%">
+                    <p>
+                        Unread field: GunPickup.SHOTGUN_NUMBER; should this field be static?
+                        <br />
+                        <br />
+                        <br />
+                        In file GunPickup.java,
+					
+						line 10
+                        <br />
+                        In class GunPickup
+                        <br />
+                        Field GunPickup.SHOTGUN_NUMBER
+                        <br />
+                        At GunPickup.java:[line 10]
+                    </p>
+                </td>
+            </tr>
+            <tr class="tablerow1">
+                <td width="20%" valign="top">
+                    <a href="#SS_SHOULD_BE_STATIC">Unread field: should this field be static?</a>
+                </td>
+                <td width="10%" valign="top">Medium</td>
+                <td width="70%">
+                    <p>
+                        Unread field: Instance.BLOCK_SIZE; should this field be static?
+                        <br />
+                        <br />
+                        <br />
+                        In file Instance.java,
+					
+						line 9
+                        <br />
+                        In class Instance
+                        <br />
+                        Field Instance.BLOCK_SIZE
+                        <br />
+                        At Instance.java:[line 9]
+                    </p>
+                </td>
+            </tr>
+            <tr class="tablerow0">
+                <td width="20%" valign="top">
+                    <a href="#SS_SHOULD_BE_STATIC">Unread field: should this field be static?</a>
+                </td>
+                <td width="10%" valign="top">Medium</td>
+                <td width="70%">
+                    <p>
+                        Unread field: Instance.SPEED; should this field be static?
+                        <br />
+                        <br />
+                        <br />
+                        In file Instance.java,
+					
+						line 10
+                        <br />
+                        In class Instance
+                        <br />
+                        Field Instance.SPEED
+                        <br />
+                        At Instance.java:[line 10]
+                    </p>
+                </td>
+            </tr>
+            <tr class="tablerow1">
+                <td width="20%" valign="top">
+                    <a href="#SS_SHOULD_BE_STATIC">Unread field: should this field be static?</a>
+                </td>
+                <td width="10%" valign="top">Medium</td>
+                <td width="70%">
+                    <p>
+                        Unread field: PlayerCharacter.ANIMATION_TIME; should this field be static?
+                        <br />
+                        <br />
+                        <br />
+                        In file PlayerCharacter.java,
+					
+						line 19
+                        <br />
+                        In class PlayerCharacter
+                        <br />
+                        Field PlayerCharacter.ANIMATION_TIME
+                        <br />
+                        At PlayerCharacter.java:[line 19]
+                    </p>
+                </td>
+            </tr>
+            <tr class="tablerow0">
+                <td width="20%" valign="top">
+                    <a href="#SS_SHOULD_BE_STATIC">Unread field: should this field be static?</a>
+                </td>
+                <td width="10%" valign="top">Medium</td>
+                <td width="70%">
+                    <p>
+                        Unread field: PlayerCharacter.BOOMERANG_NUMBER; should this field be static?
+                        <br />
+                        <br />
+                        <br />
+                        In file PlayerCharacter.java,
+					
+						line 18
+                        <br />
+                        In class PlayerCharacter
+                        <br />
+                        Field PlayerCharacter.BOOMERANG_NUMBER
+                        <br />
+                        At PlayerCharacter.java:[line 18]
+                    </p>
+                </td>
+            </tr>
+            <tr class="tablerow1">
+                <td width="20%" valign="top">
+                    <a href="#SS_SHOULD_BE_STATIC">Unread field: should this field be static?</a>
+                </td>
+                <td width="10%" valign="top">Medium</td>
+                <td width="70%">
+                    <p>
+                        Unread field: PlayerCharacter.PISTOL_NUMBER; should this field be static?
+                        <br />
+                        <br />
+                        <br />
+                        In file PlayerCharacter.java,
+					
+						line 16
+                        <br />
+                        In class PlayerCharacter
+                        <br />
+                        Field PlayerCharacter.PISTOL_NUMBER
+                        <br />
+                        At PlayerCharacter.java:[line 16]
+                    </p>
+                </td>
+            </tr>
+            <tr class="tablerow0">
+                <td width="20%" valign="top">
+                    <a href="#SS_SHOULD_BE_STATIC">Unread field: should this field be static?</a>
+                </td>
+                <td width="10%" valign="top">Medium</td>
+                <td width="70%">
+                    <p>
+                        Unread field: PlayerCharacter.RELOAD_FRAMES; should this field be static?
+                        <br />
+                        <br />
+                        <br />
+                        In file PlayerCharacter.java,
+					
+						line 15
+                        <br />
+                        In class PlayerCharacter
+                        <br />
+                        Field PlayerCharacter.RELOAD_FRAMES
+                        <br />
+                        At PlayerCharacter.java:[line 15]
+                    </p>
+                </td>
+            </tr>
+            <tr class="tablerow1">
+                <td width="20%" valign="top">
+                    <a href="#SS_SHOULD_BE_STATIC">Unread field: should this field be static?</a>
+                </td>
+                <td width="10%" valign="top">Medium</td>
+                <td width="70%">
+                    <p>
+                        Unread field: PlayerCharacter.SHOTGUN_NUMBER; should this field be static?
+                        <br />
+                        <br />
+                        <br />
+                        In file PlayerCharacter.java,
+					
+						line 17
+                        <br />
+                        In class PlayerCharacter
+                        <br />
+                        Field PlayerCharacter.SHOTGUN_NUMBER
+                        <br />
+                        At PlayerCharacter.java:[line 17]
+                    </p>
+                </td>
+            </tr>
+            <tr class="tablerow0">
+                <td width="20%" valign="top">
+                    <a href="#SS_SHOULD_BE_STATIC">Unread field: should this field be static?</a>
+                </td>
+                <td width="10%" valign="top">Medium</td>
+                <td width="70%">
+                    <p>
+                        Unread field: Scorpion.MOVEMENT_SPEED; should this field be static?
+                        <br />
+                        <br />
+                        <br />
+                        In file Scorpion.java,
+					
+						line 9
+                        <br />
+                        In class Scorpion
+                        <br />
+                        Field Scorpion.MOVEMENT_SPEED
+                        <br />
+                        At Scorpion.java:[line 9]
+                    </p>
+                </td>
+            </tr>
+            <tr class="tablerow1">
+                <td width="20%" valign="top">
+                    <a href="#SS_SHOULD_BE_STATIC">Unread field: should this field be static?</a>
+                </td>
+                <td width="10%" valign="top">Medium</td>
+                <td width="70%">
+                    <p>
+                        Unread field: ShotgunShell.BULLET_SIZE; should this field be static?
+                        <br />
+                        <br />
+                        <br />
+                        In file ShotgunShell.java,
+					
+						line 9
+                        <br />
+                        In class ShotgunShell
+                        <br />
+                        Field ShotgunShell.BULLET_SIZE
+                        <br />
+                        At ShotgunShell.java:[line 9]
+                    </p>
+                </td>
+            </tr>
+            <tr class="tablerow0">
+                <td width="20%" valign="top">
+                    <a href="#SS_SHOULD_BE_STATIC">Unread field: should this field be static?</a>
+                </td>
+                <td width="10%" valign="top">Medium</td>
+                <td width="70%">
+                    <p>
+                        Unread field: ShotgunShell.BULLET_TIME; should this field be static?
+                        <br />
+                        <br />
+                        <br />
+                        In file ShotgunShell.java,
+					
+						line 11
+                        <br />
+                        In class ShotgunShell
+                        <br />
+                        Field ShotgunShell.BULLET_TIME
+                        <br />
+                        At ShotgunShell.java:[line 11]
+                    </p>
+                </td>
+            </tr>
+            <tr class="tablerow1">
+                <td width="20%" valign="top">
+                    <a href="#SS_SHOULD_BE_STATIC">Unread field: should this field be static?</a>
+                </td>
+                <td width="10%" valign="top">Medium</td>
+                <td width="70%">
+                    <p>
+                        Unread field: ShotgunShell.NUMBER_OF_BULLETS; should this field be static?
+                        <br />
+                        <br />
+                        <br />
+                        In file ShotgunShell.java,
+					
+						line 10
+                        <br />
+                        In class ShotgunShell
+                        <br />
+                        Field ShotgunShell.NUMBER_OF_BULLETS
+                        <br />
+                        At ShotgunShell.java:[line 10]
+                    </p>
+                </td>
+            </tr>
+            <tr class="tablerow0">
+                <td width="20%" valign="top">
+                    <a href="#SS_SHOULD_BE_STATIC">Unread field: should this field be static?</a>
+                </td>
+                <td width="10%" valign="top">Medium</td>
+                <td width="70%">
+                    <p>
+                        Unread field: Spider.MOVEMENT_SPEED; should this field be static?
+                        <br />
+                        <br />
+                        <br />
+                        In file Spider.java,
+					
+						line 10
+                        <br />
+                        In class Spider
+                        <br />
+                        Field Spider.MOVEMENT_SPEED
+                        <br />
+                        At Spider.java:[line 10]
+                    </p>
+                </td>
+            </tr>
+            <tr class="tablerow1">
+                <td width="20%" valign="top">
+                    <a href="#URF_UNREAD_FIELD">Unread field</a>
+                </td>
+                <td width="10%" valign="top">Medium</td>
+                <td width="70%">
+                    <p>
+                        Unread field: CentipedeComponent.weaponTimer
+                        <br />
+                        <br />
+                        <br />
+                        In file CentipedeComponent.java,
+					
+						line 49
+                        <br />
+                        In class CentipedeComponent
+                        <br />
+                        Field CentipedeComponent.weaponTimer
+                        <br />
+                        At CentipedeComponent.java:[line 49]
+                    </p>
+                </td>
+            </tr>
+        </table>
+        <p>
+            <br />
+            <br />
+        </p>
+        <h2>
+            <a name="Warnings_STYLE">Dodgy code Warnings</a>
+        </h2>
+        <table class="warningtable" width="100%" cellspacing="2" cellpadding="5">
+            <tr class="tableheader">
+                <th align="left">Warning</th>
+                <th align="left">Priority</th>
+                <th align="left">Details</th>
+            </tr>
+            <tr class="tablerow1">
+                <td width="20%" valign="top">
+                    <a href="#UUF_UNUSED_PUBLIC_OR_PROTECTED_FIELD">Unused public or protected field</a>
+                </td>
+                <td width="10%" valign="top">Medium</td>
+                <td width="70%">
+                    <p>
+                        Unused public or protected field: BackGroundMusicPlayer.clipIsPaused
+                        <br />
+                        <br />
+                        <br />
+                        In file BackGroundMusicPlayer.java,
+					
+						lines 
+						    to 
+                        <br />
+                        In class BackGroundMusicPlayer
+                        <br />
+                        Field BackGroundMusicPlayer.clipIsPaused
+                        <br />
+                        In BackGroundMusicPlayer.java
+                    </p>
+                </td>
+            </tr>
+        </table>
+        <p>
+            <br />
+            <br />
+        </p>
+        <p>
+            <br />
+            <br />
+        </p>
+        <h1>
+            <a name="Details">Warning Types</a>
+        </h1>
+        <h2>
+            <a name="DM_EXIT">Method invokes System.exit(...)</a>
+        </h2>
+          <p> Invoking System.exit shuts down the entire Java virtual machine. This
+   should only been done when it is appropriate. Such calls make it
+   hard or impossible for your code to be invoked by other code.
+   Consider throwing a RuntimeException instead.</p>
+
+    
+        <p>
+            <br />
+            <br />
+        </p>
+        <h2>
+            <a name="DM_DEFAULT_ENCODING">Reliance on default encoding</a>
+        </h2>
+        <p> Found a call to a method which will perform a byte to String (or String to byte) conversion, and will assume that the default platform encoding is suitable. This will cause the application behaviour to vary between platforms. Use an alternative API and specify a charset name or Charset object explicitly.  </p>
+
+      
+        <p>
+            <br />
+            <br />
+        </p>
+        <h2>
+            <a name="MS_SHOULD_BE_REFACTORED_TO_BE_FINAL">Field isn't final but should be refactored to be so</a>
+        </h2>
+           <p>
+This static field public but not final, and
+could be changed by malicious code or
+by accident from another package.
+The field could be made final to avoid
+this vulnerability. However, the static initializer contains more than one write
+to the field, so doing so will require some refactoring.
+</p>
+
+    
+        <p>
+            <br />
+            <br />
+        </p>
+        <h2>
+            <a name="MS_PKGPROTECT">Field should be package protected</a>
+        </h2>
+          <p> A mutable static field could be changed by malicious code or
+   by accident.
+   The field could be made package protected to avoid
+   this vulnerability.</p>
+
+    
+        <p>
+            <br />
+            <br />
+        </p>
+        <h2>
+            <a name="NM_FIELD_NAMING_CONVENTION">Field names should start with a lower case letter</a>
+        </h2>
+          <p>
+Names of fields that are not final should be in mixed case with a lowercase first letter and the first letters of subsequent words capitalized.
+</p>
+
+    
+        <p>
+            <br />
+            <br />
+        </p>
+        <h2>
+            <a name="NP_NULL_ON_SOME_PATH_EXCEPTION">Possible null pointer dereference in method on exception path</a>
+        </h2>
+        <p> A reference value which is null on some exception control path is
+dereferenced here.&nbsp; This may lead to a <code>NullPointerException</code>
+when the code is executed.&nbsp;
+Note that because FindBugs currently does not prune infeasible exception paths,
+this may be a false warning.</p>
+
+<p> Also note that FindBugs considers the default case of a switch statement to
+be an exception path, since the default case is often infeasible.</p>
+
+    
+        <p>
+            <br />
+            <br />
+        </p>
+        <h2>
+            <a name="SS_SHOULD_BE_STATIC">Unread field: should this field be static?</a>
+        </h2>
+          <p> This class contains an instance final field that
+   is initialized to a compile-time static value.
+   Consider making the field static.</p>
+
+    
+        <p>
+            <br />
+            <br />
+        </p>
+        <h2>
+            <a name="URF_UNREAD_FIELD">Unread field</a>
+        </h2>
+          <p> This field is never read.&nbsp; Consider removing it from the class.</p>
+
+    
+        <p>
+            <br />
+            <br />
+        </p>
+        <h2>
+            <a name="UUF_UNUSED_PUBLIC_OR_PROTECTED_FIELD">Unused public or protected field</a>
+        </h2>
+          <p> This field is never used.&nbsp;
+The field is public or protected, so perhaps
+    it is intended to be used with classes not seen as part of the analysis. If not,
+consider removing it from the class.</p>
+
+    
+        <p>
+            <br />
+            <br />
+        </p>
+    </body>
+</html>
