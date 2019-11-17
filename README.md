@@ -30,35 +30,35 @@ https://plugins.jetbrains.com/plugin/3847-findbugs-idea
    0) You need a C/C++ compiler, Flex and Bison, and GNU make. To this
       end, first install the XCode from the App-store and then type
       ```
-      xcode-select --install
+      $ xcode-select --install
       ```
       in a terminal window.
 
    1) Then get the CBMC source via
       ```
-      git clone https://github.com/diffblue/cbmc cbmc-git
+      $ git clone https://github.com/diffblue/cbmc cbmc-git
       ```
    2) Then type
       ```
-      cd cbmc-git/src
-      make minisat2-download
-      make
+      $ cd cbmc-git/src
+      $ make minisat2-download
+      $ make
       ```
 
 ### 2.Compile JBMC
 
    https://github.com/diffblue/cbmc/tree/develop/jbmc
    ```
-   cd cbmc-git
+   $ cd cbmc-git
    ```
    Before compilation, run the commands:
    ```
-   make -C src DOWNLOADER=wget minisat2-download
-   make -C jbmc/src setup-submodules
+   $ make -C src DOWNLOADER=wget minisat2-download
+   $ make -C jbmc/src setup-submodules
    ```
    Then compile using:
    ```
-   make -C jbmc/src
+   $ make -C jbmc/src
    ```
 
 ### 3.Test the program
@@ -76,3 +76,23 @@ https://plugins.jetbrains.com/plugin/3847-findbugs-idea
 
 https://github.com/javapathfinder/jpf-core/wiki/Build,-Test,-Run
 
+### 1.Install Gradle
+
+#### MACOS
+```
+$ brew install gradle
+```
+
+### 2.Build JPF by Gradle
+
+```
+$ cd jpf-core
+$ ./gradlew buildJars
+$ ./gradlew tasks --all
+```
+
+### 3.Run JPF to test the program
+```
+<some-directory>$ <jpf-core-dir>/bin/jpf +classpath=. <application-main-class>
+```
+Notice: There is a space between +classpath=. and <application-main-class>!
