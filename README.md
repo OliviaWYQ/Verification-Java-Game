@@ -85,11 +85,17 @@ $ brew install gradle
 
 ### 2.Build JPF by Gradle
 
+First, use git to download jpf-core:
+```
+$ git clone git@github.com:<your_username>/jpf-core.git
+```
+Then, build JPF with command line:
 ```
 $ cd jpf-core
 $ ./gradlew buildJars
 $ ./gradlew tasks --all
 ```
+Make sure <jpf-core-dir>/bin/jpf and <jpf-core-dir>/build/RunJPF.jar exist after building.
 
 ### 3.Run JPF to test the program
 ```
