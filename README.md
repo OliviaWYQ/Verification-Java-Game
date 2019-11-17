@@ -65,7 +65,7 @@ https://plugins.jetbrains.com/plugin/3847-findbugs-idea
    
    http://www.cprover.org/jbmc/
 
-   jbmc is inside cbmc-git/jbmc/src/jbmc/
+   jbmc is inside `cbmc-git/jbmc/src/jbmc/`
    ```
    <some-directory>$ javac my/petty/examples/Simple.java
 
@@ -95,10 +95,10 @@ $ cd jpf-core
 $ ./gradlew buildJars
 $ ./gradlew tasks --all
 ```
-Make sure <jpf-core-dir>/bin/jpf and <jpf-core-dir>/build/RunJPF.jar exist after building.
+Make sure `<jpf-core-dir>/bin/jpf` and `<jpf-core-dir>/build/RunJPF.jar` exist after building.
 
 ### 3.Run JPF to test the program
 ```
 <some-directory>$ <jpf-core-dir>/bin/jpf +classpath=. <application-main-class>
 ```
-Notice: There is a space between ` +classpath=. `and `<application-main-class>` !
+Notice: There is a space between `+classpath=. ` and `<application-main-class>` !
