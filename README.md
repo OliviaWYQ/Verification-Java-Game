@@ -16,13 +16,16 @@ JRE 1.8
 ## Install Findbugs
 
 Simply install the plugins in IDEA:
+
 https://plugins.jetbrains.com/plugin/3847-findbugs-idea
 
 ## Install JBMC
 
-### 1.https://github.com/diffblue/cbmc/blob/master/COMPILING
+### 1.Get the environment
 
-#### MACOS:
+   https://github.com/diffblue/cbmc/blob/master/COMPILING
+
+   #### MACOS:
 
    0) You need a C/C++ compiler, Flex and Bison, and GNU make. To this
       end, first install the XCode from the App-store and then type
@@ -42,7 +45,9 @@ https://plugins.jetbrains.com/plugin/3847-findbugs-idea
       make
       ```
 
-### 2.https://github.com/diffblue/cbmc/tree/develop/jbmc
+### 2.Compile JBMC
+
+   https://github.com/diffblue/cbmc/tree/develop/jbmc
    ```
    cd cbmc-git
    ```
@@ -56,7 +61,9 @@ https://plugins.jetbrains.com/plugin/3847-findbugs-idea
    make -C jbmc/src
    ```
 
-### 3.http://www.cprover.org/jbmc/
+### 3.Test the program
+   
+   http://www.cprover.org/jbmc/
 
    jbmc is inside cbmc-git/jbmc/src/jbmc/
    ```
