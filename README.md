@@ -101,4 +101,4 @@ Make sure <jpf-core-dir>/bin/jpf and <jpf-core-dir>/build/RunJPF.jar exist after
 ```
 <some-directory>$ <jpf-core-dir>/bin/jpf +classpath=. <application-main-class>
 ```
-Notice: There is a space between +classpath=. and <application-main-class> !
+Notice: There is a space between ` +classpath=. `and `<application-main-class>` !
