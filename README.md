@@ -72,4 +72,7 @@ https://plugins.jetbrains.com/plugin/3847-findbugs-idea
    <some-directory>$ <path-to-jbmc>/jbmc my/petty/examples/Simple.class --unwind 5 --classpath <path-to-jbmc>/core-models.jar:.
    ```
 
+## Install Java Path Finder
+
+https://github.com/javapathfinder/jpf-core/wiki/Build,-Test,-Run
 
