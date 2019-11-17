@@ -92,6 +92,6 @@ cd jpf-core
 ```
 
 ### 2.Run JPF
-
+```
 > <jpf-core-dir>/bin/jpf +classpath=. <application-main-class>
-
+```
