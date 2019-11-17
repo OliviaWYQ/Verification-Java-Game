@@ -13,6 +13,10 @@ Compiler version:
 JDK 1.8
 JRE 1.8
 
+## Install Findbugs
+
+Simply install the plugins in IDEA:
+https://plugins.jetbrains.com/plugin/3847-findbugs-idea
 
 ## Install JBMC
 
