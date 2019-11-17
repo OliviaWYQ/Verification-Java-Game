@@ -14,34 +14,31 @@ JDK 1.8
 JRE 1.8
 
 
-##Install JBMC
+## Install JBMC
 
-1.https://github.com/diffblue/cbmc/blob/master/COMPILING
+### 1.https://github.com/diffblue/cbmc/blob/master/COMPILING
 
-   COMPILATION ON MACOS X
-   ----------------------
+   COMPILATION ON MACOS Follow these instructions:
 
-   Follow these instructions:
+   0) You need a C/C++ compiler, Flex and Bison, and GNU make. To this
+      end, first install the XCode from the App-store and then type
 
-0) You need a C/C++ compiler, Flex and Bison, and GNU make. To this
-   end, first install the XCode from the App-store and then type
+      xcode-select --install
 
-   xcode-select --install
+      in a terminal window.
 
-   in a terminal window.
+   1) Then get the CBMC source via
 
-1) Then get the CBMC source via
+      git clone https://github.com/diffblue/cbmc cbmc-git
 
-   git clone https://github.com/diffblue/cbmc cbmc-git
+   2) Then type
 
-2) Then type
-
-   cd cbmc-git/src
-   make minisat2-download
-   make
+      cd cbmc-git/src
+      make minisat2-download
+      make
 
 
-2.https://github.com/diffblue/cbmc/tree/develop/jbmc
+### 2.https://github.com/diffblue/cbmc/tree/develop/jbmc
 
    cd cbmc-git
 
@@ -54,7 +51,7 @@ JRE 1.8
    make -C jbmc/src
 
 
-3.http://www.cprover.org/jbmc/
+### 3.http://www.cprover.org/jbmc/
 
    jbmc is inside cbmc-git/jbmc/src/jbmc/
 
