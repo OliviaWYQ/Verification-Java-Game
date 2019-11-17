@@ -76,3 +76,22 @@ https://plugins.jetbrains.com/plugin/3847-findbugs-idea
 
 https://github.com/javapathfinder/jpf-core/wiki/Build,-Test,-Run
 
+### 0.Install Gradle
+
+MACOS
+```
+brew install gradle
+```
+
+### 1.Build JPF
+
+```
+cd jpf-core
+./gradlew buildJars
+./gradlew tasks --all
+```
+
+### 2.Run JPF
+
+> <jpf-core-dir>/bin/jpf +classpath=. <application-main-class>
+
