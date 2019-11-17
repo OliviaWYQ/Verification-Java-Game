@@ -1,6 +1,6 @@
 # Verification-Java-Game
 
-## How to run
+## How to run the program
 Use Eclipse or IDEA to run the game.
 
 Or Use Command Line to run:
