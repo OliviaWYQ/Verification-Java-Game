@@ -15,6 +15,9 @@
       </list>
     </option>
   </component>
+  <component name="FindBugs-IDEA-Workspace">
+    <exportBugCollectionDirectory>$PROJECT_DIR$/../FindBugs</exportBugCollectionDirectory>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
@@ -70,6 +73,8 @@
       <workItem from="1572119823876" duration="727000" />
       <workItem from="1573086467155" duration="997000" />
       <workItem from="1573094626154" duration="7076000" />
+      <workItem from="1573685486360" duration="988000" />
+      <workItem from="1573693397371" duration="918000" />
     </task>
     <servers />
   </component>
