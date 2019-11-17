@@ -18,7 +18,7 @@ JRE 1.8
 
 ### 1.https://github.com/diffblue/cbmc/blob/master/COMPILING
 
-   COMPILATION ON MACOS Follow these instructions:
+   MACOS:
 
    0) You need a C/C++ compiler, Flex and Bison, and GNU make. To this
       end, first install the XCode from the App-store and then type
