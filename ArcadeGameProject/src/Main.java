@@ -19,7 +19,10 @@ public class Main {
 	public static void main(String[] args) {
 		System.out.println("Write your cool arcade game here!");
 		JFrame frame = new JFrame("Centipede");
-		
+
+		int value = 15;
+		assert value <= 20 : "Error Value";
+
 		CentipedeComponent game = new CentipedeComponent();
 		game.setFocusable(true);
 		game.requestFocusInWindow();
