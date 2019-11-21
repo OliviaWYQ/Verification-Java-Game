@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="ArcadeGameProject">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/build/libs/ArcadeGameProject.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>
