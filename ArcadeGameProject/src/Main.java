@@ -18,10 +18,19 @@ public class Main {
 	 */
 	public static void main(String[] args) {
 		System.out.println("Write your cool arcade game here!");
-		JFrame frame = new JFrame("Centipede");
 
-		int value = 15;
-		assert value <= 20 : "Error Value";
+//		------test start------
+//		add a simple bug
+//
+//		String string1="test1";
+//		String string2="test1";
+//
+//		if(string1.equals(string2)) {
+//			throw new RuntimeException("string1 is equal to string2");
+//		}
+//		------test end------
+
+		JFrame frame = new JFrame("Centipede");
 
 		CentipedeComponent game = new CentipedeComponent();
 		game.setFocusable(true);

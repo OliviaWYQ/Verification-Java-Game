@@ -213,6 +213,21 @@ public class CentipedeComponent extends JPanel implements Runnable {
 		this.mushroomCount = 0;
 		for(Instance instance: this.instances){
 			instance.update();
+
+//			------test start------
+//			safety property centipedeCount
+//			initially, centipedeCount = 15
+//			when bullets beat a centipede body, centipedeCount - 1
+
+//			System.out.println("instance.toString():"+instance.toString());
+//			System.out.println("centipedeCount:"+this.centipedeCount);
+//			System.out.println("mushroomCount:"+this.mushroomCount);
+
+			if(this.centipedeCount > 15 || this.centipedeCount < 0) {
+				throw new RuntimeException("centipedeCount error");
+			}
+//			------test end------
+
 			if(this.hero.getSprite().intersects(instance.getSprite())){
 				this.hero.collide(instance);
 				//this.hero.update();

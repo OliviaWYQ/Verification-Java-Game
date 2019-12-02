@@ -6,6 +6,7 @@ import javax.sound.sampled.Clip;
 public class BackGroundMusicPlayer {
 	protected static Clip clip;
 	protected boolean clipIsPaused;
+
 	public BackGroundMusicPlayer() {
 		Runnable player = new Runnable() {
 			@Override
@@ -35,7 +36,16 @@ public class BackGroundMusicPlayer {
 			System.out.println("Not Found");
 		}
 	}
+
 	public void pause(boolean shouldBePaused){
+
+		//		------test start------
+//		Background music shouldBePaused
+
+		System.out.println("Background music shouldBePaused:"+shouldBePaused);
+
+		//		------test end------
+
 		if(shouldBePaused){
 			clip.stop();
 			return;
