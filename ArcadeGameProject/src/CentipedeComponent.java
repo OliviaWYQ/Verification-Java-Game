@@ -169,10 +169,19 @@ public class CentipedeComponent extends JPanel implements Runnable {
 	@Override
 	public void run() {
 		try{
+			//		------test start------
+			//		Background music shouldBePaused
+
+			//		possible bug
+//			this.IsPaused = !this.IsPaused;
+
+//			System.out.println("test game run, this.IsPaused:"+ this.IsPaused);
+
+			//		------test end------
+
 			while (true){
 				if(!this.IsPaused){
 					this.updateInstances();
-					
 				}
 				this.repaint();
 				//Thread.sleep((long) 100);
@@ -331,6 +340,13 @@ public class CentipedeComponent extends JPanel implements Runnable {
 	 */
 	
 	public void setIsPaused(boolean isPaused) {
+
+		//		------test start------
+		//		Background music shouldBePaused
+
+//		System.out.println("test setIsPaused, this.IsPaused:"+ this.IsPaused);
+		//		------test end------
+
 		this.IsPaused = isPaused;
 		this.player.pause(this.IsPaused);
 	}

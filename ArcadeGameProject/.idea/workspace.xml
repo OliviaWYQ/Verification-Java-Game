@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b2aaeef3-1868-4f60-8f30-7dd56dc951a4" name="Default Changelist" comment="" />
+    <list default="true" id="b5b9d50b-04b0-4359-85fc-57e270ac2c7e" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -11,7 +11,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectId" id="1TtxJc6X1mrgqRHp2x5hU3iOoKs" />
+  <component name="ProjectId" id="1UZrtHJqRNqE0WfNUWP9W7EPv63" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -32,19 +32,10 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main">
-    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="ArcadeGameProject_src" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
+      <module name="ArcadeGameProject" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -52,7 +43,6 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.Main (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -62,14 +52,13 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="b2aaeef3-1868-4f60-8f30-7dd56dc951a4" name="Default Changelist" comment="" />
-      <created>1574293121468</created>
+      <changelist id="b5b9d50b-04b0-4359-85fc-57e270ac2c7e" name="Default Changelist" comment="" />
+      <created>1575575171068</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1574293121468</updated>
-      <workItem from="1574293125873" duration="78000" />
-      <workItem from="1574293241487" duration="936000" />
-      <workItem from="1575082219762" duration="9626000" />
+      <updated>1575575171068</updated>
+      <workItem from="1575575172361" duration="44000" />
+      <workItem from="1575664363262" duration="8354000" />
     </task>
     <servers />
   </component>

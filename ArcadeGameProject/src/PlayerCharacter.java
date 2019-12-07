@@ -6,7 +6,6 @@ import java.io.IOException;
 import java.util.HashMap;
 
 
-
 public class PlayerCharacter extends Instance implements Moveable, Collidable{
 	
 	private final static Color HERO_COLOR = Color.BLUE;
@@ -39,7 +38,11 @@ public class PlayerCharacter extends Instance implements Moveable, Collidable{
 	public void readMap(HashMap<Integer, Boolean> hashMap) {
 		this.prevX = this.x;
 		this.prevY = this.y;
-		if(hashMap.get(38) && this.y > 600){
+
+//		bug in character position
+//		if(hashMap.get(38) && this.y > 600){
+
+		if(hashMap.get(38) && this.y > 0){
 			super.moveUp();
 		}
 		if(hashMap.get(39) && this.x < 880){
@@ -58,23 +61,46 @@ public class PlayerCharacter extends Instance implements Moveable, Collidable{
 		return this.life;
 	}
 	
+//	public void hitByEnemy(){
+//		if(this.life > 0){
+//			this.life --;
+//			this.x = DEFAULT_X;
+//			this.y = DEFAULT_Y;
+//		}
+//		else{
+//			System.out.println("YOU DIED");
+//			try {
+//				this.comp.loadLevel(this.comp.getLevelNum());
+//			} catch (IOException exception) {
+//				// WILL LOAD A LEVEL
+//				exception.printStackTrace();
+//			}
+//		}
+//	}
+
 	public void hitByEnemy(){
 		if(this.life > 0){
+			System.out.println("lively");
 			this.life --;
 			this.x = DEFAULT_X;
 			this.y = DEFAULT_Y;
 		}
 		else{
+			if(this.life < 0){
+				throw new RuntimeException("life less than zero");
+			}
+			System.out.println("fail");
 			System.out.println("YOU DIED");
 			try {
 				this.comp.loadLevel(this.comp.getLevelNum());
 			} catch (IOException exception) {
-				// WILL LOAD A LEVEL
+				//WILL LOAD A LEVEL
 				exception.printStackTrace();
 			}
 		}
 	}
-	
+
+
 	public int getScore(){
 		return this.score;
 	}

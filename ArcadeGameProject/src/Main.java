@@ -30,6 +30,12 @@ public class Main {
 //		}
 //		------test end------
 
+		//		------test start------
+
+		System.out.println("test background music");
+
+		//		------test end------
+
 		JFrame frame = new JFrame("Centipede");
 
 		CentipedeComponent game = new CentipedeComponent();

@@ -12,9 +12,18 @@ public class BackGroundMusicPlayer {
 			@Override
 			public void run() {
 				try {
-					while (true) {
+					//			possible bug
+//					while (true) {
+
+						//		------test start------
+						//		Background music shouldBePaused
+
+						System.out.println("Background music play");
+						//		------test end------
+
 						play();
-					}
+//					}
+
 				} catch (Exception exception) {
 				}
 
@@ -26,11 +35,24 @@ public class BackGroundMusicPlayer {
 	static void play() {
 
 		File song = new File(LocalResources.SongPath);
+
 		try{
 			clip = AudioSystem.getClip();
+			//		------test start------
+			//		Background music shouldBePaused
+
+			System.out.println("Background music start");
+			//		------test end------
+
+//			possible bug
+
 			clip.open(AudioSystem.getAudioInputStream(song));
+//			clip.start();
+//			Thread.sleep(clip.getMicrosecondLength()/1000);
+
 			clip.start();
-			Thread.sleep(clip.getMicrosecondLength()/1000);
+			clip.loop(Clip.LOOP_CONTINUOUSLY);
+
 		}
 		catch(Exception e){
 			System.out.println("Not Found");
@@ -40,7 +62,7 @@ public class BackGroundMusicPlayer {
 	public void pause(boolean shouldBePaused){
 
 		//		------test start------
-//		Background music shouldBePaused
+		//		Background music shouldBePaused
 
 		System.out.println("Background music shouldBePaused:"+shouldBePaused);
 
