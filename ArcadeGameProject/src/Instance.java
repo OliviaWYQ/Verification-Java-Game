@@ -14,7 +14,7 @@ public abstract class Instance implements Moveable , Collidable{
 	public int y;
 	public Rectangle2D.Double sprite;
 	protected int BlockSIZE=20;
-	
+
 	public Instance(int x, int y,CentipedeComponent comp){
 		this.comp=comp;
 		this.x = x;

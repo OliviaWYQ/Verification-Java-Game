@@ -19,6 +19,29 @@ public class Main {
 	public static void main(String[] args) {
 		System.out.println("Write your cool arcade game here!");
 
+//		------ test null pointer start ------
+
+//		// Initializing String variable with null value
+//		String ptr = null;
+//
+//		// Checking if ptr.equals null or works fine.
+//		try
+//		{
+//			// This line of code throws NullPointerException
+//			// because ptr is null
+//			if (ptr.equals("gfg"))
+//				System.out.print("Same");
+//			else
+//				System.out.print("Not Same");
+//		}
+//		catch(NullPointerException e)
+//		{
+//			System.out.print("NullPointerException Caught");
+//		}
+
+//		------ test null pointer end  ------
+
+
 //		------test start------
 //		add a simple bug
 //
@@ -30,11 +53,6 @@ public class Main {
 //		}
 //		------test end------
 
-		//		------test start------
-
-		System.out.println("test background music");
-
-		//		------test end------
 
 		JFrame frame = new JFrame("Centipede");
 
@@ -44,7 +62,7 @@ public class Main {
 		frame.add(game);
 		Thread thread = new Thread(game);
 		thread.start();
-		
+
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.pack();
 		frame.setVisible(true);
